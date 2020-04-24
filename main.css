@@ -5,3 +5,41 @@
     --paragraph-font:'Roboto Condensed', sans-serif;
 }
 
+header {
+    background-color: palegreen;
+    font-family: var(--heading-font);
+    color: paleturquoise;
+    text-shadow: 1px 1px 1px black;
+    font-size: larger;
+    border: thin;
+    border-color: black;
+}
+
+main h2 {
+    font-family: var(--heading-font);
+}
+
+#pic-frame {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.lessons {
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    background-color: paleturquoise;
+    color: palegreen;
+    text-shadow: 1px 1px 1px black;
+}
+
+.lessons a {
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    color: white;
+}
+
+.lesson a:hover {
+    color: palegoldenrod;
+} 
+
+
