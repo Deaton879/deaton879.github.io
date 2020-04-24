@@ -16,9 +16,7 @@ header {
     background-color: palegreen;
     font-family: var(--heading-font);
     color: whitesmoke;
-    text-shadow: -3px 2px 1px black;;
-    border-radius: 20px 20px 5px 5px;
-    border: 1px black;
+    border-radius: 20px 20px 2px 2px;
     padding: 1em;
 }
 
@@ -26,37 +24,34 @@ main h2 {
     font-family: var(--heading-font);
 }
 
-#pic-frame {
+#profilePic {
     margin-top: 15px;
-    border-radius: 10px;
-    float: right;
-}
-
-ul{
-    text-decoration: none;
+    border-radius: 5px;
 }
 
 .lessons {
     font-family: var(--paragraph-font);
     color: palegreen;
+    font-weight: bold;
+    marker: none;
 }
 
 .lessons a {
     text-decoration: none;
     font-family: var(--paragraph-font);
     color: paleturquoise;
+    font-weight: bold;
 }
 
 .lessons a:hover {
     color: palegoldenrod;
+    font-weight: bold;
 } 
 
 footer{ 
     background-color: palegreen;
     color: whitesmoke;
-    text-shadow: -3px 2px 1px black;;
-    border-radius: 5px 5px 20px 20px;
-    border: 1px black;
+    border-radius: 2px 2px 20px 20px;
     padding: 1em;
 }
 
