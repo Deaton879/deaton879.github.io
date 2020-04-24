@@ -5,6 +5,13 @@
     --paragraph-font:'Roboto Condensed', sans-serif;
 }
 
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 header {
     background-color: palegreen;
     font-family: var(--heading-font);
