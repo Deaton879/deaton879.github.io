@@ -17,7 +17,7 @@ header {
     background-color: palegreen;
     font-family: var(--heading-font);
     font-weight: bold;
-    color: white;
+    color: darkslategray;
     border-radius: 20px 20px 2px 2px;
     padding: 1em;
 }
@@ -25,11 +25,19 @@ header {
 main h2 {
     font-family: var(--heading-font);
     color: white;
+    padding-left: 1em;
 }
 
 #profilePic {
-    margin-top: 15px;
+    float: right;
+    margin: -80px 45px 0px 6px;
     border-radius: 5px;
+    border-style: groove;
+    border-color: paleturquoise;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .lessons {
@@ -48,17 +56,20 @@ main h2 {
 
 #byu {
     text-decoration: none;
-    color: whitesmoke;
+    color: slategray;
 }
 
 .lessons a:hover, #byu:hover {
-    color: palegoldenrod;
+    color: white;
     font-weight: bold;
 } 
 
 footer{ 
+    font-family: var(--paragraph-font);
+    font-size: large;
+    text-align: center;
     background-color: palegreen;
-    color: white;
+    color: darkslategray;
     border-radius: 2px 2px 20px 20px;
     padding: 1em;
 }
