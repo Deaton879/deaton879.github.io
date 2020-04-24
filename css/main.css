@@ -18,7 +18,8 @@ header {
     color: whitesmoke;
     text-shadow: -3px 2px 1px black;;
     border-radius: 20px 20px 5px 5px;
-    border-color: black;
+    border: 1px black;
+    padding: 1em;
 }
 
 main h2 {
@@ -28,6 +29,7 @@ main h2 {
 #pic-frame {
     margin-top: 15px;
     border-radius: 10px;
+    float: right;
 }
 
 ul{
@@ -37,7 +39,6 @@ ul{
 .lessons {
     font-family: var(--paragraph-font);
     color: palegreen;
-    text-shadow: -3px 2px 1px black;;
 }
 
 .lessons a {
@@ -50,4 +51,12 @@ ul{
     color: palegoldenrod;
 } 
 
+footer{ 
+    background-color: palegreen;
+    color: whitesmoke;
+    text-shadow: -3px 2px 1px black;;
+    border-radius: 5px 5px 20px 20px;
+    border: 1px black;
+    padding: 1em;
+}
 
