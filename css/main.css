@@ -15,10 +15,9 @@ body {
 header {
     background-color: palegreen;
     font-family: var(--heading-font);
-    color: paleturquoise;
-    text-shadow: 1px 1px 1px black;
-    font-size: larger;
-    border: thin;
+    color: whitesmoke;
+    text-shadow: -3px 2px 1px black;;
+    border-radius: 20px 20px 5px 5px;
     border-color: black;
 }
 
@@ -31,21 +30,23 @@ main h2 {
     border-radius: 10px;
 }
 
-.lessons {
+ul{
     text-decoration: none;
+}
+
+.lessons {
     font-family: var(--paragraph-font);
-    background-color: paleturquoise;
     color: palegreen;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: -3px 2px 1px black;;
 }
 
 .lessons a {
     text-decoration: none;
     font-family: var(--paragraph-font);
-    color: white;
+    color: paleturquoise;
 }
 
-.lesson a:hover {
+.lessons a:hover {
     color: palegoldenrod;
 } 
 
