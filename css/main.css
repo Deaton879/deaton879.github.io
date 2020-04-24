@@ -10,18 +10,21 @@ body {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+    background-color:black;
 }
 
 header {
     background-color: palegreen;
     font-family: var(--heading-font);
-    color: whitesmoke;
+    font-weight: bold;
+    color: white;
     border-radius: 20px 20px 2px 2px;
     padding: 1em;
 }
 
 main h2 {
     font-family: var(--heading-font);
+    color: white;
 }
 
 #profilePic {
@@ -43,15 +46,19 @@ main h2 {
     font-weight: bold;
 }
 
-.lessons a:hover {
+#byu {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.lessons a:hover, #byu:hover {
     color: palegoldenrod;
     font-weight: bold;
 } 
 
 footer{ 
     background-color: palegreen;
-    color: whitesmoke;
+    color: white;
     border-radius: 2px 2px 20px 20px;
     padding: 1em;
 }
-
