@@ -54,12 +54,12 @@ ul {
     font-weight: bold;
 }
 
-#byu {
+.byu {
     text-decoration: none;
     color: slategray;
 }
 
-.lessons a:hover, #byu:hover {
+.lessons a:hover, .byu:hover {
     color: white;
     font-weight: bold;
 } 
