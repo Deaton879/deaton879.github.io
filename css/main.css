@@ -25,7 +25,8 @@ header {
 main h2 {
     font-family: var(--heading-font);
     color: white;
-    padding-left: 1em;
+    border-bottom: solid 1px white;
+    margin: 10px 50px 10px 10px;
 }
 
 #profilePic {
@@ -33,7 +34,7 @@ main h2 {
     margin: -80px 45px 0px 6px;
     border-radius: 5px;
     border-style: groove;
-    border-color: paleturquoise;
+    border-color: white;
 }
 
 ul {
@@ -67,6 +68,7 @@ ul {
 footer{ 
     font-family: var(--paragraph-font);
     font-size: large;
+    font-weight: 600;
     text-align: center;
     background-color: palegreen;
     color: darkslategray;
