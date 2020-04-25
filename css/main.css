@@ -16,8 +16,8 @@ body {
 header {
     background-color: palegreen;
     font-family: var(--heading-font);
-    font-weight: bold;
-    color: darkslategray;
+    font-weight: bolder;
+    color: black;
     border-radius: 20px 20px 2px 2px;
     padding: 1em;
 }
