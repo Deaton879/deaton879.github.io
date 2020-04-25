@@ -19,7 +19,7 @@ header {
     font-weight: bolder;
     color: black;
     border-radius: 20px 20px 2px 2px;
-    padding: 1em;
+    padding: 10px 0px 1px 30px;
 }
 
 main h2 {
@@ -31,7 +31,7 @@ main h2 {
 
 #profilePic {
     float: right;
-    margin: -80px 45px 0px 6px;
+    margin: -90px 45px 0px 6px;
     border-radius: 5px;
     border-style: groove;
     border-color: white;
