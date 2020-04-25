@@ -60,8 +60,13 @@ ul {
     color: slategray;
 }
 
-.lessons a:hover, .byu:hover {
+.lessons a:hover{
     color: white;
+    font-weight: bold;
+} 
+
+.byu:hover {
+    color: darkblue;
     font-weight: bold;
 } 
 
