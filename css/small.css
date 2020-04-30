@@ -15,17 +15,16 @@ header {
     padding: 10px 0px 1px 30px;
 }
 
-main h2 {
+.homeMain h2 {
     font-family: 'Roboto Mono', Monospace;
     color: white;
     border-bottom: solid 1px white;
     margin: 10px 50px 10px 10px;
 }
 
-#profilePic {
-    float: right;
-    margin: -90px 45px 0px 6px;
-    border-radius: 5px;
+.homeHeader img {
+    width: 200px;
+    height: auto;
     border-style: groove;
     border-color: white;
 }
