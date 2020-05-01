@@ -3,6 +3,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    display: block;
     font-family: 'Roboto Condensed', sans-serif;
     background-color:black;
 }
@@ -13,8 +14,65 @@ header {
     font-weight: bolder;
     color: black;
     padding: 10px;
+    border-bottom: black 2px solid;
 }
 
+header h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin: auto;
+    text-shadow: 2px 1px antiquewhite;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    text-align: center;
+    background-color: paleturquoise;
+}
+
+main h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+main h3 {
+    color: palegreen;
+    margin-bottom: .25em;
+}
+
+.principleOfDesign {
+    padding: 1em;
+    margin: 20px 2.5px 20px 2.5px;
+    grid-column: span 1;
+    border: white 2px solid;
+    background-color: black;
+    border-radius: 10px;
+}
+
+div {
+    padding-bottom: .5em;
+}
+main a {
+    color: paleturquoise;
+}
+
+.designElementPic {
+    max-width: 100%;
+    max-height: 625px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+main p{
+    padding: inherit;
+}
+
+main b {
+    color: palegreen;
+}
 .byu {
     text-decoration: none;
     color: slategray;
@@ -30,6 +88,7 @@ footer{
     font-weight: 600;
     text-align: center;
     background-color: palegreen;
-    color: darkslategray;
+    color: black;
     padding: 1em;
+    border-top: black 2px solid;
 }

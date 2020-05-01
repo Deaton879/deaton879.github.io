@@ -1,0 +1,14 @@
+@media only screen and (min-width: 40em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main p {
+        margin: 5px 4em 15px 4em;
+        padding: 1em;
+    }
+
+    main a {
+        margin-top: 1em;
+    }
+}
