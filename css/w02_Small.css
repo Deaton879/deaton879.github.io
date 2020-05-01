@@ -1,0 +1,35 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', Monospace;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:black;
+}
+
+header {
+    font-family: 'Roboto Condensed', sans-serif;;
+    background-color: palegreen;
+    font-weight: bolder;
+    color: black;
+    padding: 10px;
+}
+
+.byu {
+    text-decoration: none;
+    color: slategray;
+}
+
+.byu:hover {
+    color: darkblue;
+    font-weight: bold;
+} 
+
+footer{ 
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+    background-color: palegreen;
+    color: darkslategray;
+    padding: 1em;
+}

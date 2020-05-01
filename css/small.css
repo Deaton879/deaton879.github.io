@@ -1,32 +1,44 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', Monospace;
+}
+
 body {
     max-width: 900px;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
     background-color:black;
+    border: white solid 1.5px;
 }
 
 header {
     background-color: palegreen;
-    font-family: 'Roboto Mono', Monospace;
     font-weight: bolder;
     color: black;
-    border-radius: 20px 20px 2px 2px;
-    padding: 10px 0px 1px 30px;
+    padding: 10px 0px 1px 37px;
+}
+
+.homeHeader h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.5em;
+    margin: 10px 0px 10px -25px;
+}
+
+.homeMain {
+    margin: auto;
 }
 
 .homeMain h2 {
-    font-family: 'Roboto Mono', Monospace;
     color: white;
-    border-bottom: solid 1px white;
+    border-bottom: solid 2px white;
     margin: 10px 50px 10px 10px;
 }
 
 .homeHeader img {
     width: 200px;
     height: auto;
-    border-style: groove;
-    border-color: white;
+    margin: 10px 12px;
+    border-radius: 18px;
+    border: white solid 2px;
 }
 
 ul {
@@ -34,7 +46,6 @@ ul {
 }
 
 .lessons {
-    font-family: 'Roboto Condensed', sans-serif;
     color: palegreen;
     font-weight: bold;
     marker: none;
@@ -42,7 +53,6 @@ ul {
 
 .lessons a {
     text-decoration: none;
-    font-family: 'Roboto Condensed', sans-serif;
     color: paleturquoise;
     font-weight: bold;
 }
@@ -63,12 +73,10 @@ ul {
 } 
 
 footer{ 
-    font-family: 'Roboto Condensed', sans-serif;
     font-size: large;
     font-weight: 600;
     text-align: center;
     background-color: palegreen;
     color: darkslategray;
-    border-radius: 2px 2px 20px 20px;
     padding: 1em;
 }
