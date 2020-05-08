@@ -1,0 +1,43 @@
+@media only screen and (min-width: 32.5em) {
+
+    header {
+        display: flex;
+    }
+
+    .nav-container {
+        display: inline-flex;
+        margin-left: auto;
+    }
+
+    #site-name {
+        padding: 0;
+        margin: 10px 20px auto 0;
+    }
+    #site-icon {
+        padding: 5px;
+    }
+
+    #color-box {
+        max-width: 45%;
+        display: inline-flex;
+        margin-left: 20px;
+    }
+    
+    #colors {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        
+    }
+    
+    #color-choices {
+        display: inline-block;
+    }
+    
+    #color-choices li {
+        margin-right: auto;
+        font-family: 'Cantarell', sans-serif;
+        list-style: none;
+        text-align: start;
+    }
+}

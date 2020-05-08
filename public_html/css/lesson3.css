@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #212121;
+    padding-inline-start: 3%;
+    display: block;
+}
+
+p {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 400;
+    color: #212121;
+    background-color: #f8f9fb;
+    display: block;
+    padding: 0em 3em 1em 3em;
+    margin: 0;
+}
+
+/**************************  HEADER  *********************************/
+header {
+    background-color: #212121;
+    border-bottom: 2px solid #fecc0a;
+}
+
+.nav-container {
+    display: inline-block; 
+}
+
+.nav-list {
+    list-style-type: none;
+    display: contents;
+    height: auto;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-button {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 1.5em;
+    background-color: #192535;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+#active-button {
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #f8f9fb;
+    background-color: #0c7692;
+}
+
+.nav-linkA {
+    text-decoration: none;
+    padding: 1.5em;
+}
+
+.nav-list a {
+    color: #f8f9fb;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: unset;
+}
+
+.nav-button:hover {
+    background-color: #0c7692;
+}
+
+/******************************  BODY  *****************************/
+body {
+    background-color: #192535;
+}
+
+main {
+    max-width: 970px;
+    margin: auto;
+    background-color: #f8f9fb;
+    border-left: 1.5px groove #fecc0a;
+    border-right: 1.5px groove #fecc0a;
+}
+
+.foot-nav {
+    color: #0c7692;
+    text-decoration: none;
+}
+
+.foot-nav:hover {
+    font-weight: 700;
+}
+
+/**************************  OTHER  *******************************/
+#site-name {
+    color: #f8f9fb;
+    padding: 10px;
+    float: right;
+}
+
+.title_heading {
+    margin-top: 0;
+    padding-top: 2%;
+}
+
+#site-logo {
+    margin-left: 50px;
+}
+
+#todaysDate {
+    color: #fecc0a;
+}
+
+footer {
+    background-color: #212121;
+    color: #f8f9fb;
+    font-family: 'Raleway', sans-serif;
+    border-top: 2px solid #fecc0a;
+}
+
+hr {
+    width: 98%;
+    height: .5px;
+    margin: 0 auto 0 auto;
+    background-color: #fecc0a;
+    border: 1px solid #212121;
+}
+
+/************************************* ID's *********************************/
+
+#color-box {
+    max-width: 100%;
+    display: inline-flex;
+}
+
+#colors {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    border-right: 1px solid black;
+}
+
+#color-choices {
+    display: inline-block;
+    padding: 0;
+}
+
+#color-choices li {
+    font-family: 'Cantarell', sans-serif;
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
