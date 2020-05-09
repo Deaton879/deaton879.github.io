@@ -31,14 +31,12 @@
     }
     
     #color-choices {
-        float: right;
         padding: 0%;
     }
     
     #color-choices li {
-        margin-right: auto;
         font-family: 'Cantarell', sans-serif;
         list-style: none;
-        text-align: start;
+        text-align: right;
     }
 }

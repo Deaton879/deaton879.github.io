@@ -35,9 +35,12 @@
     }
     
     #color-choices li {
-        margin-right: auto;
         font-family: 'Cantarell', sans-serif;
         list-style: none;
-        text-align: start;
+        text-align: right;
+    }
+
+    #color-choices p {
+        padding-right: 5px;
     }
 }
