@@ -24,12 +24,13 @@ header {
 }
 
 .nav-container {
-    display: inline-block; 
+    display: block; 
 }
 
 .nav-list {
     list-style-type: none;
-    display: contents;
+    display: block;
+    padding: 0;
     height: auto;
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -37,7 +38,7 @@ header {
 
 .nav-button {
     cursor: pointer;
-    display: inline-flex;
+    display: block;
     padding: 1.5em;
     background-color: #192535;
     border-radius: 4px;
@@ -46,7 +47,7 @@ header {
 
 #active-button {
     cursor: pointer;
-    display: inline-block;
+    display: block;
     border: 2px solid #f8f9fb;
     background-color: #0c7692;
 }

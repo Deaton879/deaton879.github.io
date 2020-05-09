@@ -5,8 +5,26 @@
     }
 
     .nav-container {
-        display: inline-flex;
+        display: flex;
         margin-left: auto;
+    }
+
+        
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-button {
+        display: flex;
+        border-color: azure;
+        margin-bottom: 5px;
+    }
+
+    #active-button {
+        cursor: pointer;
+        display: block;
+        border: 2px solid #f8f9fb;
+        background-color: #0c7692;
     }
 
     #site-name {
