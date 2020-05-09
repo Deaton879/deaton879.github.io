@@ -90,6 +90,7 @@ main {
 }
 
 /**************************  OTHER  *******************************/
+
 #site-name {
     color: #f8f9fb;
     padding: 10px;
@@ -118,7 +119,7 @@ footer {
 
 hr {
     width: 98%;
-    height: .5px;
+    height: .75px;
     margin: 0 auto 0 auto;
     background-color: #fecc0a;
     border: 1px solid #212121;
@@ -148,6 +149,10 @@ hr {
     list-style: none;
     padding: 20px;
     text-align: center;
+}
+
+#typo-table {
+    overflow-x: scroll;
 }
 
 #typo-table th {
