@@ -86,6 +86,7 @@ main {
 }
 
 .foot-nav:hover {
+    color: #fecc0a;
     font-weight: 700;
 }
 
@@ -151,8 +152,9 @@ hr {
     text-align: center;
 }
 
-#typo-table {
+#typo-table-container {
     overflow-x: scroll;
+    position: relative;
 }
 
 #typo-table th {
@@ -161,4 +163,24 @@ hr {
 }
 #typo-table td {
     padding: .5em 1em 1em 3em;
+}
+
+#persona-box {
+    display: flow-root;
+    margin: auto;
+    align-items: flex-end;
+}
+
+#persona2, #persona1{
+    text-align: center;
+    padding: 0 6%;
+}
+
+#persona1, #persona2 li {
+    font-family: 'Cantarell', sans serif;
+}
+
+#persona2 img, #persona1 img{
+    border: 2px solid #192535
+
 }
