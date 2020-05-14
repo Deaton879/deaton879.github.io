@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Preston Site</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./css/lesson4small.css">
+        <link rel="stylesheet" href="./css/lesson4large.css">
+        <link rel="stylesheet" href="./css/lesson4medium.css">
+        <meta name="description" content="Week 4 Assignment: Preston Site/Responsive Menu.">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <!--Header Content Here-->
+            <a href="../index.html"><img id="site-icon" src="./images/Weather-icon.png" alt="site logo"></a>
+            <h1 id="site-name">WeatherTheWeather.app</h1>
+            <div class="motto">"Let's weather this weather, together!"</div>
+        </header>
+        <!--Navigation-->
+        <nav class="nav-container">
+            <ul class="navigation">
+                <li><a class="menu" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li class="active"><a href="#">tab1</a></li>
+                <li><a href="#">tab2</a></li>
+                <li><a href="#">tab3</a></li>
+                <li><a href="#">tab4</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="heroContainer">
+                <div>Weather Summary</div>
+                <img src="#" alt="Hero image of...">
+            </div>
+            <div>5-Day Forecast</div>
+            <div>Article</div>
+            <div>Contact Information</div>
+        </main>
+        <!--Footer-->
+        <footer>
+            © 2020 WeatherTheWeather.app | Dallas Eaton | Michigan | Bachelor of Applied Technology | BYU-Idaho |  
+            <a class="foot-nav" href="../index.html">Assignments</a> 
+            <br><br>
+            <span id="todaysDate"></span>
+            <script src="js/currentDate.js"></script>
+        </footer>
+        <script src="js/responsiveMenu.js"></script> 
+    </body>
+</html>

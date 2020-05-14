@@ -1,0 +1,18 @@
+@media only screen and (min-width: 32.5rem) {
+    
+    .nav-container {
+        margin-left: auto;
+    }
+
+    #site-name {
+        color: #f8f9fb;
+        padding: 10px;  
+        text-align: center;
+    }
+    
+    .motto {
+        padding-bottom: 1rem;
+        font-size: initial;
+        text-align: center;
+    }
+}
