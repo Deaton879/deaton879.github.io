@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+header {
+    background-color: #212121;
+    border-bottom: 1px groove #fecc0a;
+    padding: 10px;
+}
+
+.navigation {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    height: auto;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation li {
+    display: none;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,192535+98 */
+}
+
+.responsive li {
+    display: block;
+    border-bottom: 1px solid white;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.responsive li:first-child {
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%); 
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+35,0c7692+98,7db9e8+100 */
+}
+
+.responsive li:first-child a {
+    color: #f8f9fb;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    color: #f8f9fb;
+    font-weight: 700;
+	display: block;
+}
+
+.active {
+    background-color: #0c7692;
+}
+
+body {
+    background-color: #192535;
+}
+
+main {
+    max-width: 970px;
+    margin: auto;
+    height: max-content;
+    background-color: #f8f9fb;
+    border-left: 1.5px groove #fecc0a;
+    border-right: 1.5px groove #fecc0a;
+}
+
+
+main section{
+    padding: .75rem;
+    border: 1px groove black;
+    font-family: 'Cantarell', sans-serif;
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: rgba(254, 204, 20, 0.7);
+}
+
+h3 {
+    margin: 0;
+    color: #212121;
+    text-indent: 5%;
+    font-size: inherit;
+}
+
+#heroImg {
+    display: none;
+}
+
+.foot-nav {
+    color: #0c7692;
+    text-decoration: none;
+}
+
+.foot-nav:hover {
+    color: #fecc0a;
+    font-weight: 700;
+}
+
+
+#site-name {
+    color: #f8f9fb;
+    padding: 10px 1.35rem .35rem 0;
+    font-size: large;
+    text-align: right;
+    margin: auto;  
+    font-family: 'Raleway', sans-serif;
+}
+
+.motto {
+    color: #f8f9fb;
+    font-weight: 600;
+    opacity: .7;
+    text-align: end;
+    padding: 0 1.35rem 0.75rem;
+    font-size: smaller;
+}
+.titleHeading {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+#site-icon {
+    float: left;
+}
+
+#todaysDate {
+    color: #fecc0a;
+}
+
+.foot-nav {
+ color: #f8f9fb;
+ font-weight: 700;
+ text-shadow: 0 0 2px #fecc0a;
+ padding-left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #212121;
+    color: #f8f9fb;
+    font-family: 'Raleway', sans-serif;
+    border-top: 1px solid #fecc0a;
+    margin: auto;
+    font-size: small;
+    font-weight: 600;
+}
