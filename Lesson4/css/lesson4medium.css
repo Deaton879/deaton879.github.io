@@ -2,17 +2,29 @@
     
     .nav-container {
         margin-left: auto;
+        border-bottom: outset;
     }
 
     #site-name {
         color: #f8f9fb;
         padding: 10px;  
         text-align: center;
+        font-size: x-large;
+    }
+
+    .titleHeading {
+        margin: 0;
+        padding: 1rem;
+        font-size: x-large;
     }
     
     .motto {
         padding-bottom: 1rem;
         font-size: initial;
         text-align: center;
+    }
+
+    footer {
+        border-bottom: outset;
     }
 }

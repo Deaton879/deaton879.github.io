@@ -1,19 +1,20 @@
-@media only screen and (min-width: 55rem) {
+@media only screen and (min-width: 60rem) {
     
     main, footer {
-        width: 80%;
+        max-width: 900px;
         margin: auto;
     }
 
     header {
         text-align: center;
-        border-bottom: .120rem groove #fecc0a;
+        border-bottom: .0125rem groove #fecc0a;
     }
 
     .navigation {
         display: flex;
     }
 
+    
     
     .navigation li:first-child {
         display: none;
@@ -37,17 +38,23 @@
 
     #site-name {
         display: contents;
+        font-size: xx-large;
     }
 
     .motto {
         margin-top: -25px;
-        padding: 0.4rem 0 1rem 6rem;
+        padding: 0.3rem 0 1rem 6rem;
     }
 
     #site-icon {
         padding: 5px;
         vertical-align: middle;
         float: none;
+    }
+
+    footer {
+        border-radius: 2px 2px 15px 15px;
+
     }
 
 }

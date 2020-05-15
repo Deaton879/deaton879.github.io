@@ -60,9 +60,33 @@ body {
 main {
     max-width: 970px;
     margin: auto;
+    height: max-content;
     background-color: #f8f9fb;
     border-left: 1.5px groove #fecc0a;
     border-right: 1.5px groove #fecc0a;
+}
+
+
+main section{
+    padding: .75rem;
+    border: 1px groove black;
+    font-family: 'Cantarell', sans-serif;
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: rgba(254, 204, 20, 0.7);
+}
+
+h3 {
+    margin: 0;
+    color: #212121;
+    text-indent: 5%;
+    font-size: inherit;
+}
+
+#heroImg {
+    display: none;
 }
 
 .foot-nav {
@@ -78,10 +102,11 @@ main {
 
 #site-name {
     color: #f8f9fb;
-    padding: 10px .35rem .35rem 0;
-    font-size: x-large;
+    padding: 10px 1.35rem .35rem 0;
+    font-size: large;
     text-align: right;
     margin: auto;  
+    font-family: 'Raleway', sans-serif;
 }
 
 .motto {
@@ -89,12 +114,14 @@ main {
     font-weight: 600;
     opacity: .7;
     text-align: end;
-    padding: 0 .35rem 0.75rem;
+    padding: 0 1.35rem 0.75rem;
     font-size: smaller;
 }
-.title_heading {
-    margin-top: 0;
-    padding-top: 2%;
+.titleHeading {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: auto;
+    padding-top: 20px;
 }
 
 #site-icon {
@@ -105,11 +132,21 @@ main {
     color: #fecc0a;
 }
 
+.foot-nav {
+ color: #f8f9fb;
+ font-weight: 700;
+ text-shadow: 0 0 2px #fecc0a;
+ padding-left: 10px;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #212121;
     color: #f8f9fb;
     font-family: 'Raleway', sans-serif;
-    border-top: 2px solid #fecc0a;
+    border-top: 1px solid #fecc0a;
+    margin: auto;
+    font-size: small;
+    font-weight: 600;
 }
