@@ -1,0 +1,45 @@
+@media only screen and (min-width: 60rem) {
+    
+    main, footer {
+        max-width: 900px;
+        margin: auto;
+    }
+
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        border-right: 1px groove rgba(0, 218, 370, 0.8);
+        border-radius: 2px;
+        background: linear-gradient(to bottom, rgba(25,37,53,1) 2%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .navigation a {
+        padding: .8rem 1rem;
+    }
+
+    .motto {
+        margin-top: -15px;
+        padding: 0.3rem 0 1rem 6rem;
+    }
+
+    #site-icon {
+        padding: 5px;
+        vertical-align: middle;
+        float: none;
+    }
+
+    footer {
+        border-radius: 2px 2px 15px 15px;
+    }
+
+}
+
