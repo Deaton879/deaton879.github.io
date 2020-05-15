@@ -1,5 +1,10 @@
 @media only screen and (min-width: 32.5rem) {
-    
+    header {
+        display: flex;
+        align-items:center;
+	    justify-content:center;
+        border-bottom: .0125rem groove #fecc0a;
+    }
     .nav-container {
         margin-left: auto;
         border-bottom: outset;
@@ -9,7 +14,7 @@
         color: #f8f9fb;
         padding: 10px;  
         text-align: center;
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .titleHeading {
@@ -17,7 +22,19 @@
         padding: 1rem;
         font-size: x-large;
     }
+
+    #site-icon {
+        padding: 5px;
+        vertical-align: middle;
+        float: none;
+    }
     
+    .headerText {
+        display: inline-flex;
+        flex-direction: column;
+
+    }
+
     .motto {
         padding-bottom: 1rem;
         font-size: initial;
