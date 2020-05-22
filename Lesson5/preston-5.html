@@ -12,9 +12,10 @@
         <link rel="shortcut icon" href="./images/favicon.ico">
         <script src="https://kit.fontawesome.com/805bc41e34.js" crossorigin="anonymous"></script>
         <meta name="description" content="Week 5 Assignment: Preston Site completion.">
+        <script src="./js/pancakes.js"></script>
     </head>
 
-    <body>
+    <body onload="checkTheYear()">
         <aside id="pancakes">
             Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
         </aside>
@@ -32,7 +33,7 @@
         <nav class="nav-container">
             <button onclick="toggleMenu()" href="#" id="menu">&#9776; Menu</button>
             <ul class="navigation">
-                <li id="active" style="border-left: 1px groove rgba(0, 218, 370, 0.8); background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);">
+                <li id="active" style="border-left: 1px groove rgba(0, 218, 370, 0.8);">
                     <a href="preston-5.html">Home</a>
                 </li>
                 <li><a href="#">Preston</a></li>
@@ -44,7 +45,6 @@
         </nav>
         <main>
             <h2 class="titleHeading">Preston Idaho</h2>
-            <hr>
             <div class="heroContainer">
                 <img id="heroImg" src="./images/island-during-golden-hour-and-upcoming-storm-1118873-min.jpg" alt="Photo by Johannes Plenio from Pexels">
                 <section class="heroFiller">
@@ -71,45 +71,48 @@
                         <p>8 mph</p>
                     </div>
                 </section>
-            </div>
+            </hr>
             <hr>
-            <section class="filler">
+            <section class="filler" id="forecastContainer">
                 <h3>5-Day Forecast</h3>
                 <div id="fiveDay">
                     <div class="forecast">
                         <p>Mon</p>
-                        <i class='fas fa-cloud-rain' style='font-size:36px; color:yellow; text-shadow: 0px 0px 2px black;'></i>
+                        <i class='fas fa-cloud-rain' style='font-size:36px; color:rgba(255, 217, 81, 0.952); text-shadow: 0px 0px 2px black;'></i>
                         <p>78 &#8457;</p>  
                     </div>
                     <div class="forecast">
                         <p>Tue</p>
-                        <i class='fas fa-cloud-showers-heavy' style='font-size:36px; color:yellow; text-shadow: 0px 0px 2px black;'></i>
+                        <i class='fas fa-cloud-showers-heavy' style='font-size:36px; color:rgba(255, 217, 81, 0.952); text-shadow: 0px 0px 2px black;'></i>
                         <p>79 &#8457;</p>  
                     </div>
                     <div class="forecast">
                         <p>Wed</p>
-                        <i class='fas fa-cloud-sun-rain' style='font-size:36px; color:yellow; text-shadow: 0px 0px 2px black;'></i>
+                        <i class='fas fa-cloud-sun-rain' style='font-size:36px; color:rgba(255, 217, 81, 0.952); text-shadow: 0px 0px 2px black;'></i>
                         <p>76 &#8457;</p>  
                     </div>
                     <div class="forecast">
                         <p>Thur</p>
-                        <i class='fas fa-cloud-sun' style='font-size:36px; color:yellow; text-shadow: 0px 0px 2px black;'></i>
+                        <i class='fas fa-cloud-sun' style='font-size:36px; color:rgba(255, 217, 81, 0.952); text-shadow: 0px 0px 2px black;'></i>
                         <p>77 &#8457;</p>  
                     </div>
                     <div class="forecast">
                         <p>Fri</p>
-                        <i class='fas fa-sun' style='font-size:36px; color:yellow; text-shadow: 0px 0px 2px black;'></i>
+                        <i class='fas fa-sun' style='font-size:36px; color:rgba(255, 217, 81, 0.952); text-shadow: 0px 0px 2px black;'></i>
                         <p>83 &#8457;</p>  
                     </div>
                 </div>
             </section>
             <hr>
-            <article class="filler">        
-                
+            <article>        
                 <div id="article">
-                    <img id="articleImg" src="images/watermelon-846357_1920.jpg">
-                    <h3>Article Title</h3>
-                    <h4>By: Author Unknown</h4>
+                    <div id="aImgContainer">
+                        <img id="articleImg" src="images/watermelon-846357_1920.jpg">
+                    </div>                        
+                    <div id="articleHeader">
+                        <h3>Article Title</h3>
+                        <h4>By: Author Unknown</h4>
+                    </div>
                     <p>
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
                         atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
@@ -124,7 +127,39 @@
                 </div>
             </article>
             <hr>
-            <section class="filler"><h3>Contact Information</h3></section>
+            <section class="filler">
+                <h3>Contact Information</h3>
+                <section class="contactInfo">
+                        <div id="prestonMap">
+                            <iframe width="100%" height="340" 
+                            src="https://maps.google.com/maps?width=100%&amp;height=340&amp;hl=en&amp;coord=42.0963133, 
+                            -111.8766173&amp;q=Preston%2C%20ID%2083263+(WeatherTheWeather)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" 
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/draw-radius-circle-map/">Create radius map</a>
+                            </iframe>
+                        </div><br>
+                    <section class="contactInfo"></section>
+                        <ul class="addressInfo">
+                            <li><b>Address: </b>
+                                <br>123 Weather Place 
+                                <br>Preston, ID 83263
+                            </li><br>
+                            <li><b>Phone: </b>
+                                <br>012.345.6789
+                            </li><br>
+                            <li><b>E-mail: </b>
+                                <br>contact@weathertheweather.com
+                            </li>
+                        </ul>
+                        <ul class="socialInfo">
+                            <li class="png"><img src="./images/facebook-social-media-pngrepo-com.png" alt="Facebook Icon"></li>
+                            <li class="png"><img src="./images/twitter-social-media-pngrepo-com.png" alt="Twitter Icon"></li>
+                            <li class="png"><img src="./images/google-play-social-media-pngrepo-com.png" alt="Google Play"></li>
+                            <li class="png"><img src="./images/pinterest-social-media-pngrepo-com.png" alt="Pintrest"></li>
+                            <li class="png"><img src="./images/whatsapp-social-media-pngrepo-com.png" alt="Whatsapp"></li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
             <hr>
         </main>
         <!--Footer-->

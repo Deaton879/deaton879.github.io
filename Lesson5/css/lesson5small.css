@@ -2,7 +2,6 @@
 
 header {
     background-color: #212121;
-    border-bottom: 1px groove #fecc0a;
     padding: 10px;
 }
 
@@ -12,7 +11,7 @@ header {
     padding: 0;
     height: auto;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Cantarell', sans-serif;
 }
 
 .navigation li {
@@ -25,6 +24,7 @@ header {
 .responsive li {
     display: block;
     border-bottom: 1px solid white;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);
 }
 
 #menu {
@@ -54,17 +54,18 @@ header {
     text-decoration: none;
     text-align: center;
     padding: 1em;
-    color: #f8f9fb;
-    font-weight: 700;
+    font-variant: small-caps;
+    color: azure;
+    font-weight: 600;
 	display: block;
 }
 
 #active {
-    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
 }
 
 body {
-    background-color: #192535;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);
 }
 
 main {
@@ -88,7 +89,12 @@ main {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: medium;
-    padding: .25rem;
+    padding: .5rem;
+    background-color: rgb(103, 172, 224);
+    border: .01rem dashed black;
+    color: azure;
+    text-shadow: 0px 0px 5px black;
+    border-radius: 10px 10px 0 0;
 }
 
 #fiveDay {
@@ -97,6 +103,9 @@ main {
     padding: 1vh;
     text-align: center;
     font-style: italic;
+    background-color: #212121;
+    border: .01rem dashed gold;
+    border-radius: 0 0 10px 10px;
 }
 
 .forecast {
@@ -106,29 +115,70 @@ main {
     border-radius: 5px;
     margin: 1.5vw;
     padding: .5vh;
+    box-shadow: 0px 1px 0px 1px azure;
 }
 
 #article {
     padding: 2vw;
     font-family: 'Cantarell', sans-serif;
+    background: rgba(255, 217, 81, 0.3);
+    border-radius: 18px;
+    margin: 9px;
+    border: 1px dashed goldenrod;
 }
 
 #article h3 {
     text-align: left;
     text-indent: 0%;
-    padding: 0;
+    padding: 1vh;
     font-size: large;
+    color: azure;
 } 
 
-#articleImg {
-    width: 90%;
+#article h4 {
+    padding: 1vw;
     margin: auto;
-    padding: 5vw;
-    border-radius: 25px;
+    text-indent: 2%;
+    color: rgba(255, 217, 81, 0.952);
+}
+
+#article p {
+    margin: 2vw;
+    -webkit-text-stroke: thin;
+    color: darkslategray;
+}
+
+#articleHeader {
+    max-width: 100%;
+    background-color: rgb(103, 172, 224);
+    border-radius: 5px;
+    color: azure;
+    text-shadow: -2px 1px 3px rgba(25,37,53,1);
+    padding: 1vh;
+    box-shadow: -1px -1px 0px 0px rgba(25,37,53,1);
+}
+
+#aImgContainer {
+    width: 100%;    
+    border-radius: 15px;
+    box-shadow: inset;
+}
+
+#articleImg {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: -1px -1px 0px 0px rgba(25,37,53, 1);
+}
+
+#prestonMap {
+    width: 98%;
+    border: .25rem groove rgba(30,87,153,1);
+    margin-top: .5rem;
 }
 
 #pancakes {
-    background: rgba(254, 204, 20, 0.8);
+    display: none;
+    background: rgba(255, 217, 81, 0.952);
     padding: 1em;
     font-family: cursive;
     text-align: center;
@@ -226,12 +276,13 @@ h3 {
 
 .titleHeading {
     text-align: center;
-    font-family: 'Cantarell', sans-serif;
-    margin-top: auto;
-    padding-top: 20px;
-    font-size: larger;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
     font-variant: small-caps;
     -webkit-text-stroke: thin;
+    margin: auto;
+    padding: 1rem;
+    color: rgba(30,87,153,1)
 }
 
 #site-icon {
@@ -255,11 +306,37 @@ h3 {
 }
 
 hr {
-    width: 90%; 
-    margin: 2vh auto; 
-    background-color: rgba(30,87,153,1);
+    width: 99%;
+    margin: 2vh auto;
+    padding: .05rem;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 81, 0.952);
 }
 
+.filler {
+    margin: 5px;
+}
+
+.addressInfo {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 1vw 3.5vw;
+}
+
+.socialInfo {
+    list-style: none;
+    display: flex;
+    padding: inherit;
+}
+.png {
+    max-width: 40px;
+    padding: 17px;
+}
+
+.png img {
+    width: 100%;
+}
 
 footer {
     text-align: center;

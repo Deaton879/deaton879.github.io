@@ -3,13 +3,28 @@
     main, footer {
         max-width: 900px;
         margin: auto;
-        border-left: 1px groove #fecc0a;
-        border-right: 1px groove #fecc0a;
     }
 
+    .contactInfo {
+        margin-top: 1vh;
+    }
+
+    main {
+        padding: .8rem;
+        background: azure;
+        margin-bottom: 5px;
+    }
+    
+    #forecastContainer {
+        width: 60%;
+        margin: auto;
+    }
     
     .nav-container {
-        border-radius: 0 0 5px 5px;    
+        border-radius: 0 0 5px 5px;
+        border-bottom: inset;
+        border-top: outset;
+        margin-bottom: 5px;
     }
 
     .navigation {
@@ -29,7 +44,7 @@
         flex: 1 1 100%;
         border-right: 1px groove rgba(0, 218, 370, 0.8);
         border-radius: 2px;
-        background: linear-gradient(to bottom, rgba(25,37,53,1) 2%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%);
     }
 
     .navigation a {
