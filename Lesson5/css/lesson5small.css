@@ -106,6 +106,7 @@ main {
     background-color: #212121;
     border: .01rem dashed gold;
     border-radius: 0 0 10px 10px;
+    box-shadow: 0px 2px 0px 2px darkgoldenrod;
 }
 
 .forecast {
