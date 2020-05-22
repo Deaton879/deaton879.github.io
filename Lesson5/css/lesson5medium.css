@@ -63,7 +63,6 @@
     }
     #articleImg {
         width: 100%;
-        shape-outside: border-box;
     }
 
     #article h3 {

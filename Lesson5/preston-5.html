@@ -32,7 +32,7 @@
         </header>
         <!--Navigation-->
         <nav class="nav-container">
-            <button onclick="toggleMenu()" href="#" id="menu">&#9776; Menu</button>
+            <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
             <ul class="navigation">
                 <li id="active" style="border-left: 1px groove rgba(0, 218, 370, 0.8);">
                     <a href="preston-5.html">Home</a>
@@ -72,7 +72,7 @@
                         <p>8 mph</p>
                     </div>
                 </section>
-            </hr>
+            </div>
             <hr>
             <section class="filler" id="forecastContainer">
                 <h3>5-Day Forecast</h3>
@@ -108,7 +108,7 @@
             <article>        
                 <div id="article">
                     <div id="aImgContainer">
-                        <img id="articleImg" src="images/watermelon-846357_1920.jpg">
+                        <img id="articleImg" src="images/watermelon-846357_1920.jpg" alt="picture of young girl eating watermelon">
                     </div>                        
                     <div id="articleHeader">
                         <h3>Article Title</h3>
@@ -130,7 +130,7 @@
             <hr>
             <section class="filler">
                 <h3>Contact Information</h3>
-                <section class="contactInfo">
+                <div class="contactInfo">
                         <div id="prestonMap">
                             <iframe width="100%" height="340" 
                             src="https://maps.google.com/maps?width=100%&amp;height=340&amp;hl=en&amp;coord=42.0963133, 
@@ -138,15 +138,17 @@
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/draw-radius-circle-map/">Create radius map</a>
                             </iframe>
                         </div><br>
-                    <section class="contactInfo"></section>
+                    <div class="contactInfo">
                         <ul class="addressInfo">
                             <li><b>Address: </b>
                                 <br>123 Weather Place 
                                 <br>Preston, ID 83263
-                            </li><br>
+                            </li>
+                            <li><br></li>
                             <li><b>Phone: </b>
                                 <br>012.345.6789
-                            </li><br>
+                            </li>
+                            <li><br></li>
                             <li><b>E-mail: </b>
                                 <br>contact@weathertheweather.com
                             </li>
@@ -158,8 +160,8 @@
                             <li class="png"><img src="./images/pinterest-social-media-pngrepo-com.png" alt="Pintrest"></li>
                             <li class="png"><img src="./images/whatsapp-social-media-pngrepo-com.png" alt="Whatsapp"></li>
                         </ul>
-                    </section>
-                </section>
+                    </div>
+                </div>
             </section>
             <hr>
         </main>
