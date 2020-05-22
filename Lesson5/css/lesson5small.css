@@ -335,13 +335,9 @@ hr {
     padding: inherit;
 }
 .png {
-    max-width: 40px;
     padding: 17px;
 }
 
-.png img {
-    width: 100%;
-}
 
 footer {
     text-align: center;

@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="./css/lesson5large.css">
         <link rel="stylesheet" href="./css/lesson5medium.css">
         <link rel="shortcut icon" href="./images/favicon.ico">
-        <script src="https://kit.fontawesome.com/805bc41e34.js" crossorigin="anonymous"></script>
         <meta name="description" content="Week 5 Assignment: Preston Site completion.">
+        <script src="https://kit.fontawesome.com/805bc41e34.js" crossorigin="anonymous"></script>
         <script src="./js/pancakes.js"></script>
+        <script src="./js/lazysizes.min.js" async></script>
     </head>
 
     <body onload="checkDay()">
@@ -108,7 +109,7 @@
             <article>        
                 <div id="article">
                     <div id="aImgContainer">
-                        <img id="articleImg" src="images/watermelon-846357_1920.jpg" alt="picture of young girl eating watermelon">
+                        <img id="articleImg" class="lazyload" data-src="images/watermelon-846357_1920.jpg" alt="picture of young girl eating watermelon">
                     </div>                        
                     <div id="articleHeader">
                         <h3>Article Title</h3>
@@ -133,7 +134,7 @@
                 <div class="contactInfo">
                         <div id="prestonMap">
                             <iframe width="100%" height="340" 
-                            src="https://maps.google.com/maps?width=100%&amp;height=340&amp;hl=en&amp;coord=42.0963133, 
+                            class="lazyload" data-src="https://maps.google.com/maps?width=100%&amp;height=340&amp;hl=en&amp;coord=42.0963133, 
                             -111.8766173&amp;q=Preston%2C%20ID%2083263+(WeatherTheWeather)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" 
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/draw-radius-circle-map/">Create radius map</a>
                             </iframe>
@@ -154,11 +155,11 @@
                             </li>
                         </ul>
                         <ul class="socialInfo">
-                            <li class="png"><img src="./images/facebook-social-media-pngrepo-com.png" alt="Facebook Icon"></li>
-                            <li class="png"><img src="./images/twitter-social-media-pngrepo-com.png" alt="Twitter Icon"></li>
-                            <li class="png"><img src="./images/google-play-social-media-pngrepo-com.png" alt="Google Play"></li>
-                            <li class="png"><img src="./images/pinterest-social-media-pngrepo-com.png" alt="Pintrest"></li>
-                            <li class="png"><img src="./images/whatsapp-social-media-pngrepo-com.png" alt="Whatsapp"></li>
+                            <li class="png"><img data-src="./images/facebook-social-media-pngrepo-com.png" class="lazyload" alt="Facebook Icon"></li>
+                            <li class="png"><img data-src="./images/twitter-social-media-pngrepo-com.png" class="lazyload" alt="Twitter Icon"></li>
+                            <li class="png"><img data-src="./images/google-play-social-media-pngrepo-com.png" class="lazyload" alt="Google Play"></li>
+                            <li class="png"><img data-src="./images/pinterest-social-media-pngrepo-com.png" class="lazyload" alt="Pintrest"></li>
+                            <li class="png"><img data-src="./images/whatsapp-social-media-pngrepo-com.png" class="lazyload" alt="Whatsapp"></li>
                         </ul>
                     </div>
                 </div>
