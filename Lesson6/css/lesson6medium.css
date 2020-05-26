@@ -1,0 +1,118 @@
+@media only screen and (min-width: 35rem) {
+    header {
+        display: flex;
+        align-items:center;
+	    justify-content:center;
+        border-bottom: .0125rem dotted #fecc0a;
+    }
+    .nav-container {
+        margin-left: auto;
+    }
+    
+    .contactInfo {
+        display: flex;
+    }
+    .navigation li:hover {
+        background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%); 
+        text-shadow: 0px 0px 5px black;
+    }
+
+    #site-name {
+        color: #f8f9fb;
+        padding: 10px;  
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .titleHeading {
+        font-size: xx-large;
+        margin-bottom: 2vh;
+    }
+
+    #site-icon {
+        padding: 5px;
+        vertical-align: middle;
+        float: none;
+    }
+    
+    .headerText {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .heroFiller h4 {
+        font-size: 1em;
+    }
+
+    #heroImg {
+        display: inline;
+        max-width: 100%;
+    }
+    
+    .heroFiller {
+        top: 25px;
+        width: 28%;
+        font-size: large;
+    }
+
+    #aImgContainer {
+        float: right;
+        width: 50%;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    #articleImg {
+        width: 100%;
+    }
+
+    #article h3 {
+        font-size: larger;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    .filler h3 {
+        font-size: x-large;
+    }
+
+    #prestonMap {
+        width: 50%;
+        border-radius: 5px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        display: inline-block;
+        height: fit-content;
+    }
+
+
+    .motto {
+        padding: 0 1rem 1rem;
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .forecast {
+        font-size: medium;
+        padding: 0;
+    }
+
+    .forecast p {
+        font-size: large;
+    }
+
+    .socialInfo {
+        display: grid;
+        box-shadow: 1px 1px 0px 2px rgba(25,37,53,1);
+        border-radius: 2px;
+        background: lightgoldenrodyellow;
+    }
+
+    .png:hover {
+        background-color:palegoldenrod;
+        cursor: pointer;
+    }
+
+    footer {
+        border-bottom: outset;
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Preston Site Final</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./css/lesson6small.css">
+        <link rel="stylesheet" href="./css/lesson6medium.css">
+        <link rel="stylesheet" href="./css/lesson6large.css">
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <meta name="description" content="Week 6 Assignment: Responsive Images and Font">
+        <script src="https://kit.fontawesome.com/805bc41e34.js" crossorigin="anonymous"></script>
+        <script src="./js/pancakes.js"></script>
+        <script src="./js/lazysizes.min.js" async></script>
+    </head>
+
+    <body onload="checkDay()">
+        <aside id="pancakes">
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+            <button onclick="goAway()" style="background-color: black; color: azure; cursor: pointer;">&times;</button>
+        </aside>
+        <!--Header-->
+        <header>
+            <!--Header Content Here-->
+            <a href="../index.html"><img id="site-icon" src="./images/Weather-icon.png" alt="site logo"></a>
+            <section class="headerText"> 
+                <h1 id="site-name">WeatherTheWeather.app</h1>
+                <div class="motto">"Let's weather this weather, together!"</div>
+            </section>
+           
+        </header>
+        <!--Navigation-->
+        <nav class="nav-container">
+            <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
+            <ul class="navigation">
+                <li id="active">
+                    <a href="preston-5.html">Home</a>
+                </li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2 class="titleHeading">Preston Idaho</h2>
+            <div class="heroContainer">
+                <img id="heroImg" src="./images/island-during-golden-hour-and-upcoming-storm-1118873-min.jpg" alt="Photo by Johannes Plenio from Pexels">
+                <section class="heroFiller">
+                    <h4>Weather Summary</h4>
+                    <hr>
+                    <div class="summaryData">
+                        <h5>Currently: </h5>
+                        <p> Sunny</p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>High: </h5>
+                        <p> 76  &#8457;</p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>Wind Chill: </h5>
+                        <p> &#8457;</p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>Humidity: </h5>
+                        <p>43%</p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>Wind Speed: </h5>
+                        <p>8 mph</p>
+                    </div>
+                </section>
+            </div>
+            <hr>
+            <section class="filler" id="forecastContainer">
+                <h3>5-Day Forecast</h3>
+                <div id="fiveDay">
+                    <div class="forecast">
+                        <p>Mon</p>
+                        <i class='fas fa-cloud-rain'></i>
+                        <p>78 &#8457;</p>  
+                    </div>
+                    <div class="forecast">
+                        <p>Tue</p>
+                        <i class='fas fa-cloud-showers-heavy'></i>
+                        <p>79 &#8457;</p>  
+                    </div>
+                    <div class="forecast">
+                        <p>Wed</p>
+                        <i class='fas fa-cloud-sun-rain'></i>
+                        <p>76 &#8457;</p>  
+                    </div>
+                    <div class="forecast">
+                        <p>Thur</p>
+                        <i class='fas fa-cloud-sun'></i>
+                        <p>77 &#8457;</p>  
+                    </div>
+                    <div class="forecast">
+                        <p>Fri</p>
+                        <i class='fas fa-sun'></i>
+                        <p>83 &#8457;</p>  
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <article>        
+                <div id="article">
+                    <div id="aImgContainer">
+                        <img id="articleImg" class="lazyload" data-src="images/watermelon-846357_1920.jpg" alt="picture of young girl eating watermelon">
+                    </div>                        
+                    <div id="articleHeader">
+                        <h3>Article Title</h3>
+                        <h4>By: Author Unknown</h4>
+                    </div>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
+                        sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis 
+                        est et expedita distinctio.</p>
+                    <p> 
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+                        id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem 
+                        quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae 
+                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur 
+                        aut perferendis doloribus asperiores repellat.</p>              
+                </div>
+            </article>
+            <hr>
+            <section class="filler">
+                <h3>Contact Information</h3>
+                <div class="contactInfo">
+                        <div id="prestonMap">
+                            <iframe width="100%" height="340" 
+                            class="lazyload" data-src="https://maps.google.com/maps?width=100%&amp;height=340&amp;hl=en&amp;coord=42.0963133, 
+                            -111.8766173&amp;q=Preston%2C%20ID%2083263+(WeatherTheWeather)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" 
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/draw-radius-circle-map/">Create radius map</a>
+                            </iframe>
+                        </div><br>
+                    <div class="contactInfo">
+                        <ul class="addressInfo">
+                            <li><b>Address: </b>
+                                <br>123 Weather Place 
+                                <br>Preston, ID 83263
+                            </li>
+                            <li><br></li>
+                            <li><b>Phone: </b>
+                                <br>012.345.6789
+                            </li>
+                            <li><br></li>
+                            <li><b>E-mail: </b>
+                                <br>contact@weathertheweather.com
+                            </li>
+                        </ul>
+                        <ul class="socialInfo">
+                            <li class="png"><img data-src="./images/facebook-social-media-pngrepo-com.png" class="lazyload" alt="Facebook Icon"></li>
+                            <li class="png"><img data-src="./images/twitter-social-media-pngrepo-com.png" class="lazyload" alt="Twitter Icon"></li>
+                            <li class="png"><img data-src="./images/pinterest-social-media-pngrepo-com.png" class="lazyload" alt="Pintrest"></li>
+                            <li class="png"><img data-src="./images/whatsapp-social-media-pngrepo-com.png" class="lazyload" alt="Whatsapp"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            © 2020 WeatherTheWeather.app | Dallas Eaton | Michigan | Bachelor of Applied Technology | BYU-Idaho |  
+            <a class="foot-nav" href="../index.html">Assignments</a> 
+            <br><br>
+            <span id="todaysDate"></span>
+            <script src="js/currentDate.js"></script>
+        </footer>
+        <script src="js/responsiveMenu.js"></script> 
+    </body>
+</html>
