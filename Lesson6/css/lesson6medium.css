@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 30rem) {
     header {
         display: flex;
         align-items:center;
@@ -38,6 +38,13 @@
     .headerText {
         display: inline-flex;
         flex-direction: column;
+    }
+
+    .heroFiller {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background: rgba(41,137,216,.9);
     }
 
     .heroFiller h4 {
