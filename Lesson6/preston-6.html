@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Preston Site Final</title>
-        <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="./css/lesson6small.css">
         <link rel="stylesheet" href="./css/lesson6medium.css">
         <link rel="stylesheet" href="./css/lesson6large.css">
@@ -36,7 +35,7 @@
             <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
             <ul class="navigation">
                 <li id="active">
-                    <a href="preston-5.html">Home</a>
+                    <a href="preston-6.html">Home</a>
                 </li>
                 <li><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
@@ -48,7 +47,11 @@
         <main>
             <h2 class="titleHeading">Preston Idaho</h2>
             <div class="heroContainer">
-                <img id="heroImg" src="./images/island-during-golden-hour-and-upcoming-storm-1118873-minmx.jpg" alt="Photo by Johannes Plenio from Pexels">
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/wdd230_image_franklinOriginal_SMALL.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/wdd230_image_franklinOriginal_MEDIUM.jpg">
+                    <img id="heroImg" src="./images/wdd230_image_franklinOriginal_LARGE.jpg" alt="Sun shines over grassy field">
+                </picture>
                 <section class="heroFiller">
                     <h4>Weather Summary</h4>
                     <hr>
@@ -58,11 +61,11 @@
                     </div>
                     <div class="summaryData">
                         <h5>High: </h5>
-                        <p> 76 &#8457;</p>
+                        <p id="temp"> 49 &#8457;</p>
                     </div>
                     <div class="summaryData">
                         <h5>Wind Chill: </h5>
-                        <p> 0 &#8457;</p>
+                        <p id="windchill"></p>
                     </div>
                     <div class="summaryData">
                         <h5>Humidity: </h5>
@@ -70,7 +73,7 @@
                     </div>
                     <div class="summaryData">
                         <h5>Wind Speed: </h5>
-                        <p>8 mph</p>
+                        <p id="windspeed">8 mph</p>
                     </div>
                 </section>
             </div>
@@ -172,6 +175,9 @@
             <span id="todaysDate"></span>
             <script src="js/currentDate.js"></script>
         </footer>
-        <script src="js/responsiveMenu.js"></script> 
+        <script src="js/responsiveMenu.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ['Raleway: 400,600,800', 'Cantarell:ital,wght@0,400;0,700;1,400']}});</script> 
+        <script src="./js/windchill.js"></script>
     </body>
 </html>
