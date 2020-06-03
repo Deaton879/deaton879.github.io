@@ -49,12 +49,29 @@ ul {
     color: palegreen;
     font-weight: bold;
     marker: none;
+    line-height: 1.5;
 }
 
 .lessons a {
     text-decoration: none;
     color: paleturquoise;
     font-weight: bold;
+}
+
+.lesson7 {
+    color: paleturquoise;
+    font-weight: bold;
+    text-indent: 2rem;
+    list-style: circle;
+}
+
+.lesson7 a {
+    color: palegoldenrod;
+    text-decoration: none;
+}
+
+.lesson7 a:hover {
+    color: white;
 }
 
 .byu {
