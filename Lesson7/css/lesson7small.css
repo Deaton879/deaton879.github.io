@@ -378,25 +378,30 @@ footer {
     padding:2vh;
     display: grid;
     max-width: 100%;
-    grid-column-gap: 2vh;
-    grid-row-gap: 4vh;
+
 }
 
 .galleryContainer figure {
+    max-width: 100%;
     text-align: center;
-    text-rendering: optimizeLegibility;
     font-family: 'Raleway', sans-serif;
     background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
     color: #fecc0a;
     border-radius: 5px;
     font-weight: 600;
+    margin: 1vw;
 }
 
 .galleryContainer img {
     border-radius: 5px 5px 0px 0px;
+    max-width: 100%;
 }
 
 
 .gallery-image {
     width: 100%;
+}
+
+figcaption {
+    padding: 15px;
 }
