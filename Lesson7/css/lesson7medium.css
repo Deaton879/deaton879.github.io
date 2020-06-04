@@ -103,12 +103,18 @@
         padding: 0;
     }
 
+    #forecastContainer {
+        width: 80%;
+        margin: auto;
+    }
+
     .forecast p {
         font-size: large;
     }
 
     .socialInfo {
         display: grid;
+
         box-shadow: 1px 1px 0px 2px rgba(25,37,53,1);
         border-radius: 2px;
         background: lightgoldenrodyellow;
@@ -121,5 +127,17 @@
 
     footer {
         border-bottom: outset;
+    }
+
+    /* --------------------- WEATHER GALLERY -------------------------*/
+
+    .galleryContainer {
+
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .galleryContainer picture {
+        max-width: fit-content;
     }
 }

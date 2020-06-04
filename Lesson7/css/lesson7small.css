@@ -101,7 +101,7 @@ main {
     font-family: 'Raleway', sans-serif;
     font-size: medium;
     padding: .5rem;
-    background-color: rgb(103, 172, 224);
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
     border: .01rem dashed black;
     color: azure;
     text-shadow: 0px 0px 5px black;
@@ -352,7 +352,7 @@ img[data-src] {
 
 img[src]{
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: filter 1.5s;
 }
 .forecast i {
     font-size:36px; 
@@ -370,4 +370,32 @@ footer {
     margin: auto;
     font-size: small;
     font-weight: 600;
+}
+
+/* --------------------- WEATHER GALLERY -------------------------*/
+
+.galleryContainer {
+    padding:2vh;
+    display: grid;
+    max-width: 100%;
+    grid-column-gap: 2vh;
+    grid-row-gap: 4vh;
+}
+
+.galleryContainer picture {
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
+    color: #f8f9fb;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.galleryContainer img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.galleryContainer p {
+    padding: auto;
 }

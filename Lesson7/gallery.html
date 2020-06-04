@@ -10,19 +10,14 @@
         <link rel="stylesheet" href="./css/lesson7large.css">
         <link rel="shortcut icon" href="./images/favicon.ico">
         <meta name="description" content="Week 7 Assignment: Image Gallery">
-        <script src="./js/pancakes.js"></script>
         <script src="./js/lazyload.js" async></script>
     </head>
 
-    <body onload="checkDay()">
-        <aside id="pancakes">
-            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-            <button onclick="goAway()" style="background-color: black; color: azure; cursor: pointer;">&times;</button>
-        </aside>
+    <body>
         <!--Header-->
         <header>
             <!--Header Content Here-->
-            <a href="../index.html"><img id="site-icon" data-src="./images/Weather-icon.png" alt="site logo"></a>
+            <a href="../index.html"><img id="site-icon" src="./images/Weather-icon.png" alt="site logo"></a>
             <section class="headerText"> 
                 <h1 id="site-name">WeatherTheWeather.app</h1>
                 <div class="motto">"Let's weather this weather, together!"</div>
@@ -33,20 +28,79 @@
         <nav class="nav-container">
             <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
             <ul class="navigation">
-                <li id="active">
+                <li>
                     <a href="preston-7.html">Home</a>
                 </li>
-                <li><a href="#">Preston</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
+                <li id="active"><a href="./gallery.html">Gallery</a></li>
             </ul>
         </nav>
-        <main>
+        <main id="gallery-main">
             <h2 class="titleHeading">Weather Gallery</h2>
-            
+            <section class="galleryContainer">
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/Tornado1_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/Tornado1.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Tornado1.jpg" alt="Tornado forms over the plains">
+                    <p class="galleryCaption">A funnel cloud turns into a tornado on the farm land.</p>
+                </picture>
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/Tracking_storm_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/Tracking_storm.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Tracking_storm.jpg" alt="weather caravan tracking a thunderstorm | Photo by NOAA on Unsplash">
+                    <p class="galleryCaption">Weather caravan tracking a thunderstorm.</p>
+                </picture>
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/Hurricane_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/Hurricane.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Hurricane.jpg" alt="Hurricane making landfall">
+                    <p class="galleryCaption">Hurricane making landfall.</p>
+                </picture>
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/Fog_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/Fog.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Fog.jpg" alt="morning fog covers the mountain| Photo by Panjinda on Unsplash">
+                    <p class="galleryCaption">Morning fog covers the mountain.</p>
+                </picture>
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/Dark_clouds_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/Dark_clouds.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Dark_clouds.jpg" alt="Dark Clouds | Photo by Yousef Espanioly on Unsplash">
+                    <p class="galleryCaption">Dark clouds roll in.</p>
+                </picture>
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/Dog_in_snow_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/Dog_in_snow.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Dog_in_snow.jpg" alt="Dog sits in snow with coat on | Photo by Ian Matyssik on Unsplash">
+                    <p class="galleryCaption">Snowfall as dog relaxes in snow bank.</p>
+                </picture>
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/flood_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/flood.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/flood.jpg" alt="Flooding in the streets | Photo by Mika Baumeister on Unsplash">
+                    <p class="galleryCaption">High tide on the Rhine floods the street.</p>
+                </picture>
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/isolated_showers_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/isolated_showers.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/isolated_showers.jpg" alt="Rain falls in the middle of the ocean | Photo by Brian Cook on Unsplash">
+                    <p class="galleryCaption">Isolated showers out on the sea.</p>
+                </picture>
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/rainbow_card.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/rainbow.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/rainbow.jpg" alt="Rainbow from a cloud | Photo by NOAA on Unsplash">
+                    <p class="galleryCaption">From outside the storm, a rainbow appears.</p>
+                </picture>
+            </section>
             <hr>
+            
+        </main>
+        <!--Footer-->
+        <footer id="gallery-footer">
             <section class="filler">
                 <h3>Contact Information</h3>
                 <div class="contactInfo">
@@ -73,17 +127,15 @@
                             </li>
                         </ul>
                         <ul class="socialInfo">
-                            <li class="png"><img data-src="./images/facebook-social-media-pngrepo-com.png" class="lazyload" alt="Facebook Icon"></li>
-                            <li class="png"><img data-src="./images/twitter-social-media-pngrepo-com.png" class="lazyload" alt="Twitter Icon"></li>
-                            <li class="png"><img data-src="./images/pinterest-social-media-pngrepo-com.png" class="lazyload" alt="Pintrest"></li>
-                            <li class="png"><img data-src="./images/whatsapp-social-media-pngrepo-com.png" class="lazyload" alt="Whatsapp"></li>
+                            <li class="png"><img src="./images/facebook-social-media-pngrepo-com.png" class="lazyload" alt="Facebook Icon"></li>
+                            <li class="png"><img src="./images/twitter-social-media-pngrepo-com.png" class="lazyload" alt="Twitter Icon"></li>
+                            <li class="png"><img src="./images/pinterest-social-media-pngrepo-com.png" class="lazyload" alt="Pintrest"></li>
+                            <li class="png"><img src="./images/whatsapp-social-media-pngrepo-com.png" class="lazyload" alt="Whatsapp"></li>
                         </ul>
                     </div>
                 </div>
             </section>
-        </main>
-        <!--Footer-->
-        <footer>
+            <br>
             © 2020 WeatherTheWeather.app | Dallas Eaton | Michigan | Bachelor of Applied Technology | BYU-Idaho |  
             <a class="foot-nav" href="../index.html">Assignments</a> 
             <br><br>

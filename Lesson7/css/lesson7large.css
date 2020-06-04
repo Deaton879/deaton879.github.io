@@ -7,6 +7,11 @@
 
     .contactInfo {
         margin-top: 1vh;
+        justify-content: center;
+    }
+
+    .filler h3 {
+        border-radius: 2px;
     }
 
     main {
@@ -14,15 +19,9 @@
         background: azure;
     }
     
-    #forecastContainer {
-        width: 60%;
-        margin: auto;
-    }
     
     .nav-container {
         border-radius: 0 0 5px 5px;
-        border-bottom: inset;
-        border-top: outset;
         margin-bottom: 5px;
     }
 
@@ -64,6 +63,25 @@
 
     footer {
         border-radius: 2px 2px 10px 10px;
+    }
+
+    /* --------------------- WEATHER GALLERY -------------------------*/
+
+    #gallery-main {
+        max-width: 100%;
+    }
+
+    #gallery-footer {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .galleryContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    picture:hover {
+        box-shadow: -2px 6px 8px 1px rgba(25,37,53,1);
     }
 
 }
