@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./css/lesson7large.css">
         <link rel="shortcut icon" href="./images/favicon.ico">
         <meta name="description" content="Week 7 Assignment: Image Gallery">
-        <script src="./js/lazyload.js" async></script>
+        
     </head>
 
     <body>
@@ -40,62 +40,44 @@
         </nav>
         <main id="gallery-main">
             <h2 class="titleHeading">Weather Gallery</h2>
-            <section class="galleryContainer">
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/Tornado1_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/Tornado1.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Tornado1.jpg" alt="Tornado forms over the plains">
-                    <p class="galleryCaption">A funnel cloud turns into a tornado on the farm land.</p>
-                </picture>
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/Tracking_storm_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/Tracking_storm.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Tracking_storm.jpg" alt="weather caravan tracking a thunderstorm | Photo by NOAA on Unsplash">
-                    <p class="galleryCaption">Weather caravan tracking a thunderstorm.</p>
-                </picture>
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/Hurricane_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/Hurricane.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Hurricane.jpg" alt="Hurricane making landfall">
-                    <p class="galleryCaption">Hurricane making landfall.</p>
-                </picture>
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/Fog_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/Fog.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Fog.jpg" alt="morning fog covers the mountain| Photo by Panjinda on Unsplash">
-                    <p class="galleryCaption">Morning fog covers the mountain.</p>
-                </picture>
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/Dark_clouds_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/Dark_clouds.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Dark_clouds.jpg" alt="Dark Clouds | Photo by Yousef Espanioly on Unsplash">
-                    <p class="galleryCaption">Dark clouds roll in.</p>
-                </picture>
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/Dog_in_snow_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/Dog_in_snow.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/Dog_in_snow.jpg" alt="Dog sits in snow with coat on | Photo by Ian Matyssik on Unsplash">
-                    <p class="galleryCaption">Snowfall as dog relaxes in snow bank.</p>
-                </picture>
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/flood_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/flood.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/flood.jpg" alt="Flooding in the streets | Photo by Mika Baumeister on Unsplash">
-                    <p class="galleryCaption">High tide on the Rhine floods the street.</p>
-                </picture>
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/isolated_showers_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/isolated_showers.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/isolated_showers.jpg" alt="Rain falls in the middle of the ocean | Photo by Brian Cook on Unsplash">
-                    <p class="galleryCaption">Isolated showers out on the sea.</p>
-                </picture>
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/rainbow_card.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/rainbow.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/rainbow.jpg" alt="Rainbow from a cloud | Photo by NOAA on Unsplash">
-                    <p class="galleryCaption">From outside the storm, a rainbow appears.</p>
-                </picture>
-            </section>
+            <div class="galleryContainer">
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/Tornado1.jpg" alt="Tornado forms over the plains">
+                    <figcaption>A funnel cloud turns into a tornado on the farm land.</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/Tracking_storm.jpg" alt="weather caravan tracking a thunderstorm | Photo by NOAA on Unsplash">
+                    <figcaption>Weather caravan tracking a thunderstorm.</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/Hurricane.jpg" alt="Hurricane making landfall">
+                    <figcaption>Hurricane making landfall.</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/Fog.jpg" alt="morning fog covers the mountain| Photo by Panjinda on Unsplash">
+                    <figcaption>Morning fog covers the mountain.</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/Dark_clouds.jpg" alt="Dark Clouds | Photo by Yousef Espanioly on Unsplash">
+                    <figcaption>Dark clouds roll in.</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/Dog_in_snow.jpg" alt="Dog sits in snow with coat on | Photo by Ian Matyssik on Unsplash">
+                    <figcaption>Snowfall as dog relaxes in snow bank.</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/flood.jpg" alt="Flooding in the streets | Photo by Mika Baumeister on Unsplash">
+                    <figcaption>High tide on the Rhine floods the street.</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/isolated_showers.jpg" alt="Rain falls in the middle of the ocean | Photo by Brian Cook on Unsplash">
+                    <figcaption>Isolated showers out on the sea.</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" src="./images/Placeholder.png" data-src="./images/rainbow.jpg" alt="Rainbow from a cloud | Photo by NOAA on Unsplash">
+                    <figcaption>From outside the storm, a rainbow appears.</figcaption>
+                </figure>
+            </div>
             <hr>
             
         </main>
@@ -106,7 +88,7 @@
                 <div class="contactInfo">
                         <div id="prestonMap">
                             <iframe width="100%" height="340" 
-                            class="lazyload" data-src="https://maps.google.com/maps?width=100%&amp;height=340&amp;hl=en&amp;coord=42.0963133, 
+                            class="lazyload" src="https://maps.google.com/maps?width=100%&amp;height=340&amp;hl=en&amp;coord=42.0963133, 
                             -111.8766173&amp;q=Preston%2C%20ID%2083263+(WeatherTheWeather)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" 
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/draw-radius-circle-map/">Create radius map</a>
                             </iframe>
@@ -142,9 +124,9 @@
             <span id="todaysDate"></span>
             <script src="js/currentDate.js"></script>
         </footer>
+        <script src="./js/lazyload.js"></script>
         <script src="js/responsiveMenu.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>WebFont.load({google: {families: ['Raleway: 400,600,800', 'Cantarell:ital,wght@0,400;0,700;1,400']}});</script> 
-        <script src="./js/windchill.js"></script>
     </body>
 </html>

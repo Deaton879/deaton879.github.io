@@ -287,7 +287,6 @@ h3 {
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     font-variant: small-caps;
-    -webkit-text-stroke: thin;
     margin: auto;
     padding: 1rem;
     color: rgba(30,87,153,1)
@@ -350,10 +349,11 @@ img[data-src] {
     filter: blur(0.2em);
 }
 
-img[src]{
+img{
     filter: blur(0em);
     transition: filter 1.5s;
 }
+
 .forecast i {
     font-size:36px; 
     color:rgba(255, 217, 81, 0.952); 
@@ -382,12 +382,12 @@ footer {
     grid-row-gap: 4vh;
 }
 
-.galleryContainer picture {
+.galleryContainer figure {
     text-align: center;
     text-rendering: optimizeLegibility;
     font-family: 'Raleway', sans-serif;
     background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
-    color: #f8f9fb;
+    color: #fecc0a;
     border-radius: 5px;
     font-weight: 600;
 }
@@ -396,6 +396,7 @@ footer {
     border-radius: 5px 5px 0px 0px;
 }
 
-.galleryContainer p {
-    padding: auto;
+
+.gallery-image {
+    width: 100%;
 }

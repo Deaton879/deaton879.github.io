@@ -137,7 +137,12 @@
         justify-items: center;
     }
 
-    .galleryContainer picture {
+    .galleryContainer figure {
         max-width: fit-content;
+    }
+
+    .gallery-image {
+        display: inline;
+        max-width: 100%;
     }
 }
