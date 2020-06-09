@@ -20,7 +20,7 @@ caption {
 }
 
 table, th, td {
-    border: 1px solid silver;
+    border: 2px solid silver;
     border-collapse: collapse;
   }
 

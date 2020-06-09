@@ -78,6 +78,9 @@ main {
     background-color: #f8f9fb;
 }
 
+#forecastContainer {
+    display: none;
+}
 
 .forecast p {
     font-weight: 600;
@@ -208,13 +211,13 @@ h3 {
 }
 
 .heroFiller {
-    
+    margin: auto;
     background: rgba(41,137,216,1);
     font-family: 'Raleway', sans-serif;
     font-size: medium;
     color: azure;
     text-shadow: 1px 1px 1px black;
-    width: 52%;
+    width: 80%;
     border: 1px solid #000;
     padding: 10px;
     border-radius: 4px;
@@ -405,3 +408,4 @@ footer {
 figcaption {
     padding: 15px;
 }
+

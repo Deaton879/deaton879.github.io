@@ -42,6 +42,8 @@
 
     .heroFiller {
         position: absolute;
+        width: 52%;
+        margin: initial;
         top: 1rem;
         left: 1rem;
         background: rgba(41,137,216,.9);
@@ -98,12 +100,13 @@
         text-align: center;
     }
 
-    .forecast {
+    div.forecast {
         font-size: medium;
         padding: 0;
     }
 
     #forecastContainer {
+        display: initial;
         width: 80%;
         margin: auto;
     }
@@ -114,7 +117,6 @@
 
     .socialInfo {
         display: grid;
-
         box-shadow: 1px 1px 0px 2px rgba(25,37,53,1);
         border-radius: 2px;
         background: lightgoldenrodyellow;
