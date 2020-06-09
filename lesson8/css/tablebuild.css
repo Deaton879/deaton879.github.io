@@ -1,0 +1,72 @@
+:root {
+    --data-row-color-1: #e7f0ed;
+    --data-row-color-2: #e7ffed;
+    --table-headings: #628ca6;
+    --table-title: #7fb9c2;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    margin: 5rem auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px 2px var(--table-headings);
+}
+
+caption {
+    box-shadow: 5px 5px 10px 2px var(--table-headings);
+}
+
+table, th, td {
+    border: 1px solid silver;
+    border-collapse: collapse;
+  }
+
+table caption {
+    font-size: x-large;
+    background-color: var(--table-title);
+    font-weight: 700;
+}
+
+table th {
+    font-size: medium;
+    background-color: var(--table-headings);
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--data-row-color-1);
+}
+
+table tbody tr {
+    background-color: var(--data-row-color-2);
+}
+
+tfoot {
+    font-size: .68em;
+    background-color: var(--table-title);
+    color: black;
+    font-weight: 500;
+}
+
+th, td, caption {
+    justify-content: center;
+    padding: 1vh;
+}
+
+#focus {
+    background-color: var(--table-headings);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+
+
+

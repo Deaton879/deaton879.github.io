@@ -1,0 +1,407 @@
+header {
+    background-color: #212121;
+    padding: 10px;
+}
+
+.navigation {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    height: auto;
+    margin: 0;
+    font-family: 'Cantarell', sans-serif;
+}
+
+.navigation li {
+    display: none;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,192535+98 */
+}
+
+.responsive li {
+    display: block;
+    border-bottom: 1px solid white;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);
+}
+
+#menu {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
+    color: azure;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+    padding: 13px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.responsive li:first-child {
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%); 
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+35,0c7692+98,7db9e8+100 */
+}
+
+.responsive li:first-child a {
+    color: #f8f9fb;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    font-variant: small-caps;
+    color: azure;
+    font-weight: 600;
+	display: block;
+}
+
+#active {
+    background: #fecc0a;
+}
+
+#active a {
+    color: black;
+    font-size: larger;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    height: max-content;
+    background-color: #f8f9fb;
+}
+
+
+.forecast p {
+    font-weight: 600;
+    font-family: 'Cantarell', sans-serif;
+    font-size: small;
+    color: snow;
+    font-variant: small-caps;
+    text-shadow: 0 0 2px #111;
+}
+
+.forecast section {
+    display: flex;
+}
+
+.forecast img {
+    width: 100%;
+}
+
+.filler h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    padding: .5rem;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
+    border: .01rem dashed black;
+    color: azure;
+    text-shadow: 0px 0px 5px black;
+    border-radius: 10px 10px 0 0;
+}
+
+#fiveDay {
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+    text-align: center;
+    font-style: italic;
+    background-color: #212121;
+    border: .01rem dashed gold;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 2px 0px 2px darkgoldenrod;
+}
+
+.forecast {
+    flex: 1 1 100%;
+    font-size: small;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);
+    border-radius: 5px;
+    margin: 1.5vw;
+    padding: .5vh;
+    box-shadow: 0px 1px 0px 1px azure;
+}
+
+#article {
+    padding: 2vw;
+    font-family: 'Cantarell', sans-serif;
+    background: rgba(255, 217, 81, 0.3);
+    border-radius: 18px;
+    margin: 9px;
+    border: 1px dashed goldenrod;
+}
+
+#article h3 {
+    text-align: left;
+    text-indent: 0%;
+    padding: 1vh;
+    font-size: large;
+    color: azure;
+} 
+
+#article h4 {
+    padding: 1vw;
+    margin: auto;
+    text-indent: 2%;
+    color: rgba(255, 217, 81, 0.952);
+}
+
+#article p {
+    margin: 2vw;
+    -webkit-text-stroke: thin;
+    color: darkslategray;
+}
+
+#articleHeader {
+    max-width: 100%;
+    background-color: rgb(103, 172, 224);
+    border-radius: 5px;
+    color: azure;
+    text-shadow: -2px 1px 3px rgba(25,37,53,1);
+    padding: 1vh;
+    box-shadow: -1px -1px 0px 0px rgba(25,37,53,1);
+}
+
+#aImgContainer {
+    width: 100%;    
+    border-radius: 15px;
+}
+
+#articleImg {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: -1px -1px 0px 0px rgba(25,37,53, 1);
+}
+
+#prestonMap {
+    width: 98%;
+    border: .25rem groove rgba(30,87,153,1);
+    margin-top: .5rem;
+}
+
+#pancakes {
+    display: none;
+    background: rgba(255, 217, 81, 0.952);
+    padding: 1em;
+    font-family: cursive;
+    text-align: center;
+    font-weight: 600;
+}
+
+h3 {
+    margin: 0;
+    color: #212121;
+    text-indent: 5%;
+    font-size: inherit;
+}
+
+#heroImg {
+    width: 100%;
+}
+
+.heroFiller {
+    
+    background: rgba(41,137,216,1);
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    color: azure;
+    text-shadow: 1px 1px 1px black;
+    width: 52%;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 30px #111;
+}
+
+.heroFiller h4 {
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+}
+
+.summaryData {
+    display: flex;
+}
+
+.summaryData h5 {
+    color: #fecc0a;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    flex: 1 1;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 5px black;
+    opacity: 1;
+}
+
+.summaryData p {
+    text-align: left;
+    font-size: .83em;
+    font-weight: 600;
+    flex: 1 1;
+    margin: 1px;
+    padding-left: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 5px black;
+}
+
+.foot-nav {
+    color: #0c7692;
+    text-decoration: none;
+}
+
+
+#site-name {
+    color: #f8f9fb;
+    padding: 10px 1.35rem .35rem 0;
+    font-size: larger;
+    text-align: right;
+    margin: auto;  
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 0px 8px #0c7692;
+}
+
+.motto {
+    color: #f8f9fb;
+    font-weight: 600;
+    opacity: .7;
+    text-align: end;
+    padding: 0 1.35rem 0.75rem;
+    font-size: x-small;
+    font-family: 'Cantarell';
+}
+
+.titleHeading {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    font-variant: small-caps;
+    margin: auto;
+    padding: 1rem;
+    color: rgba(30,87,153,1)
+}
+
+#site-icon {
+    float: left;
+}
+
+#todaysDate {
+    color: #fecc0a;
+}
+
+.foot-nav {
+ color: #f8f9fb;
+ font-weight: 700;
+ text-shadow: 0 0 2px #fecc0a;
+ padding-left: 10px;
+}
+
+.foot-nav:hover {
+    color: #fecc0a;
+    text-shadow: 0 0 2px #f8f9fb;
+}
+
+.heroContainer {
+    position: relative;
+    max-width: inherit;
+}
+
+hr {
+    width: 99%;
+    margin: 2vh auto;
+    padding: .05rem;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 81, 0.952);
+}
+
+.filler {
+    margin: 5px;
+}
+
+.addressInfo {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 1vw 3.5vw;
+}
+
+.socialInfo {
+    list-style: none;
+    display: flex;
+    padding: inherit;
+}
+.png {
+    padding: 17px;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img{
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+.forecast i {
+    font-size:36px; 
+    color:rgba(255, 217, 81, 0.952); 
+    text-shadow: 0px 0px 2px black;
+}
+
+footer {
+    text-align: center;
+    padding: 2vh;
+    background-color: #212121;
+    color: #f8f9fb;
+    font-family: 'Raleway', sans-serif;
+    border-top: 2px solid #f8f9fb;
+    margin: auto;
+    font-size: small;
+    font-weight: 600;
+}
+
+/* --------------------- WEATHER GALLERY -------------------------*/
+
+.galleryContainer {
+    padding:2vh;
+    display: grid;
+    max-width: 100%;
+
+}
+
+.galleryContainer figure {
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
+    color: #fecc0a;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 1vw;
+}
+
+.galleryContainer img {
+    border-radius: 5px 5px 0px 0px;
+    max-width: 100%;
+}
+
+
+.gallery-image {
+    width: 100%;
+}
+
+figcaption {
+    padding: 15px;
+}

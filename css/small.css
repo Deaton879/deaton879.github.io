@@ -58,19 +58,19 @@ ul {
     font-weight: bold;
 }
 
-.lesson7 {
+.lesson_sub {
     color: paleturquoise;
     font-weight: bold;
     text-indent: 2rem;
     list-style: circle;
 }
 
-.lesson7 a {
+.lesson_sub a {
     color: palegoldenrod;
     text-decoration: none;
 }
 
-.lesson7 a:hover {
+.lesson_sub a:hover {
     color: white;
 }
 
