@@ -12,15 +12,15 @@ html {
 table {
     margin: 5rem auto;
     text-align: center;
-    box-shadow: 5px 5px 10px 2px var(--table-headings);
+    box-shadow: 10px 8px 15px 1px var(--table-headings);
 }
 
 caption {
-    box-shadow: 5px 5px 10px 2px var(--table-headings);
+    box-shadow: 10px 8px 15px 1px var(--table-headings);
 }
 
-table, th, td, caption {
-    border: 1px solid silver;
+table, th, td {
+    border: 2px solid silver;
     border-collapse: collapse;
   }
 
@@ -28,12 +28,15 @@ table caption {
     font-size: x-large;
     background-color: var(--table-title);
     font-weight: 700;
+    border: 1.5px solid silver;
+    border-bottom: none;
 }
 
 table th {
     font-size: medium;
     background-color: var(--table-headings);
     color: white;
+    font-weight: 600;
 }
 
 tbody tr:nth-child(odd) {
@@ -56,9 +59,13 @@ th, td, caption {
     padding: 1vh;
 }
 
-#focus {
+table tr:nth-child(4) td:nth-child(3) {
     background-color: var(--table-headings);
     color: white;
+}
+
+table tr:nth-child(5) td:first-child {
+    font-style: italic;
 }
 
 footer {
