@@ -19,8 +19,8 @@ caption {
     box-shadow: 5px 5px 10px 2px var(--table-headings);
 }
 
-table, th, td {
-    border: 2px solid silver;
+table, th, td, caption {
+    border: 1px solid silver;
     border-collapse: collapse;
   }
 
