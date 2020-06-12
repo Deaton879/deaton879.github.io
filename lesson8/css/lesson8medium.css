@@ -168,4 +168,15 @@
         margin: auto 2vh;
         max-width: 81.5%;
     }
+
+    form#weather-form legend {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    #submit {
+        margin: 15px;
+        width: 25%;
+        height: 4vh;
+    }
 }

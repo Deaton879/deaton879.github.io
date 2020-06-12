@@ -1,3 +1,5 @@
 function displayValue(result) {
-    document.getElementById('adjustedValue').innerHTML = result;
+    var num = document.getElementById('adjustedValue');
+    num.innerHTML = result;
+    num.style.gridColumn = result;
 }

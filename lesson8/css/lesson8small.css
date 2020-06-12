@@ -60,11 +60,11 @@ header {
 
 #active {
     background: #fecc0a;
+    font-family: 'Raleway', sans-serif;
 }
 
 #active a {
     color: rgba(25,37,53, 1);
-    font-size: larger;
     font-variant: none;
 }
 
@@ -349,6 +349,7 @@ hr {
     display: flex;
     padding: inherit;
 }
+
 .png {
     padding: 17px;
 }
@@ -424,7 +425,7 @@ form#weather-form {
     align-content: flex-start;
     border-radius: 6px;
     font-variant: small-caps;
-    background-color: snow;
+    background: linear-gradient(to bottom, rgba(30,87,153,.9) 0%,rgba(25,37,53,1) 98%);
     border: 1px solid rgba(25,37,53,.5);
     box-shadow: -5px 5px 8px 1px rgba(25,37,53,1);
 }
@@ -433,7 +434,7 @@ form#weather-form legend{
     font-size: 1.3em;
     padding: 3vh;
     color: black;
-    text-shadow: 0px 0px 3px #0c7692;
+    text-shadow: 0px 0px 1px black;
     text-indent: -20px;
 }
 
@@ -453,13 +454,13 @@ div.some-info {
     border-radius: 12px;
     font-size: small;
     align-items: stretch;
-    border: 2px dotted rgba(12,118,146,1);
+    border: 1px solid rgba(0, 0, 0, .5);
 }
 
 div.some-info label {
     font-family: 'Raleway', sans-serif;
     color: #fecc0a;
-    background: linear-gradient(to bottom, rgba(30,87,153,.9) 0%,rgba(25,37,53,1) 98%);
+    background: linear-gradient(to bottom, rgba(30,87,153,.9) 60%,rgba(25,37,53,.9) 100%);
     padding: 5px;
     display: block;
     border-radius: 12px;
@@ -467,7 +468,7 @@ div.some-info label {
     font-size: 1.15em;
     font-weight: 600;
     text-indent: 6px;
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 0px 0px 3px black;
 }
 
 form input:required {
@@ -484,22 +485,28 @@ div.some-info input, #region {
     border-radius: 6px;
     margin-top: 5px;
     background: snow;
+    font-variant: all-small-caps;
+    font-size: medium;
 }
 
 #StormSeverity {
     padding: 0%;
-    outline: auto;
+    max-width: 95%;
     display: inline-block;
-    max-width: 85%;
-    color: #f8f9fb;
+    color: #fecc0a;
     font-size: larger;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #adjustedValue {
-    font-size: large;
-    padding: 5px;
-    margin: auto;
+    font-size: medium;
+    margin: 0;
+    grid-column: 3;
+}
+
+#slide-value-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 }
 
 #form-content-container {
@@ -521,7 +528,7 @@ input:placeholder-shown {
     background: linear-gradient(to bottom, rgba(30,87,153,.9) 0%,rgba(25,37,53,1) 98%);;
     border-radius: inherit;
     text-indent: 10px;
-    border: 2px dotted rgba(12,118,146,1);
+    border: 1px solid black;
 }
 
 #more-info #comments {
@@ -529,7 +536,7 @@ input:placeholder-shown {
     width: -webkit-fill-available;
     margin: 15px;
     border-radius: 5px;
-    font-variant: small-caps;
+    font-variant: all-small-caps;
     font-weight: bold;
     text-indent: 10px;
     padding: 1vh;
@@ -537,11 +544,13 @@ input:placeholder-shown {
 
 #comment-label {
     padding: 2vh;
+    margin-top: 100px;
     max-width: 100%;
     line-height: initial;
     font-weight: 600;
     color: #fecc0a;
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 0px 0px 3px black;
+    font-family: 'Raleway',sans-serif;
 }
 
 #radio-picker {
@@ -554,15 +563,17 @@ input:placeholder-shown {
     font-size: 1.3em;
     padding: 3vh;
     color: black;
-    text-shadow: 0px 0px 3px #0c7692;
+    text-shadow: 0px 0px 1px black;
     text-indent: -20px;
 }
+
 
 #radio-picker label{
     background: #f8f9fb;
     color: rgba(25,37,53, 1);
     text-indent: 20px;
     padding-bottom: 20px;
+    text-shadow: 0px 0px 1px black;
 }
 
 #bottom-section {
@@ -584,24 +595,27 @@ input:placeholder-shown {
 
 #form-content-container {
     border-radius: 12px;
-    border: 1px dashed rgba(30,87,153,.9);
+    border-radius: 12px;
+    border: 2px solid #fecc0a;
 }
 
 #submit {
     display: block;
     margin: auto;
-    width: 15em;
-    height: 5vh;
+    width: 50%;
+    height: 6vh;
     margin-bottom: 10px;
-    text-shadow: 0px 0px 3px #0c7692;
-    background-color: lightgray;
+    text-shadow: 0px 0px 1px black;
+    background-color: #fecc0a;
     border-radius: 6px;
+    font-variant: inherit;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: x-large;
+
 }
 
-.ticker {
-    display: flex;
-    align-items: center;    
-}
+
 
 #region-label {
     border-radius: 12px 12px 0px 0px;
@@ -610,4 +624,7 @@ input:placeholder-shown {
 #region {
     border-radius: 0px 0px 12px 12px;
     margin: auto;
+    font-variant: all-small-caps;
+    font-size: medium;
 }
+
