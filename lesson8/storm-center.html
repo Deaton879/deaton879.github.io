@@ -43,15 +43,13 @@
             <h2 class="titleHeading">Storm Center</h2>
 
 
-            <!-----      FORM        ------>
-
             <form action="./Thanks.html" method="get" id="weather-form">
                 <div id="form-content-container">
                     <fieldset id="top-section">
                         <legend>Contact Info</legend>
                         <div class="some-info">
                             <label for="Name">*Full Name:<br>
-                            <input type="text" id="Name" name="Name" placeholder="john doe" pattern="[A-za-z\s]{5,}" on required autofocus></label>
+                            <input type="text" id="Name" name="Name" placeholder="john doe" pattern="[A-za-z\s]{5,}" required autofocus></label>
                             <br>
                         
                         
@@ -61,7 +59,7 @@
                         
                         
                             <label for="Zip">*Zip-Code:<br>
-                            <input type="number" id="Zip" name="Zip" pattern="(\d{5}([\-]\d{4})?)" placeholder="enter zip here" autocomplete="shipping postal-codep" required></label>
+                            <input type="number" id="Zip" name="Zip" placeholder="enter zip here" required></label>
                             <br>
                         
                         
@@ -91,20 +89,34 @@
                                 </datalist></label>
                             </div><br>
                            
-                            <label for="StormSeverity">Storm Severity (Scale of 1 to 10):<br><br>
-                            <input type="range" id="StormSeverity" name="StormSeverity" value="1" min="1" max="10" step="1" list="tickmarks" oninput="displayValue(this.value)" onchange="displayValue(this.value)" >
-                                <span id="adjustedValue"></span></label>
+                            <label class="ticker" for="StormSeverity">Storm Severity (Scale of 1 to 10):<br><br>
+                                <input type="range" id="StormSeverity" name="StormSeverity" value="3" min="1" max="10" step="1" list="intervals" oninput="displayValue(this.value)" onchange="displayValue(this.value)" >
+                                <span id="adjustedValue">3</span>
+                            </label>
+                            <datalist id="intervals">
+                                <option value="0">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10">
+                            </datalist>
                             <br>
                             
                             <div id="radio-picker">
-                                <legend>In-Danger Level: </legend>
-                                <label for="Danger"><input type="radio" name="Danger" value="yes">
+                                <div id="radioHeading">In-Danger Level: </div>
+                                <label><input type="radio" name="Danger" value="yes">
                                 Yes</label>
                             
-                                <label for="Danger"><input type="radio" name="Danger" value="maybe">
+                                <label><input type="radio" name="Danger" value="maybe">
                                 Maybe</label>
                             
-                                <label for="Danger"><input type="radio" name="Danger" value="no">
+                                <label><input type="radio" name="Danger" value="no">
                                 No</label>
                             </div>
                         </div>
@@ -116,7 +128,6 @@
                             
                             <label  id="comment-label" for="comments">Comments:<br><textarea name="comments" id="comments" placeholder="Include any additional information here..."></textarea></label>
                         </div>
-                       
                     </fieldset>   
                     <input type="submit" value="Submit" id="submit"> 
                 </div>
