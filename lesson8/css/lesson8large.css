@@ -10,9 +10,6 @@
         justify-content: center;
     }
 
-    .filler h3 {
-        border-radius: 2px;
-    }
 
     main {
         padding: .8rem;
@@ -86,6 +83,10 @@
 
     figcaption {
         padding: 10px;
+    }
+
+    form#weather-form {
+        width: 80%;
     }
 }
 

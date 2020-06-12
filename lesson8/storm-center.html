@@ -10,15 +10,10 @@
         <link rel="stylesheet" href="./css/lesson8large.css">
         <link rel="shortcut icon" href="./images/favicon.ico">
         <meta name="description" content="Week 8 Assignment: Storm Center">
-        <script src="./js/pancakes.js"></script>
         <script src="./js/lazyload.js" async></script>
     </head>
 
-    <body onload="checkDay()">
-        <aside id="pancakes">
-            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-            <button onclick="goAway()" style="background-color: black; color: azure; cursor: pointer;">&times;</button>
-        </aside>
+    <body>
         <!--Header-->
         <header>
             <!--Header Content Here-->
@@ -43,105 +38,94 @@
                 <li><a href="./gallery.html">Gallery</a></li>
             </ul>
         </nav>
+
         <main>
-            <h2 class="titleHeading">Preston Idaho</h2>
-            <div class="heroContainer">
-                <picture>
-                    <source media="(max-width: 360px)" srcset="./images/landscape-photo-of-mountain-1105392small.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/landscape-photo-of-mountain-1105392medium.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/landscape-photo-of-mountain-1105392.jpg" alt="Sun shines over grassy field">
-                </picture>
-                <section class="heroFiller">
-                    <h4>Weather Summary</h4>
-                    <hr>
-                    <div class="summaryData">
-                        <h5>Currently: </h5>
-                        <p> Sunny</p>
-                    </div>
-                    <div class="summaryData">
-                        <h5>High: </h5>
-                        <p id="temp"> 49 &#8457;</p>
-                    </div>
-                    <div class="summaryData">
-                        <h5>Wind Chill: </h5>
-                        <p id="windchill"></p>
-                    </div>
-                    <div class="summaryData">
-                        <h5>Humidity: </h5>
-                        <p>43%</p>
-                    </div>
-                    <div class="summaryData">
-                        <h5>Wind Speed: </h5>
-                        <p id="windspeed">8 mph</p>
-                    </div>
-                </section>
-            </div>
-            <hr>
-            <section class="filler" id="forecastContainer">
-                <h3>5-Day Forecast</h3>
-                <div id="fiveDay">
-                    <div class="forecast">
-                        <p>Mon</p>
-                        <div class="icon-holder">
-                            <img src="./images/partlyCloudy.png" alt="forecast icon, partly cloudy">
+            <h2 class="titleHeading">Storm Center</h2>
+
+
+            <!-----      FORM        ------>
+
+            <form action="./Thanks.html" method="get" id="weather-form">
+                <div id="form-content-container">
+                    <fieldset id="top-section">
+                        <legend>Contact Info</legend>
+                        <div class="some-info">
+                            <label for="Name">*Full Name:<br>
+                            <input type="text" id="Name" name="Name" placeholder="john doe" pattern="[A-za-z\s]{5,}" on required autofocus></label>
+                            <br>
+                        
+                        
+                            <label for="Phone">*Phone Number:<br>
+                            <input type="tel" id="Phone" name="Phone" placeholder="include area code" required></label>
+                            <br>
+                        
+                        
+                            <label for="Zip">*Zip-Code:<br>
+                            <input type="number" id="Zip" name="Zip" pattern="(\d{5}([\-]\d{4})?)" placeholder="enter zip here" autocomplete="shipping postal-codep" required></label>
+                            <br>
+                        
+                        
+                            <label for="Email">E-Mail:<br>
+                            <input type="email" id="Email" name="Email" placeholder="john_doe@myemail.com"></label>
+                            
                         </div>
-                        <p>78 &#8457;</p>  
-                    </div>
-                    <div class="forecast">
-                        <p>Tue</p>
-                        <div class="icon-holder">
-                            <img src="./images/heavyRain.png" alt="forecast icon, heavy rain">
+                    </fieldset>
+
+                    <fieldset id="middle-section">
+                        <legend>Storm Report</legend>
+                        <div class="some-info">
+                            <label for="StormDate">Storm Date:
+                            <input type="date" id="StormDate" name="StormDate"></label><br>
+                            <br>
+                            
+                            <div class="stormInfo">
+                                <label for="StormType">Storm Type:
+                                <input list="storms" id="StormType" name="StormType"><br>
+                                
+                                <datalist id="storms">
+                                    <option value="Flash Flood"></option>
+                                    <option value="Hail"></option>
+                                    <option value="Hurricane"></option>
+                                    <option value="Thunderstorm"></option>
+                                    <option value="Tornado"></option>
+                                </datalist></label>
+                            </div><br>
+                           
+                            <label for="StormSeverity">Storm Severity (Scale of 1 to 10):<br><br>
+                            <input type="range" id="StormSeverity" name="StormSeverity" value="1" min="1" max="10" step="1" list="tickmarks" oninput="displayValue(this.value)" onchange="displayValue(this.value)" >
+                                <span id="adjustedValue"></span></label>
+                            <br>
+                            
+                            <div id="radio-picker">
+                                <legend>In-Danger Level: </legend>
+                                <label for="Danger"><input type="radio" name="Danger" value="yes">
+                                Yes</label>
+                            
+                                <label for="Danger"><input type="radio" name="Danger" value="maybe">
+                                Maybe</label>
+                            
+                                <label for="Danger"><input type="radio" name="Danger" value="no">
+                                No</label>
+                            </div>
                         </div>
-                        <p>79 &#8457;</p>  
-                    </div>
-                    <div class="forecast">
-                        <p>Wed</p>
-                        <div class="icon-holder">
-                            <img src="./images/partlySunny.png" alt="forecast icon, partly sunny">
+                    </fieldset> 
+
+                    <fieldset id="bottom-section">
+                        <legend>Additional Info</legend>
+                        <div id="more-info">
+                            
+                            <label  id="comment-label" for="comments">Comments:<br><textarea name="comments" id="comments" placeholder="Include any additional information here..."></textarea></label>
                         </div>
-                        <p>76 &#8457;</p>  
-                    </div>
-                    <div class="forecast">
-                        <p>Thur</p>
-                        <div class="icon-holder">
-                            <img src="./images/rain.png" alt="forecast icon, rain">
-                        </div>
-                        <p>77 &#8457;</p>  
-                    </div>
-                    <div class="forecast">
-                        <p>Fri</p>
-                        <div class="icon-holder">
-                            <img src="./images/sunny.png" alt="forecast icon, sunny">
-                        </div>
-                        <p>83 &#8457;</p>  
-                    </div>
+                       
+                    </fieldset>   
+                    <input type="submit" value="Submit" id="submit"> 
                 </div>
-            </section>
-            <hr>
-            <article>        
-                <div id="article">
-                    <div id="aImgContainer">
-                        <img id="articleImg" src="./images/Placeholder.png" data-src="images/watermelon-846357_1920rez60.jpg" alt="picture of young girl eating watermelon">
-                    </div>                        
-                    <div id="articleHeader">
-                        <h3>Article Title</h3>
-                        <h4>By: Author Unknown</h4>
-                    </div>
-                    <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
-                        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
-                        sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis 
-                        est et expedita distinctio.</p>
-                    <p> 
-                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
-                        id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem 
-                        quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae 
-                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur 
-                        aut perferendis doloribus asperiores repellat.</p>              
-                </div>
-            </article>
-            <hr>
-            
+            </form>
+
+
+
+
+
         </main>
         <!--Footer-->
         <footer>
@@ -171,10 +155,10 @@
                             </li>
                         </ul>
                         <ul class="socialInfo">
-                            <li class="png"><img src="./images/facebook-social-media-pngrepo-com.png" alt="Facebook Icon"></li>
-                            <li class="png"><img src="./images/twitter-social-media-pngrepo-com.png"  alt="Twitter Icon"></li>
-                            <li class="png"><img src="./images/pinterest-social-media-pngrepo-com.png"  alt="Pintrest"></li>
-                            <li class="png"><img src="./images/whatsapp-social-media-pngrepo-com.png"  alt="Whatsapp"></li>
+                            <li class="png"><a href="https://www.facebook.com"><img src="./images/facebook-social-media-pngrepo-com.png" alt="Facebook Icon"></a></li>
+                            <li class="png"><a href="https://www.twitter.com"><img src="./images/twitter-social-media-pngrepo-com.png"  alt="Twitter Icon"></a></li>
+                            <li class="png"><a href="https://www.pinterest.com"><img src="./images/pinterest-social-media-pngrepo-com.png"  alt="Pintrest"></a></li>
+                            <li class="png"><a href="https://www.whatsapp.com"><img src="./images/whatsapp-social-media-pngrepo-com.png"  alt="Whatsapp"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -186,8 +170,8 @@
             <script src="js/currentDate.js" defer></script>
         </footer>
         <script src="js/responsiveMenu.js"></script>
+        <script src="./js/Slider.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>WebFont.load({google: {families: ['Raleway: 400,600,800', 'Cantarell:ital,wght@0,400;0,700;1,400']}});</script> 
-        <script src="./js/windchill.js" defer></script>
     </body>
 </html>

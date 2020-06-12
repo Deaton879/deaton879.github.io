@@ -147,4 +147,25 @@
         display: inline;
         max-width: 100%;
     }
+
+    /*--------------------FORM--------------------------*/
+
+    form#weather-form {
+        width: 90%;
+    }
+
+    div.some-info {
+        max-width: 90%;
+    }
+
+    div.some-info label {
+        max-width: 80%;
+        margin: auto 2vh;
+    }
+
+    #bottom-section {
+
+    }
+
+
 }
