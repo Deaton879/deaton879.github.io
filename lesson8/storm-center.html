@@ -46,7 +46,7 @@
             <form action="./Thanks.html" method="get" id="weather-form">
                 <div id="form-content-container">
                     <fieldset id="top-section">
-                        <legend>Contact Info</legend>
+                        <legend>contact info</legend>
                         <div class="some-info">
                             <label for="Name">*Full Name:<br>
                             <input type="text" id="Name" name="Name" placeholder="john doe" pattern="[A-za-z\s]{5,}" required autofocus></label>
@@ -70,7 +70,7 @@
                     </fieldset>
 
                     <fieldset id="middle-section">
-                        <legend>Storm Report</legend>
+                        <legend>storm report</legend>
                         <div class="some-info">
                             <label for="StormDate">Storm Date:
                             <input type="date" id="StormDate" name="StormDate"></label><br>
@@ -107,7 +107,17 @@
                                 <option value="10">
                             </datalist>
                             <br>
+
                             
+                            <label for="region" id="region-label">Storm Region:</label>
+                            <select name="region" id="region">
+                                <option value selected disabled>Select Region..</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+
+                            <br>
                             <div id="radio-picker">
                                 <div id="radioHeading">In-Danger Level: </div>
                                 <label><input type="radio" name="Danger" value="yes">
@@ -123,7 +133,7 @@
                     </fieldset> 
 
                     <fieldset id="bottom-section">
-                        <legend>Additional Info</legend>
+                        <legend>additional info</legend>
                         <div id="more-info">
                             
                             <label  id="comment-label" for="comments">Comments:<br><textarea name="comments" id="comments" placeholder="Include any additional information here..."></textarea></label>

@@ -163,5 +163,9 @@
         margin: auto 2vh;
     }
 
-
+    #region {
+        font-family: 'Raleway', sans-serif;
+        margin: auto 2vh;
+        max-width: 81.5%;
+    }
 }
