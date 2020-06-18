@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap');
+
+header {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+div.cards {
+    margin: auto;
+    padding: 15px;
+    max-width: 97%;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 3px;
+}
+
+div.cards section {
+    background-color: #b9b9cc;
+    border: 2px ridge #4e4e97;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+h1, h2 {
+    color: #4e4e97;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 0px 1px black;
+}
+
+p {
+    margin: 5px 10px 5px 10px;
+    font-family: 'Cantarell', sans-serif;
+    text-shadow: 0px 0px 1px black;
+}
+.imageBox {
+    max-width: 300px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+}
+
+div.cards section img {
+    max-width: 100%;
+    box-shadow: 0px 1px 8px 3px black;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    font-weight: 600;
+}
+/* ------------------- Medium -------------------- */
+@media only screen and (min-width: 30rem) {
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+/* ------------------- Large ---------------------- */
+@media only screen and (min-width: 60rem) {
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
