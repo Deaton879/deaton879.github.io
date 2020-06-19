@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page of WTW.app</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="./css/lesson9small.css">
+        <link rel="stylesheet" href="./css/lesson9medium.css">
+        <link rel="stylesheet" href="./css/lesson9large.css">
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <meta name="description" content="Thank you page, loaded upon successfully submit a storm report">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <!--Header Content Here-->
+            <a href="../index.html"><img id="site-icon" src="./images/Weather-icon.png" alt="site logo"></a>
+            <section class="headerText"> 
+                <h1 id="site-name">WeatherTheWeather.app</h1>
+                <div class="motto">"Let's weather this weather, together!"</div>
+            </section>
+           
+        </header>
+        <!--Navigation-->
+        <nav class="nav-container">
+            <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
+            <ul class="navigation">
+                <li id="active">
+                    <a href="./home-page.html">Home</a>
+                </li>
+                <li><a href="./preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="./storm-center.html">Storm Center</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main id="home-main">
+            
+            <span id="breadcrumb"><sup>L</sup><a href="./home-page.html">Home</a></span>
+
+            <h1 class="titleHeading">Home Page</h1><hr>
+            <h4 id="welcome"> Welcome to WeatherTheWeather.app, we're glad you're here!</h4>
+            <div id="home-flex">
+                <div class="townCard">
+                    <div class="townTextContain">
+                        <h2>Preston</h2>
+                        <h4><i>"Home of Napoleon Dynamite."</i></h4>
+                        <p>Year Founded: 1866</p>
+                        <p>Population: 5204</p>
+                        <p>Annual Rain Fall: 16.65</p>
+                    </div>
+                    <div class="townImgContain"><a href="https://www.tripadvisor.com/LocationPhotos-g35578-Preston_Idaho.html#408385960">
+                        <img alt="Photo of Preston, Idaho" src="./images/Placeholder.png" data-src="./images/preston1.png"/></a>
+                    <sup>This photo of Preston is courtesy of Tripadvisor</sup></div>
+                </div>
+                <div class="townCard">
+                    <div class="townTextContain">
+                        <h2>Soda Springs</h2>
+                        <h4><i>"Historic Oregon Trail Oasis. The Soda is on Us."</i></h4>
+                        <p>Year Founded: 1858</p>
+                        <p>Population: 2985</p>
+                        <p>Annual Rain Fall: 15.75</p>
+                    </div>
+                    <div class="townImgContain"><a href="https://www.tripadvisor.com/LocationPhotos-g35606-Soda_Springs_Idaho.html#382950792">
+                        <img alt="Photo of Soda Springs, Idaho" src="./images/Placeholder.png" data-src="./images/soda_springs1.png"/></a>
+                        <sup>This photo of Soda Springs is courtesy of Tripadvisor</sup></div>
+                </div>
+                <div class="townCard">
+                    <div class="townTextContain">
+                        <h2>Fish Haven</h2>
+                        <h4><i>"This is Fish Heaven."</i></h4>
+                        <p>Year Founded: 1864</p>
+                        <p>Population: 501</p>
+                        <p>Annual Rain Fall: 14.2</p>
+                    </div>
+                    <div class="townImgContain"><a href="https://www.tripadvisor.com/LocationPhotos-g35454-Fish_Haven_Idaho.html#375796799">
+                        <img alt="Photo of Fish Haven, Idaho" src="./images/Placeholder.png" data-src="./images/fish_haven.png"/></a>
+                        <sup>This photo of Fish Haven is courtesy of Tripadvisor</sup></div>
+                </div>
+            </div>    
+
+            <div id="wireframes"><a href="./wireframes.html">Home Page Wireframes</a></div>
+
+
+
+        </main>
+        <!--Footer-->
+        <footer id="home-footer">
+            <section class="filler">
+                <h3>Contact Information</h3>
+                <div class="contactInfo">
+                        <div id="prestonMap">
+                            <iframe width="100%" height="340" 
+                             src="https://maps.google.com/maps?width=100%&amp;height=340&amp;hl=en&amp;coord=42.0963133, 
+                            -111.8766173&amp;q=Preston%2C%20ID%2083263+(WeatherTheWeather)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" 
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/draw-radius-circle-map/">Create radius map</a>
+                            </iframe>
+                        </div><br>
+                    <div class="contactInfo">
+                        <ul class="addressInfo">
+                            <li><b>Address: </b>
+                                <br>123 Weather Place 
+                                <br>Preston, ID 83263
+                            </li>
+                            <li><br></li>
+                            <li><b>Phone: </b>
+                                <br>012.345.6789
+                            </li>
+                            <li><br></li>
+                            <li><b>E-mail: </b>
+                                <br>contact@weathertheweather.com
+                            </li>
+                        </ul>
+                        <ul class="socialInfo">
+                            <li class="png"><img src="./images/facebook-social-media-pngrepo-com.png" alt="Facebook Icon"></li>
+                            <li class="png"><img src="./images/twitter-social-media-pngrepo-com.png"  alt="Twitter Icon"></li>
+                            <li class="png"><img src="./images/pinterest-social-media-pngrepo-com.png"  alt="Pintrest"></li>
+                            <li class="png"><img src="./images/whatsapp-social-media-pngrepo-com.png"  alt="Whatsapp"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section><br>
+            © 2020 WeatherTheWeather.app | Dallas Eaton | Michigan | Bachelor of Applied Technology | BYU-Idaho |  
+            <a class="foot-nav" href="../index.html">Assignments</a> 
+            <br><br>
+            <span id="todaysDate"></span>
+            <script src="./js/lazyload.js" defer></script>
+            <script src="js/currentDate.js" defer></script>
+        </footer>
+        <script src="js/responsiveMenu.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ['Raleway: 400,600,800', 'Cantarell:ital,wght@0,400;0,700;1,400']}});</script> 
+    </body>
+</html>

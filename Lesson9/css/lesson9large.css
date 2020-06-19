@@ -1,0 +1,159 @@
+@media only screen and (min-width: 60rem) {
+    
+    main, footer {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .contactInfo {
+        margin-top: 1vh;
+        justify-content: center;
+    }
+
+
+    main {
+        padding: .8rem;
+        background: azure;
+    }
+    
+    
+    .nav-container {
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 5px;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    #breadcrumb {
+        display: initial;
+    }
+
+    #breadcrumb sup {
+        top: -0.3em;
+        font-family: cursive;
+        margin-right: 5px;
+    }
+
+    #breadcrumb a {
+        text-decoration: none;
+    }
+
+    #breadcrumb a:hover {
+        text-decoration: underline;
+    }
+    #breadcrumb b {
+        font-weight: 500;
+        font-family: monospace;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .heroFiller {
+        width: 35%;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        border-right: 1px groove rgba(0, 218, 360, 0.8);
+        border-radius: 2px;
+        background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%);
+    }
+
+    .navigation a {
+        padding: .8rem 1rem;
+    }
+
+    .motto {
+        margin-top: -15px;
+        padding: 0.3rem 0 1rem 6rem;
+    }
+
+    #site-icon {
+        padding: 5px;
+        vertical-align: middle;
+        float: none;
+    }
+
+
+    footer {
+        border-radius: 2px 2px 10px 10px;
+    }
+
+    /* --------------------- WEATHER GALLERY -------------------------*/
+
+    #gallery-main {
+        max-width: 100%;
+    }
+
+    #gallery-footer {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .galleryContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure:hover {
+        box-shadow: -2px 6px 8px 1px rgba(25,37,53,1);
+    }
+
+    figcaption {
+        padding: 10px;
+    }
+
+    form#weather-form {
+        width: 80%;
+    }
+
+    /* ------------------ Home Page/Wireframes -------------------- */
+    
+
+    #home-main {
+        max-width: 1300px;
+    }
+    #home-footer {
+        max-width: 1290px;
+    }
+
+    div#home-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 3em auto;
+    }
+
+    div.townCard {
+        flex-direction: column;
+        max-width: 90%;
+        border-radius: 5px;
+    }
+
+    div.townTextContain {
+        width: 100%;
+        border: none;
+        border-bottom: 2px groove white;
+    }
+
+    div.townCard:nth-child(2) .townTextContain {
+        border: none;
+        border-bottom: 2px groove white;
+    }
+
+    div.townImgContain img {
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    div.townCard:nth-child(2) {
+        flex-direction: column;
+    }
+
+    div.townImgContain {
+        width: 100%;
+    }
+}
+
