@@ -755,14 +755,3 @@ div.townImgContain img:hover {
     outline: auto;
     outline-color: rgba(25,37,53,1);
 }
-
-div.townImgContain sup {
-    color: #f8f9fb;
-    font-variant: small-caps;
-    text-shadow: -2px 0px 2px black;
-    font-weight: 600;
-    font-family: cursive;
-    margin: -4px;
-    background: rgba(25,37,53, 1);
-    font-size: x-small;
-}

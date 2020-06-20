@@ -124,7 +124,7 @@
         max-width: 1290px;
     }
 
-    div#home-flex {
+    div.homeFlex {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 3em auto;
