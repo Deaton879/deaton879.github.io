@@ -369,6 +369,16 @@ img{
     text-shadow: 0px 0px 2px black;
 }
 
+#basic-contact {
+    text-align: left;
+}
+
+#basic-social {
+    display: flex;
+    height: fit-content;
+    align-self: center;
+}
+
 footer {
     text-align: center;
     padding: 2vh;
