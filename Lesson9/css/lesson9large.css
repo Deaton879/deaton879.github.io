@@ -140,6 +140,7 @@
         width: 100%;
         border: none;
         border-bottom: 2px groove white;
+        height: 200px;
     }
 
     div.townCard:nth-child(2) .townTextContain {
