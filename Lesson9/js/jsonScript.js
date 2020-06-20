@@ -36,7 +36,7 @@ fetch(requestURL)
             h4.textContent = filter[i].motto;
             p1.textContent =  "Year Founded: " + filter[i].yearFounded;
             p2.textContent = "Population: " + filter[i].currentPopulation;
-            p2.textContent = "Annual Rainfall: " + filter[i].averageRainfall;
+            p3.textContent = "Annual Rainfall: " + filter[i].averageRainfall;
             image.setAttribute('src', './images/Placeholder.png');
             image.setAttribute('data-src', filter[i].photo)
             image.setAttribute('alt', 'Photo of ' + element.name + ', Idaho');
