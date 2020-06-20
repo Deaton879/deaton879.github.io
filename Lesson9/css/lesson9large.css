@@ -10,7 +10,10 @@
         justify-content: center;
     }
 
-
+    #prestonMap {
+        width: 40em;
+    }
+    
     main {
         padding: .8rem;
         background: azure;
