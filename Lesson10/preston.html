@@ -14,7 +14,7 @@
         <script src="./js/lazyload.js" defer></script>
     </head>
 
-    <body onload="checkDay()">
+    <body onload="checkDay(), getFive(), getCurrent()">
         <aside id="pancakes">
             Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
             <button onclick="goAway()" style="background-color: black; color: azure; cursor: pointer;">&times;</button>
@@ -57,11 +57,15 @@
                     <hr>
                     <div class="summaryData">
                         <h5>Currently: </h5>
-                        <p> Sunny</p>
+                        <p id="currently"></p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>Temp: </h5>
+                        <p id="temp-now"></p>
                     </div>
                     <div class="summaryData">
                         <h5>High: </h5>
-                        <p id="temp"> 49 &#8457;</p>
+                        <p id="temp-high"></p>
                     </div>
                     <div class="summaryData">
                         <h5>Wind Chill: </h5>
@@ -69,11 +73,11 @@
                     </div>
                     <div class="summaryData">
                         <h5>Humidity: </h5>
-                        <p>43%</p>
+                        <p id="humidity"></p>
                     </div>
                     <div class="summaryData">
                         <h5>Wind Speed: </h5>
-                        <p id="windspeed">8 mph</p>
+                        <p id="windspeed"></p>
                     </div>
                 </section>
             </div>
@@ -84,35 +88,35 @@
                     <div class="forecast">
                         <p>Mon</p>
                         <div class="icon-holder">
-                            <img src="./images/partlyCloudy.png" alt="forecast icon, partly cloudy">
+                            <img src="./images/Placeholder.png" alt="forecast icon, partly cloudy">
                         </div>
                         <p>78 &#8457;</p>  
                     </div>
                     <div class="forecast">
                         <p>Tue</p>
                         <div class="icon-holder">
-                            <img src="./images/heavyRain.png" alt="forecast icon, heavy rain">
+                            <img src="./images/Placeholder.png" alt="forecast icon, heavy rain">
                         </div>
                         <p>79 &#8457;</p>  
                     </div>
                     <div class="forecast">
                         <p>Wed</p>
                         <div class="icon-holder">
-                            <img src="./images/partlySunny.png" alt="forecast icon, partly sunny">
+                            <img src="./images/Placeholder.png" alt="forecast icon, partly sunny">
                         </div>
                         <p>76 &#8457;</p>  
                     </div>
                     <div class="forecast">
                         <p>Thur</p>
                         <div class="icon-holder">
-                            <img src="./images/rain.png" alt="forecast icon, rain">
+                            <img src="./images/Placeholder.png" alt="forecast icon, rain">
                         </div>
                         <p>77 &#8457;</p>  
                     </div>
                     <div class="forecast">
                         <p>Fri</p>
                         <div class="icon-holder">
-                            <img src="./images/sunny.png" alt="forecast icon, sunny">
+                            <img src="./images/Placeholder.png" alt="forecast icon, sunny">
                         </div>
                         <p>83 &#8457;</p>  
                     </div>
@@ -177,7 +181,8 @@
                 </div>
             </section><br>
             © 2020 WeatherTheWeather.app | Dallas Eaton | Michigan | Bachelor of Applied Technology | BYU-Idaho |  
-            <a class="foot-nav" href="../index.html">Assignments</a> 
+            <a class="foot-nav" href="../index.html">Assignments</a><br><br>
+            <a class="foot-nav" href="https://openweathermap.org/">OpenWeatherMap.org</a>
             <br><br>
             <span id="todaysDate"></span>
             <script src="js/currentDate.js" defer></script>
@@ -185,6 +190,7 @@
         <script src="js/responsiveMenu.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>WebFont.load({google: {families: ['Raleway: 400,600,800', 'Cantarell:ital,wght@0,400;0,700;1,400']}});</script> 
-        <script src="./js/windchill.js" defer></script>
+        <!--<script src="./js/windchill.js"></script>-->
+        <script src="./js/weather_api.js"></script>
     </body>
 </html>

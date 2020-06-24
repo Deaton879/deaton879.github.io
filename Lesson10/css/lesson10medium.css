@@ -55,8 +55,13 @@
         background: rgba(41,137,216,.9);
     }
 
+    .heroFiller hr {
+        margin: 10px auto 20px;
+        width: 55%;
+    }
+
     .heroFiller h4 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     #heroImg {
