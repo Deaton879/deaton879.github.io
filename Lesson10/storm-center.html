@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Storm Center</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="./css/lesson10small.css">
+        <link rel="stylesheet" href="./css/lesson10medium.css">
+        <link rel="stylesheet" href="./css/lesson10large.css">
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <meta name="description" content="Form for user to submit local storm reports">
+        <script src="./js/lazyload.js" async></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <!--Header Content Here-->
+            <a href="../index.html"><img id="site-icon" src="./images/Weather-icon.png" alt="site logo"></a>
+            <section class="headerText"> 
+                <h1 id="site-name">WeatherTheWeather.app</h1>
+                <div class="motto">"Let's weather this weather, together!"</div>
+            </section>
+           
+        </header>
+        <!--Navigation-->
+        <nav class="nav-container">
+            <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
+            <ul class="navigation">
+                <li>
+                    <a href="./home-page.html">Home</a>
+                </li>
+                <li><a href="./preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li id="active"><a href="./storm-center.html">Storm Center</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <span id="breadcrumb"><sup>L</sup><a href="./storm-center.html">Storm-Center</a></span>
+            <h2 class="titleHeading">Storm Center</h2>
+
+
+            <form action="./Thanks.html" method="get" id="weather-form">
+                <div id="form-content-container">
+                    <fieldset id="top-section">
+                        <legend>contact info</legend>
+                        <div class="some-info">
+                            <label for="Name">*Full Name:<br>
+                            <input type="text" id="Name" name="Name" placeholder="john doe" pattern="[A-za-z\s]{5,}" required autofocus></label>
+                            <br>
+                        
+                        
+                            <label for="Phone">*Phone Number:<br>
+                            <input type="tel" id="Phone" name="Phone" placeholder="include area code" required></label>
+                            <br>
+                        
+                        
+                            <label for="Zip">*Zip-Code:<br>
+                            <input type="number" id="Zip" name="Zip" placeholder="enter zip here" required></label>
+                            <br>
+                        
+                        
+                            <label for="Email">E-Mail:<br>
+                            <input type="email" id="Email" name="Email" placeholder="john_doe@myemail.com"></label>
+                            
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="middle-section">
+                        <legend>storm report</legend>
+                        <div class="some-info">
+                            <label for="StormDate">Storm Date:
+                            <input type="date" id="StormDate" name="StormDate"></label><br>
+                            <br>
+                            
+                            <div class="stormInfo">
+                                <label for="StormType">Storm Type:
+                                <input list="storms" id="StormType" name="StormType"><br>
+                                
+                                <datalist id="storms">
+                                    <option value="Flash Flood"></option>
+                                    <option value="Hail"></option>
+                                    <option value="Hurricane"></option>
+                                    <option value="Thunderstorm"></option>
+                                    <option value="Tornado"></option>
+                                </datalist></label>
+                            </div><br>
+                           
+                            <label id="ticker" for="StormSeverity">Storm Severity (Scale of 1 to 10):<br><br>
+                                <input type="range" id="StormSeverity" name="StormSeverity" value="3" min="1" max="10" step="1" list="intervals" oninput="displayValue(this.value)" onchange="displayValue(this.value)" >
+                                <span id="slide-value-container" ><p id="adjustedValue">3</p></span>
+                            </label>
+                            <datalist id="intervals">
+                                <option value="0">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10">
+                            </datalist>
+                            <br>
+
+                            
+                            <label for="region" id="region-label">Storm Region:</label>
+                            <select name="region" id="region">
+                                <option value selected disabled>Select Region..</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+
+                            <br>
+                            <div id="radio-picker">
+                                <div id="radioHeading">In-Danger Level: </div>
+                                <label><input type="radio" name="Danger" value="yes">
+                                Yes</label>
+                            
+                                <label><input type="radio" name="Danger" value="maybe">
+                                Maybe</label>
+                            
+                                <label><input type="radio" name="Danger" value="no">
+                                No</label>
+                            </div>
+                        </div>
+                    </fieldset> 
+
+                    <fieldset id="bottom-section">
+                        <legend>additional info</legend>
+                        <div id="more-info">
+                            
+                            <label  id="comment-label" for="comments">Comments:<br><textarea name="comments" id="comments" placeholder="Include any additional information here..."></textarea></label>
+                        </div>
+                    </fieldset>   
+                    <input type="submit" value="file report" id="submit"> 
+                </div>
+            </form>
+
+
+
+
+
+        </main>
+        <!--Footer-->
+        <footer>
+            <section class="filler">
+                <h3>Contact Information</h3>
+                <div class="contactInfo">
+                    <div class="contactInfo">
+                        <ul class="addressInfo" id="basic-contact">
+                            <li><b>Address: </b>
+                                <br>123 Weather Place 
+                                <br>Preston, ID 83263
+                            </li>
+                            <li><br></li>
+                            <li><b>Phone: </b>
+                                <br>012.345.6789
+                            </li>
+                            <li><br></li>
+                            <li><b>E-mail: </b>
+                                <br>contact@weathertheweather.com
+                            </li>
+                        </ul>
+                        <ul class="socialInfo" id="basic-social">
+                            <li class="png"><a href="https://www.facebook.com"><img src="./images/facebook-social-media-pngrepo-com.png" alt="Facebook Icon"></a></li>
+                            <li class="png"><a href="https://www.twitter.com"><img src="./images/twitter-social-media-pngrepo-com.png"  alt="Twitter Icon"></a></li>
+                            <li class="png"><a href="https://www.pinterest.com"><img src="./images/pinterest-social-media-pngrepo-com.png"  alt="Pintrest"></a></li>
+                            <li class="png"><a href="https://www.whatsapp.com"><img src="./images/whatsapp-social-media-pngrepo-com.png"  alt="Whatsapp"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section><br>
+            © 2020 WeatherTheWeather.app | Dallas Eaton | Michigan | Bachelor of Applied Technology | BYU-Idaho |  
+            <a class="foot-nav" href="../index.html">Assignments</a> 
+            <br><br>
+            <span id="todaysDate"></span>
+            <script src="js/currentDate.js" defer></script>
+        </footer>
+        <script src="js/responsiveMenu.js"></script>
+        <script src="./js/Slider.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ['Raleway: 400,600,800', 'Cantarell:ital,wght@0,400;0,700;1,400']}});</script> 
+    </body>
+</html>

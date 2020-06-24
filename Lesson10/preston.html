@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Preston Town Page</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="./css/lesson10small.css">
+        <link rel="stylesheet" href="./css/lesson10medium.css">
+        <link rel="stylesheet" href="./css/lesson10large.css">
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <meta name="description" content="Week 10 Assignment: Live Weather Data | JSON and Weather API">
+        <script src="./js/pancakes.js" async></script>
+        <script src="./js/lazyload.js" defer></script>
+    </head>
+
+    <body onload="checkDay()">
+        <aside id="pancakes">
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+            <button onclick="goAway()" style="background-color: black; color: azure; cursor: pointer;">&times;</button>
+        </aside>
+        <!--Header-->
+        <header>
+            <!--Header Content Here-->
+            <a href="../index.html"><img id="site-icon" src="./images/Weather-icon.png" alt="site logo"></a>
+            <section class="headerText"> 
+                <h1 id="site-name">WeatherTheWeather.app</h1>
+                <div class="motto">"Let's weather this weather, together!"</div>
+            </section>
+           
+        </header>
+        <!--Navigation-->
+        <nav class="nav-container">
+            <button onclick="toggleMenu()" id="menu">&#9776; Menu</button>
+            <ul class="navigation">
+                <li>
+                    <a href="./home-page.html">Home</a>
+                </li>
+                <li id="active"><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="./storm-center.html">Storm Center</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <span id="breadcrumb"><sup>L</sup><a href="./preston.html">Preston</a></span>
+            <h2 class="titleHeading">Preston Idaho</h2>
+            <div class="heroContainer">
+                <picture>
+                    <source media="(max-width: 360px)" srcset="./images/landscape-photo-of-mountain-1105392small.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/landscape-photo-of-mountain-1105392medium.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/landscape-photo-of-mountain-1105392.jpg" alt="Sun shines over grassy field">
+                </picture>
+                <section class="heroFiller">
+                    <h4>Weather Summary</h4>
+                    <hr>
+                    <div class="summaryData">
+                        <h5>Currently: </h5>
+                        <p> Sunny</p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>High: </h5>
+                        <p id="temp"> 49 &#8457;</p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>Wind Chill: </h5>
+                        <p id="windchill"></p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>Humidity: </h5>
+                        <p>43%</p>
+                    </div>
+                    <div class="summaryData">
+                        <h5>Wind Speed: </h5>
+                        <p id="windspeed">8 mph</p>
+                    </div>
+                </section>
+            </div>
+            <hr>
+            <section class="filler" id="forecastContainer">
+                <h3>5-Day Forecast</h3>
+                <div id="fiveDay">
+                    <div class="forecast">
+                        <p>Mon</p>
+                        <div class="icon-holder">
+                            <img src="./images/partlyCloudy.png" alt="forecast icon, partly cloudy">
+                        </div>
+                        <p>78 &#8457;</p>  
+                    </div>
+                    <div class="forecast">
+                        <p>Tue</p>
+                        <div class="icon-holder">
+                            <img src="./images/heavyRain.png" alt="forecast icon, heavy rain">
+                        </div>
+                        <p>79 &#8457;</p>  
+                    </div>
+                    <div class="forecast">
+                        <p>Wed</p>
+                        <div class="icon-holder">
+                            <img src="./images/partlySunny.png" alt="forecast icon, partly sunny">
+                        </div>
+                        <p>76 &#8457;</p>  
+                    </div>
+                    <div class="forecast">
+                        <p>Thur</p>
+                        <div class="icon-holder">
+                            <img src="./images/rain.png" alt="forecast icon, rain">
+                        </div>
+                        <p>77 &#8457;</p>  
+                    </div>
+                    <div class="forecast">
+                        <p>Fri</p>
+                        <div class="icon-holder">
+                            <img src="./images/sunny.png" alt="forecast icon, sunny">
+                        </div>
+                        <p>83 &#8457;</p>  
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <article>        
+                <div id="article">
+                    <div id="aImgContainer">
+                        <img id="articleImg" src="./images/Placeholder.png" data-src="images/watermelon-846357_1920rez60.jpg" alt="picture of young girl eating watermelon">
+                    </div>                        
+                    <div id="articleHeader">
+                        <h3>Article Title</h3>
+                        <h4>By: Author Unknown</h4>
+                    </div>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
+                        sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis 
+                        est et expedita distinctio.</p>
+                    <p> 
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+                        id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem 
+                        quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae 
+                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur 
+                        aut perferendis doloribus asperiores repellat.</p>              
+                </div>
+            </article>
+            <hr>
+            
+        </main>
+        <!--Footer-->
+        <footer class="townFooter">
+            <section class="filler">
+                <h3>Contact Information</h3>
+                <div class="contactInfo">
+                    <div id="prestonMap">
+                        <img style="width: 100%" src="./images/Placeholder.png" data-src="../images/preston_map.png" alt="Preston GPS Map">
+                    </div><br>
+                    <div class="contactInfo">
+                        <ul class="addressInfo">
+                            <li><b>Address: </b>
+                                <br>123 Weather Place 
+                                <br>Preston, ID 83263
+                            </li>
+                            <li><br></li>
+                            <li><b>Phone: </b>
+                                <br>012.345.6789
+                            </li>
+                            <li><br></li>
+                            <li><b>E-mail: </b>
+                                <br>contact@weathertheweather.com
+                            </li>
+                        </ul>
+                        <ul class="socialInfo">
+                            <li class="png"><img src="./images/facebook-social-media-pngrepo-com.png" alt="Facebook Icon"></li>
+                            <li class="png"><img src="./images/twitter-social-media-pngrepo-com.png"  alt="Twitter Icon"></li>
+                            <li class="png"><img src="./images/pinterest-social-media-pngrepo-com.png"  alt="Pintrest"></li>
+                            <li class="png"><img src="./images/whatsapp-social-media-pngrepo-com.png"  alt="Whatsapp"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section><br>
+            © 2020 WeatherTheWeather.app | Dallas Eaton | Michigan | Bachelor of Applied Technology | BYU-Idaho |  
+            <a class="foot-nav" href="../index.html">Assignments</a> 
+            <br><br>
+            <span id="todaysDate"></span>
+            <script src="js/currentDate.js" defer></script>
+        </footer>
+        <script src="js/responsiveMenu.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ['Raleway: 400,600,800', 'Cantarell:ital,wght@0,400;0,700;1,400']}});</script> 
+        <script src="./js/windchill.js" defer></script>
+    </body>
+</html>
