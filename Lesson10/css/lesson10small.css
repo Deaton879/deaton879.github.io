@@ -110,10 +110,10 @@ main {
     font-size: medium;
     padding: .5rem;
     background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(25,37,53,1) 98%); 
-    border-bottom: .01rem dotted #fecc0a;
     color: azure;
     text-shadow: 0px 0px 5px black;
     border-radius: 10px 10px 0 0;
+    box-shadow: 0px 1px 0px 0px darkgoldenrod;
 }
 
 #fiveDay {
@@ -123,9 +123,7 @@ main {
     text-align: center;
     font-style: italic;
     background-color: #212121;
-    border: .01rem dashed gold;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0px 2px 0px 2px darkgoldenrod;
 }
 
 .forecast {
@@ -135,7 +133,10 @@ main {
     border-radius: 5px;
     margin: 1.5vw;
     padding: .5vh;
-    box-shadow: 0px 1px 0px 1px azure;
+    box-shadow: 0px 0px 3px 2px darkgoldenrod;
+}
+
+
 }
 
 #article {
@@ -145,6 +146,7 @@ main {
     border-radius: 18px;
     margin: 9px;
     border: 1px dashed goldenrod;
+    box-shadow: -3px 3px 5px 0px black;
 }
 
 #article h3 {
@@ -162,10 +164,42 @@ main {
     color: rgba(255, 217, 81, 0.952);
 }
 
+#article h5 {
+    text-indent: 2%;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #article p {
     margin: 2vw;
     -webkit-text-stroke: thin;
     color: darkslategray;
+}
+
+#read-more {
+    padding: 10px 10px 10px 0px;
+    margin: auto;
+    display: block;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+#read-more a {
+    text-decoration: none;
+    color: rgba(250, 223, 125, 0.952);
+    text-shadow: 1px 1px 1px rgba(25,37,53,1);
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 7px;
+    background-color: rgb(103, 172, 224);
+    box-shadow: 2px 2px 4px rgba(25,37,53, 1);
+}
+
+#read-more a:hover {
+    color: rgba(248, 205, 47, 0.952);
+    padding: 6px;
+    box-shadow: 2px 2px 4px rgba(25,37,53, .7);
+    background-color: rgb(78, 146, 199);
 }
 
 #articleHeader {
@@ -175,7 +209,7 @@ main {
     color: azure;
     text-shadow: -2px 1px 3px rgba(25,37,53,1);
     padding: 1vh;
-    box-shadow: -1px -1px 0px 0px rgba(25,37,53,1);
+    box-shadow: -1px 2px 4px 1px rgba(25,37,53, 1);
 }
 
 #aImgContainer {
@@ -186,7 +220,7 @@ main {
 #articleImg {
     width: 100%;
     border-radius: 15px;
-    box-shadow: -1px -1px 0px 0px rgba(25,37,53, 1);
+    box-shadow: -1px 5px 5px 1px rgba(25,37,53, 1);
 }
 
 #prestonMap {
@@ -296,7 +330,8 @@ h3 {
     font-size: x-large;
     font-variant: small-caps;
     margin: auto;
-    color: rgba(30,87,153,1)
+    color: rgba(30,87,153,1);
+    padding: 5px;
 }
 
 #site-icon {

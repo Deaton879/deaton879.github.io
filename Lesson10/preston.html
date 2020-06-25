@@ -14,7 +14,7 @@
         <script src="./js/lazyload.js" defer></script>
     </head>
 
-    <body onload="checkDay(), getFive(), getCurrent()">
+    <body onload="checkDay(), getFive(5604473), getCurrent(5604473)">
         <aside id="pancakes">
             Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
             <button onclick="goAway()" style="background-color: black; color: azure; cursor: pointer;">&times;</button>
@@ -48,9 +48,9 @@
             <h2 class="titleHeading">Preston Idaho</h2>
             <div class="heroContainer">
                 <picture>
-                    <source media="(max-width: 360px)" srcset="./images/landscape-photo-of-mountain-1105392small.jpg">
-                    <source media="(max-width: 900px)" srcset="./images/landscape-photo-of-mountain-1105392medium.jpg">
-                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/landscape-photo-of-mountain-1105392.jpg" alt="Sun shines over grassy field">
+                    <source media="(max-width: 360px)" srcset="./images/prestonS.jpg">
+                    <source media="(max-width: 900px)" srcset="./images/prestonM.jpg">
+                    <img id="heroImg" src="./images/Placeholder.png" data-src="./images/prestonL.jpg" alt="Sun shines over grassy field">
                 </picture>
                 <section class="heroFiller">
                     <h4>Weather Summary</h4>
@@ -86,35 +86,35 @@
                 <h3>5-Day Forecast</h3>
                 <div id="fiveDay">
                     <div class="forecast">
-                        <p>Mon</p>
+                        <p id="day1">Mon</p>
                         <div class="icon-holder">
                             <img src="./images/Placeholder.png" alt="forecast icon, partly cloudy">
                         </div>
                         <p>78 &#8457;</p>  
                     </div>
                     <div class="forecast">
-                        <p>Tue</p>
+                        <p id="day2">Tue</p>
                         <div class="icon-holder">
                             <img src="./images/Placeholder.png" alt="forecast icon, heavy rain">
                         </div>
                         <p>79 &#8457;</p>  
                     </div>
                     <div class="forecast">
-                        <p>Wed</p>
+                        <p id="day3">Wed</p>
                         <div class="icon-holder">
                             <img src="./images/Placeholder.png" alt="forecast icon, partly sunny">
                         </div>
                         <p>76 &#8457;</p>  
                     </div>
                     <div class="forecast">
-                        <p>Thur</p>
+                        <p id="day4">Thur</p>
                         <div class="icon-holder">
                             <img src="./images/Placeholder.png" alt="forecast icon, rain">
                         </div>
                         <p>77 &#8457;</p>  
                     </div>
                     <div class="forecast">
-                        <p>Fri</p>
+                        <p id="day5">Fri</p>
                         <div class="icon-holder">
                             <img src="./images/Placeholder.png" alt="forecast icon, sunny">
                         </div>
@@ -129,20 +129,15 @@
                         <img id="articleImg" src="./images/Placeholder.png" data-src="images/watermelon-846357_1920rez60.jpg" alt="picture of young girl eating watermelon">
                     </div>                        
                     <div id="articleHeader">
-                        <h3>Article Title</h3>
-                        <h4>By: Author Unknown</h4>
+                        <h3>10 Health Benefits Of Watermelon That Make It The Perfect Summer Fruit</h3>
+                        <h4>By: Frank Bozzo</h4>
                     </div>
                     <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
-                        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
-                        sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis 
-                        est et expedita distinctio.</p>
+                        Few things instantly evoke such powerful memories of summer and can put an smile on your face quite as quick as the thought of capping off a backyard barbecue with a big tray of freshly sliced, ripe and juicy watermelon. I mean, seriously, just think about it for a moment… you can almost taste it, can’t you? It’s pretty safe to say that most people love this flavorful fruit, but few realize that watermelons are actually jam-packed with tons of health benefits, making them a truly perfect summertime snack.</p>
+                    <h5>1. Good for your Heart</h5>
                     <p> 
-                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
-                        id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem 
-                        quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae 
-                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur 
-                        aut perferendis doloribus asperiores repellat.</p>              
+                        Watermelons owe their gorgeous red color to the powerful antioxidant lycopene, just like tomatoes. In recent years, lycopene has being recognized by the scientific community as an especially important nutrient for cardiovascular health. The consumption of lycopene-rich foods, like watermelon, have been connected to an improvement in blood flow by acting as a vasodilator and have shown some ability to potentially lower LDL, aka bad cholesterol, making lycopene doubly good for your heart.</p> 
+                    <span id="read-more"><a href="https://www.lifehack.org/articles/lifestyle/10-health-benefits-watermelon-that-make-the-perfect-summer-fruit.html">Read More!</a></span>
                 </div>
             </article>
             <hr>
