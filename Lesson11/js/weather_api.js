@@ -1,11 +1,10 @@
 // FOR THE CURRENT WEATHER IN HERO IMAGE
 
-function getCurrent(x) {
+function getCurrent(x, y) {
   //USE WEATHER IN URL QUERY
-  const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + x + "&units=imperial&appid=5a73ef4b83ca4f2d6941744d6dc8e118";
   
-  /*TEST FILE
-  const apiURL = "./json/preston1.json";*/
+  const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + x + "&lon=" + y + "&units=imperial&appid=5a73ef4b83ca4f2d6941744d6dc8e118";
+  
 
   fetch(apiURL)
     .then((response) => response.json())
@@ -46,9 +45,9 @@ function getCurrent(x) {
 
 // FOR THE 5-DAY FORECAST
 
-function getFive(x) {
+function getFive(x, y) {
   //USE FORECAST IN URL QUERY
-  const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + x + "&units=imperial&appid=5a73ef4b83ca4f2d6941744d6dc8e118";
+  const apiURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + x + "&lon=" + y + "&units=imperial&appid=5a73ef4b83ca4f2d6941744d6dc8e118";
 
   forecast();
 
