@@ -27,9 +27,9 @@ fetch(requestURL)
             let p2 = document.createElement('p');
             let p3 = document.createElement('p');
             let image = document.createElement('img');
-            let a = document.createElement('a');
+            //let a = document.createElement('a');
 
-            a.setAttribute('href', './' + element.name + '.html');
+            //a.setAttribute('href', './' + element.name + '.html');
             divcard.setAttribute('class', 'townCard');
             divtxt.setAttribute('class', 'townTextContain');
             divimg.setAttribute('class', 'townImgContain');
@@ -49,8 +49,9 @@ fetch(requestURL)
             divtxt.appendChild(p1);
             divtxt.appendChild(p2);
             divtxt.appendChild(p3);
-            divimg.appendChild(a);
-            a.appendChild(image);
+            //divimg.appendChild(a);
+            //a.appendChild(image);
+            divimg.appendChild(image);
 
             document.querySelector('div#home-flex').appendChild(divcard);
         }

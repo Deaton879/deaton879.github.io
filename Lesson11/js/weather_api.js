@@ -122,3 +122,7 @@ function forecast() {
   }
        
 }
+
+//function getEvents() {
+
+//}
