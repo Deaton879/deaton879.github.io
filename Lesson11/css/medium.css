@@ -88,6 +88,14 @@
         width: 50%;
         border-radius: 2rem;
         padding: 1rem;
+        text-align: end;
+        color: darkred;
+        font-family: cursive;
+        font-variant: all-small-caps;
+        font-size: smaller;
+    }
+    
+    
     }
 
     #articleImg {
