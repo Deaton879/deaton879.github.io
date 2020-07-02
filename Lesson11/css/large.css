@@ -11,11 +11,6 @@
         
     }
 
-    .contactInfo#not-town {
-        margin: auto;
-        width: fit-content;
-        flex-direction: column;
-    }
 
     #prestonMap {
         width: 40em;

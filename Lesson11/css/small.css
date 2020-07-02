@@ -411,15 +411,6 @@ img{
     text-shadow: 0px 0px 2px black;
 }
 
-#basic-contact {
-    text-align: center;
-}
-
-#basic-social {
-    display: flex;
-    height: fit-content;
-    align-self: center;
-}
 
 footer {
     text-align: center;
@@ -766,10 +757,7 @@ div.townTextContain p{
     margin: auto;
     padding: 5px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
     color: #dfe6f3;
-    
 }
 
 div.townTextContain h2{

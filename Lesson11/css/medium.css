@@ -16,11 +16,6 @@
     
     .contactInfo {
         display: flex;
-        margin: auto;
-    }
-    
-    #basic-contact{
-        text-align: left;
     }
 
     .navigation li:hover {
@@ -96,7 +91,6 @@
     }
     
     
-    }
 
     #articleImg {
         width: 100%;
@@ -235,7 +229,9 @@
 
     div.townTextContain p{
         margin: auto;
-        padding: 2px
+        padding: 2px;
+        font-weight: 600;
+        font-size: 1rem;
     }
 
     div.townCard:nth-child(2) {
