@@ -14,7 +14,7 @@
         <script src="./js/lazyload.js" defer></script>
     </head>
 
-    <body onload='checkDay(), getFive(42.0963, -111.8766), getCurrent(42.0963, -111.8766), forecast()'>
+    <body onload='checkDay(), getEvents(4), getFive(42.0963, -111.8766), getCurrent(42.0963, -111.8766), forecast()'>
         <aside id="pancakes">
             Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
             <button onclick="goAway()" style="background-color: black; color: azure; cursor: pointer;">&times;</button>
@@ -81,6 +81,7 @@
                 </section>
             </div>
             <hr>
+            <section class="events"></section><hr>
             <section class="filler" id="forecastContainer">
                 <h3>5-Day Forecast</h3>
                 <div id="fiveDay">

@@ -16,8 +16,10 @@ fetch(requestURL)
             }
         });
         
-        for(let i = 0; i < filter.length; i++) {
-            const element = filter[i];
+        let organize = [filter[1], filter[2], filter[0]];
+        
+        for(let i = 0; i < organize.length; i++) {
+            const element = organize[i];
             let divcard = document.createElement('div');
             let divtxt = document.createElement('div');
             let divimg = document.createElement('div');
@@ -34,12 +36,12 @@ fetch(requestURL)
             divtxt.setAttribute('class', 'townTextContain');
             divimg.setAttribute('class', 'townImgContain');
             h2.textContent = element.name;
-            h4.textContent = filter[i].motto;
-            p1.textContent =  "Year Founded: " + filter[i].yearFounded;
-            p2.textContent = "Population: " + filter[i].currentPopulation;
-            p3.textContent = "Annual Rainfall: " + filter[i].averageRainfall;
+            h4.textContent = organize[i].motto;
+            p1.textContent =  "Year Founded: " + organize[i].yearFounded;
+            p2.textContent = "Population: " + organize[i].currentPopulation;
+            p3.textContent = "Annual Rainfall: " + organize[i].averageRainfall;
             
-            image.setAttribute('src', '../images/' + filter[i].photo);
+            image.setAttribute('src', '../images/' + organize[i].photo);
             image.setAttribute('alt', 'Photo of ' + element.name + ', Idaho');
 
             divcard.appendChild(divtxt)

@@ -5,6 +5,7 @@ function getCurrent(x, y) {
   
   const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + x + "&lon=" + y + "&units=imperial&appid=5a73ef4b83ca4f2d6941744d6dc8e118";
   
+  
 
   fetch(apiURL)
     .then((response) => response.json())
@@ -12,6 +13,7 @@ function getCurrent(x, y) {
 
       //LOG THE RESPONSE OBJECT FOR REFERENCE
       console.log(jsObject);
+
 
       document.getElementById('currently').textContent = jsObject.weather[0].description;
       document.getElementById('temp-now').textContent = Math.round(jsObject.main.temp) + '℉';
@@ -123,6 +125,39 @@ function forecast() {
        
 }
 
-//function getEvents() {
+function getEvents(num) {
 
-//}
+  const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+
+
+  fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+
+        const towns = jsonObject['towns'];
+        const townEvents = towns[num].events;
+
+        let h2 = document.createElement('h2');
+        h2.textContent = "Upcoming Events";
+        h2.setAttribute('style', 'font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; color: white;');
+
+        let box = document.querySelector('section.events');
+        box.appendChild(h2);
+
+        for(let i = 0; i < townEvents.length; i++) {
+          let event = document.createElement('div');
+          let p = document.createElement('p');
+
+          p.textContent = townEvents[i];
+          event.appendChild(p);
+
+          event.setAttribute('class', 'eventP')
+
+          box.appendChild(event);
+      }
+    })
+}
+  
