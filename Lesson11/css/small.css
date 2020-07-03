@@ -233,6 +233,10 @@ main {
     margin-top: .5rem;
 }
 
+.map {
+    width: 100%;
+}
+
 #pancakes {
     display: none;
     background: rgba(255, 217, 81, 0.952);
