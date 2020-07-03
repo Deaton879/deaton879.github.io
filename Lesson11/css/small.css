@@ -820,7 +820,7 @@ div.townImgContain img:hover {
     border-radius: 10px;
 }
 
-section.events {
+div.events {
     background-color: #212121;
     text-align: center; 
     padding-bottom: 20px; 

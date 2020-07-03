@@ -144,7 +144,7 @@ function getEvents(num) {
         h2.textContent = "Upcoming Events";
         h2.setAttribute('style', 'font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; color: white;');
 
-        let box = document.querySelector('section.events');
+        let box = document.querySelector('div.events');
         box.appendChild(h2);
 
         for(let i = 0; i < townEvents.length; i++) {
