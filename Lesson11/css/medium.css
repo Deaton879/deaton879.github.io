@@ -37,7 +37,6 @@
     }
 
     #site-icon {
-        padding: 5px;
         vertical-align: middle;
         float: none;
     }
@@ -147,7 +146,7 @@
         display: grid;
         box-shadow: 1px 1px 0px 2px rgba(25,37,53,1);
         border-radius: 15px;
-        background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);
+        background: linear-gradient(to top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 35%,rgba(12,118,146,1) 98%,rgba(125,185,232,1) 100%);
     }
     
     .addressInfo {
@@ -218,7 +217,7 @@
     
     div.townCard {
         display: flex;
-        border-radius: 0;
+        border-radius: 5px;
     }
 
     div.townTextContain {
