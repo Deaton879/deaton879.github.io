@@ -48,12 +48,13 @@
 
     .heroFiller {
         position: absolute;
-        width: 40%;
+        top: 25px;
+        width: 28%;
+        font-size: large;
         min-width: 200px;
         margin: initial;
-        top: 1rem;
         left: 1rem;
-        background: rgba(41,137,216,.9);
+        background: rgba(41,137,216,1);
     }
 
     .heroFiller hr {
@@ -71,11 +72,6 @@
         box-shadow: 0px 2px 4px 4px black;
     }
     
-    .heroFiller {
-        top: 25px;
-        width: 28%;
-        font-size: large;
-    }
 
     #aImgContainer {
         float: right;
