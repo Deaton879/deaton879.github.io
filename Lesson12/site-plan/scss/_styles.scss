@@ -1,0 +1,145 @@
+html {
+  background-color: $primary-color;
+}
+
+body {
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  color: $headline-color-on-white;
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: $paragraph-color-on-color;
+  background-color: $paragraph-background-color;
+
+  h1, h2 {color: $headline-color-on-color;}
+  
+} // end of header
+
+p {
+  font-family: $paragraph-font;
+  color: $paragraph-color-on-white;
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+
+  th {
+    background-color: rgb(86, 128, 175); 
+    color: #f0ecec; 
+    padding: 5px; 
+    font-variant: all-small-caps; 
+    font-family: $paragraph-font;
+  }
+
+  td{width: 20%; height: 3em; font-family: $paragraph-font;}
+
+}
+
+.primary {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+.secondary {
+  background-color: $secondary-color;
+  color: #d7d8e2;
+}
+.accent1 {
+  background-color: $accent1-color;
+  color: #09090c;
+}
+.accent2{
+  background-color: $accent2-color;
+  color: #f4f4fc;
+}
+.accent3{
+  background-color: $accent3-color;
+  color: #e8e8f1;
+
+}
+
+p.colored {
+  background-color: $paragraph-background-color;
+  color: $paragraph-color-on-color;
+}
+
+nav {
+  background-color: $nav-background-color;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;}
+
+  a {padding:1em; min-width: 70px; font-family: $paragraph-font;}
+  a:link, nav a:visited {color: $nav-link-color;}
+  a:hover {color: $nav-hover-link-color; background-color: $nav-hover-background-color;}
+
+} // end of nav
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+
+  div {text-align: center;}
+}
+
+.sm-home {
+  grid-area: home;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #999;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
