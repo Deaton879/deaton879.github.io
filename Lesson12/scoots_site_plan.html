@@ -3,64 +3,79 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Site Plan</title>
+    <title>Scoots Site Plan</title>
     <link type="text/css" rel="stylesheet" href="site-plan/css/site-plan.css">
     <link rel="shortcut icon" href="./images/phpThumb_generated_thumbnailico">
   </head>
 
   <body>
     <header>
-      <h1>Scoots Website - Site Plan</h1>
-      <h2>Dallas Eaton</h2>
-      <h2>WDD 230</h2>
+      <div><span><a href="https://icons8.com/icon/119513/scooter"><img style="border: none;" src="./images/icons8-scooter-64.png" alt="Site logo | Scooter icon by Icons8"><br></a></span>
+        <h1>Scoots Website Plan</h1></div>
+      
+      <div>
+        <h2>Dallas Eaton</h2>
+        <h2>WDD 230</h2>
+      </div>
 
     </header>
-    <main>
+    <nav><ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Rentals</a></li>
+      <li><a href="#">Reservations</a></li>
+      <li><a href="#">Tours</a></li>
+      <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main><hr>
 
-      <h2>Overview</h2>
+      
+      <div id="SiteMap">
+        <h3>
+          Site Map
+        </h3>
+        <img id="smImg" src="./images/SiteMap.png" alt="SiteMap for Scoots Scooter rentals"></img>
+      </div><br><br>
+
       <hr>
-      <h3>Purpose</h3>
+      <h2>Site Purpose</h2>
       <p>
         The purpose of this website is to promote the rental services of the Scoots motor scooter rental company on the island of Cozumel. Site content is targeted at customers that like to do their homework before getting to the island, and plans to provide information about the services, requirements, and rental process. The website aims to embody the fun and carefree attitude of the island, advertising the ability to escape the droves of tourists found on the west side by exploring the vast coasts and inlets to the south and east.
-      </p>  <!-- change this -->
+      </p>  <hr>
 
 
-      <h3>Audience</h3>
-      <p>
-        This owner-operator company caters to locals, walk-in tourists, enthusiasts, and cruise-based touring groups and partnerships. 
-      </p>  <!-- change this -->
-
-
-      <h2>Branding</h2>
-      <h3>Website Logo</h3>
-      <!-- Replace this with site logo -->
-      
-      <a href="https://icons8.com/icon/119513/scooter"><img src="./images/icons8-scooter-64.png" alt="Site logo"><br>Scooter icon by Icons8</a>
+      <h2>Target Audience</h2>
+      <div>
+        <p>This owner-operator company caters to...</p>
+        <p>LOCALS -- </p><span></span>
+        <p>WALK-IN TOURISTS -- </p><span></span>
+        <p>ENTHUSIASTS -- </p><span></span>
+        <p>CRUISE-BASED TOURING GROUPS / PARTNERSHIPS -- </p><span></span>
+      </div> 
       <hr>
-      <h2>
-        Style Guide
-      </h2>
 
-      <h3>
+
+      <h2>
         Color Scheme
-      </h3>
+      </h2>
       <!-- Colors for the Scoots site -->
 
       <!-- URL to finished palette below -->
-      Palette URL: <a href="https://coolors.co/4c6109-a96834-b8bc32-6a829a-130d0c" target="_blank"> https://coolors.co/4c6109-a96834-b8bc32-6a829a-130d0c </a><br>
+      Palette URL: <a style="margin-bottom: 10px; display: block;" href="https://coolors.co/fff3eb-fa9c61-fddb75-00cc99-04a8a8" target="_blank"> https://coolors.co/fff3eb-fa9c61-fddb75-00cc99-04a8a8 </a><br>
 
-      <img src="./images/palette.png" alt="color scheme for Scoots Website - site plan">
-      <table class="colors">
-        <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th><th>Accent 3</th></tr>
-        <tr><td class="primary">[#6A829A]</td><td class="secondary">[#130D0C]</td><td class="accent1">[#B8BC32]</td><td class="accent2">[#A96834]</td><td class="accent3">[#4C6109]</td></tr>
-      </table>
-      
+      <div class="contentContainer">
+        <img src="./images/palette.png" alt="color scheme for Scoots Website - site plan">
+        <table class="colors">
+          <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th><th>Accent 3</th></tr>
+          <tr><td class="primary">[#FFF3EB]</td><td class="secondary">[#FA9C61]</td><td class="accent1">[#FFDB75]</td><td class="accent2">[#00CC99]</td><td class="accent3">[#00FFFF]</td></tr>
+        </table>
+      </div>
 
-      <h3>
+      <h2>
         Typography
-      </h3>
+      </h2>
 
-      <h4>
+      <h4 class="fonts">
         Heading Font: [Merienda One]
       </h4>
       <p>        
@@ -69,14 +84,14 @@
         Merienda has soft shapes, is slightly condensed, and has a rhythm which is an invitation to read short pieces of text. It is ideal for headlines which call for height, as its strokes resemble those of a brush and deliver freshness and a dynamic touch in the development of words."
       </p>
 
-      <h4>
+      <h4 class="fonts">
         Paragraph Font: [Quicksand]
       </h4>
       <p>
           The paragraph body is composed of: Quicksand. This is a very readable text that does not disctract and does not strain the eyes.
       </p>
 
-      <h4>
+      <h4 class="fonts">
         Normal paragraph example
       </h4>
       <p>
@@ -86,7 +101,7 @@
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
         sunt in culpa qui officia deserunt mollit anim id est laborum."ing Fork Rivers in Glenwood Springs.  
       </p>
-      <h4>
+      <h4 class="fonts">
         Colored paragraph example
       </h4>
       <p class="colored">
@@ -97,60 +112,30 @@
         sunt in culpa qui officia deserunt mollit anim id est laborum." 
       </p>
 
-      <h3>
-        Navigation
-      </h3>
-
-      <nav><ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Rentals</a></li>
-        <li><a href="#">Reservations</a></li>
-        <li><a href="#">Tours</a></li>
-        <li><a href="#">Contact</a></li>
-        </ul></nav>
+     
       <hr>
-      <h2>
-        Site Map
-      </h2>
-      <div class="sitemap">
-        <div class="sm-home">
-          Home
-        </div>
-        <div class="sm-page2">
-          [Page2] <!-- change this -->
-        </div>
-        <div class="sm-page3">
-          [Page3]  <!-- change this -->
-        </div>
-
-        <div class="top">
-          &nbsp;
-        </div>
-        <div class="left">
-          &nbsp;
-        </div>
-        <div class="right">
-          &nbsp;
-        </div>
-
-      </div>
+      
 
       <h2>
-        Wireframes
+        Wireframes (Home Page)
       </h2>
       <p>
-        Create three wireframes for your site. One for each page and list them here</p>
-
-      <h3>Home</h3>
-      <img src="./images/cozumel-unsplash.jpg" alt="hero Image for home page">
-      <span>Photo by <a href="https://unsplash.com/@brian_j?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Brian Jin</a> on <a href="https://unsplash.com/s/photos/cozumel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-      <p>         
-        There is an image behond the main content (on all 3 pages) that is represented by the placeholder box with an [x] in it.
-        A slideshow will play and the text/image header will change with every photo.
-      </p>
-      <img src="#" alt="home page wireframe large">
-      <img src="#" alt="home page wireframe medium">
-      <img src="#" alt="home page wireframe small">
+        Large, Medium, Small Wireframes | Homepage</p>
+        <hr>
+      <div id="heroImg">
+        <h3 class="fonts">         
+          Sample Showcase Image For Home Page
+        </h3>
+        <img src="./images/cozumel-unsplash.jpg" alt="hero Image for home page">
+        <span style="color: seashell;">Photo by <a style="color: #fddb75;" href="https://unsplash.com/@brian_j?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Brian Jin</a> on <a style="color: #fddb75;" href="https://unsplash.com/s/photos/cozumel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+      </div>
+      
+      <div id="wire-container">
+        <img class="wires" src="./images/LargeWire.png" alt="home page wireframe large">
+        <img class="wires" src="./images/MediumWire.png" alt="home page wireframe medium">
+        <img class="wires" src="./images/SmallWire.png" alt="home page wireframe small">
+      </div>
+      
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ['Merienda One', 'Quicksand:wght@300;500;700']}});</script> 
