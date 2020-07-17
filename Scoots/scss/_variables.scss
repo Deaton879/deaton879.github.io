@@ -1,0 +1,21 @@
+$primary-color: #fff3eb;
+$secondary-color: #fa9c61;
+$accent1-color: #fddb75;
+$accent2-color: #00cc99;
+$accent3-color: #04a8a8;
+
+
+
+$heading-font: 'Merienda One', cursive;
+$paragraph-font:'Quicksand', sans-serif;
+
+
+$headline-color-on-white: $accent2-color;  /* headlines on a white background */ 
+$headline-color-on-color: $accent1-color;  /* headlines on a colored background */ 
+$paragraph-color-on-white: black; /* paragraph text on a white background */ 
+$paragraph-color-on-color: $primary-color; /* paragraph text on a colored background */ 
+$paragraph-background-color: $accent3-color;
+$nav-link-color: $primary-color;
+$nav-background-color: $secondary-color;
+$nav-hover-link-color: $accent2-color;
+$nav-hover-background-color: $accent1-color;
