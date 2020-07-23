@@ -1,0 +1,98 @@
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/scooters1_Caleb_George_M.jpg");
+}
+.tour-image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ship-wreckage.jpg");}
+.contact-image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/reef-snorkeling.jpg");}
+.res_image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Jeep_4_Door_Group.jpg");}
+
+.slideshow{height: 50%; box-shadow: 0 0 10px 4px black;
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden; width: 80%; background-color: $accent3-color;}
+
+//.slide_button{top:50%; position: absolute; padding: 15px;}
+
+//.slide_button:hover{transform: scale(1.5,1.5); border-radius:50%;}
+.currentWeather h4 {
+  font-size: 1.2em;
+}
+#videoContainer{width: 70%; flex-direction: column;}
+.ImgContainer{width: 60%; margin: 2em auto;}
+#tourBody {
+  height: max-content;
+  background-position: top;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sign_post.jpg");
+  h2{text-transform: uppercase;}
+  main{display: inline-block; background: $primary-color; width: 40%; margin: unset; outline: .5em ridge $primary-color;}
+  p{margin: 1em 10em;}}
+#read-more a{font-family: $heading-font; text-decoration: none;}
+.articleImg{box-shadow: 0 0 6px 6px black;}
+.side_panel, .openbtn, #socialSidepanel{top: 25%;}
+#main2{position: absolute;
+  right: 0;
+  top: 59em;
+  font-weight: 600;
+  z-index: 0;
+  width: 48%;
+  
+  white-space: break-spaces; ol{color: $primary-color; padding-right: 2em;
+    background: #00000063;
+  right: inherit;
+  position: inherit;
+  margin: 3em 2em;}}
+
+
+#rentMe{max-width: 70%; margin: 20px auto;}
+.tableTitle{text-align: center;}
+.tableHead, .tableBody{padding: 10px;}
+#rentalMain{background: azure;padding: .5em;
+  box-shadow: 0 0 16px 4px black;}
+#read-more{ 
+  
+  
+  text-align-last: end;
+  .highlight{color: $accent2-color;}
+  a{
+    font-family: "Merienda One",cursive;
+    text-decoration: none;
+    border-style: dotted;
+    padding: 5px;
+    background: yellowgreen;
+    font-style: italic;
+  }
+  margin: -4em 3em;
+}
+
+div.forecast {
+  font-size: medium;
+  padding: 0;
+}
+
+#forecastContainer {
+  display: initial;
+  width: 80%;
+  margin: auto;
+}
+
+.forecast p {
+  font-size: large;
+}
+#forecastContainer {
+ margin:auto 0;
+}
+#home-main{width: 65%; padding: 1em; margin: auto 0 auto 30%;}
+.currentWeather{width:150px; position: absolute;
+  left: 0;}
+.home_pic{
+
+  img{max-height: 550px; overflow: hidden;}}
+
+#rentalSlides{max-height: fit-content; background-color: azure;}
+
+
+#contactMessage{padding: 10px; border: 2px dashed $accent2-color;background-color: azure; h1{margin-top: .4em;} text-align: right; border-radius:10px; h3{color: $secondary-color;} p{font-weight: 600; color: $accent2-color; }}
+#contact_form{ margin: auto 1em; border-radius:10px; border:2px azure dashed;
+textarea{width: 350px; height: 250px;}
+}
+#contact-main{flex-direction: row; margin: auto;width: fit-content;}

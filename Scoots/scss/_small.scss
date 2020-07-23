@@ -1,0 +1,568 @@
+* {box-sizing: border-box;}
+
+#thanksMessage{
+
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sign_post.jpg");
+
+  
+  
+  #thanksH1{color:$primary-color; width: 80%; margin: 1em auto; padding: 2rem; background-color: mediumaquamarine; border-radius: 10px; border: 3px dotted $primary-color;}
+  footer{width: 100%;}
+}
+
+html, body{font-family: $paragraph-font; height: 100%; margin: 0;}
+
+body{width: 100%; background-color: $primary-color;}
+
+
+main{width: 90%; margin: auto;} 
+
+h1,h2,h3,h4,h5,h6 {font-family: $heading-font;}
+
+.body_h2{font-family: $heading-font; font-weight: 600; text-transform: uppercase;}
+
+hr{height: 1px; background: aqua; width: 96%; box-shadow: 0px 0px 12px 0px $accent1-color;}
+
+footer{margin: auto; padding: 2rem; color: $paragraph-color-on-color; background-color: #257d78; max-width: 100%; text-align: center;}
+
+/*
+===============================
+          Header
+================================
+*/
+
+header{display: flex; color: $primary-color; background-color: $accent3-color;width: 100%; justify-content: space-between; box-shadow: -1px 1px 4px black;}
+
+header section{margin: 0px 0px 0px 5px;}
+
+header div{color: $accent1-color;}
+.header_title{margin: 0px;}
+
+
+
+/*
+===============================
+          Navigation
+================================
+*/
+
+#menu{top:0; right:0; font-size: 3rem; color:$primary-color; background-color: $accent3-color; border: none;}
+
+#nav_toggle{ background-color: $accent2-color;}
+
+.nav-container{width: 100%; top: 8%;box-shadow: -1px 3px 4px 1px black;
+}
+
+.nav_hide{display:none}
+
+.nav_show{display:block}
+
+.nav_list{list-style: none; font-family: $paragraph-font; font-variant: all-small-caps; padding-left: 0em;}
+
+.dropdown{background-color: #eee;
+  color: $secondary-color;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+  padding-left: 0;
+  box-shadow: 0px -1px 2px 0px slategrey;
+}
+
+.dropdown a {
+  text-decoration: none;
+  font-size: large;
+  text-decoration: none;
+  color: $secondary-color;
+  font-weight: 700;
+}
+
+
+#nest_menu{display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.active{background-color: $accent2-variant; a{color: $primary-color;}}
+
+/*
+===============================
+          Hero Image 
+================================
+*/
+
+.hero-image, .tour-image, .contact-image, .res_image {
+  outline: auto;
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 3em;
+}
+
+.hero-image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/scooters1_Caleb_George_S.jpg");}
+.tour-image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ship-wreckage.jpg");}
+.contact-image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/reef-snorkeling.jpg");}
+.res_image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Jeep_4_Door_Group.jpg");}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {font-size: 50px}
+.hero-text a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: $accent3-color;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px black;
+  font-weight: 600;
+}
+
+
+.hero-text a:hover {
+  background-color: $accent2-variant;
+  color: $accent1-color;
+  
+}
+
+/*
+==========================
+         home
+==========================
+*/
+
+#titleScoot{color: $primary-color; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); width: fit-content; padding: 5px; border-radius: 0px 10px 10px 0px;}
+#subTitleScoot{color:$secondary-color; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); width: fit-content; padding: 5px; border-radius: 0px 10px 10px 0px;}
+.forecast p {
+  font-weight: 600;
+  font-family: 'Cantarell', sans-serif;
+  font-size: small;
+  color: snow;
+  font-variant: small-caps;
+  text-shadow: 0 0 2px #111;
+}
+.icon-holder{ max-width: 100px; margin: auto;}
+.forecast section {
+  display: flex;
+}
+
+.forecast img {
+  width: 100%;
+}
+
+.filler h3 {
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  background: $accent2-variant; 
+  color: $primary-color;
+  text-transform: uppercase;
+  font-size: larger;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid $accent2-color;
+  box-shadow: 0px 3px 5px 2px $accent3-color;
+}
+
+#fiveDay {
+  display: flex;
+  flex-direction: row;
+  height: 275px;
+  text-align: center;
+  height: fit-content;
+  background-color: $accent2-color;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 3px 5px 2px rgba(25,37,53, 1);
+  border: 3px dashed $accent1-color;
+}
+
+.forecast {
+  flex: 1 1 100%;
+  font-size: small;
+  background: $accent3-color;
+  border-radius: 5px;
+  margin: 5px;
+  padding: .25vh;
+  height: fit-content;
+  box-shadow: 0px 0px 0px 1px $accent1-color;
+}
+
+#home-main{width: 90%; padding: 1em;}
+#homeBody{height: max-content;
+  background-position: bottom;
+  background-repeat: round;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sign_post.jpg");}
+
+.currentWeather{background-color: $accent2-color; h4{color:$accent1-color}
+  width: fit-content; p{vertical-align: bottom; color: $accent2-variant; font-weight: 600;} .summaryData{margin: auto; height: fit-content;} color: $primary-color; text-transform: uppercase;  padding:10px; border: 2px dotted white; border-radius: 10px;}
+
+#callTo{ 
+  border: 3px dashed $accent1-color;
+  background-color:$primary-color;
+  text-align: center; 
+  a{text-decoration: none; border-radius: 10px; color: $accent1-color; background-color: $accent3-color; padding: 10px;} 
+  a:hover{padding: 12px; background-color: $accent2-variant;}
+  padding: 10px;
+  font-weight: 700;
+  p{font-family: $heading-font;}
+  font-size: larger;
+  margin: 1em auto;
+}
+
+#tellMeMore{
+  padding: 10px; 
+  border-radius: 10px;
+  a{text-decoration: none; 
+    border-radius: 10px; 
+    color: $accent1-color; 
+    background-color: $accent3-color; 
+    padding: 10px;} 
+  a:hover{padding: 12px; background-color: $accent2-variant;}
+  background-color: $primary-color;
+
+}
+/*
+===============================
+          Reservation Form 
+================================
+*/
+#formTA{width:300px; height: 150px; border-radius: 10px; background-color: $primary-color;}
+#reserve-form{
+  border-radius: 10px;
+  border: 2px dashed $accent1-color;
+  select{background-color: $primary-color;}
+  justify-content: space-around;
+  text-align: right;
+  display: flex;
+  margin: auto;
+  background-color: azure;
+  padding: 10px;
+  #contact-info{
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .contactInfoLabel{
+    color: $accent3-color;
+    font-variant: all-small-caps;
+    font-family: $paragraph-font;
+    padding: 1rem;
+    margin: auto;
+  
+  }
+  legend{font-family: $heading-font; text-transform: uppercase; color:$accent2-variant}
+  .errorMessage{display: none;font-family: $paragraph-font;
+  padding: 10px; color: maroon;}
+  input{background-color: $primary-color;}
+  
+  #submitForm:hover, #reset:hover{background-color: $accent2-variant; }
+  #confirm-purchase{border-radius: 10px; font-weight: 600; select{color: $accent2-variant;}}
+  #submitForm, #reset{padding: 10px; background-color: $accent2-color;border-radius: 10px; color:$primary-color; font-weight: 500;}
+}
+
+
+/*
+===========================================
+         Slideshow for Homepage 
+===========================================
+*/
+
+
+/*.slideshow{max-width: inherit; margin: auto;}
+.slides{width: 100%;padding-top: 4em;}
+
+.slide_button{
+  display:block; top:25%; position: absolute; padding: 15px;
+}
+
+.display_left{
+  left:0; opacity: .6;background-color: $accent3-color; color: $accent1-color; border-radius: 0px 5px 5px 0px;
+}
+
+.display_right{
+  right:0; opacity: .6;background-color: $accent3-color; color: $accent1-color; border-radius: 5px 0px 0px 5px;
+}
+*/
+.home_pic{   
+  vertical-align: middle; width: 100%;
+  img{vertical-align: middle; width: 100%;}
+}
+
+
+.mySlides {display: none; display: flex;}
+
+
+/* Slideshow container */
+.slideshow {
+  width: 100%;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(73, 185, 98);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+.rentalHeader{text-align: center; padding: 20px; color: $accent3-color;}
+#rentMe{background-color: $secondary-color; color: $primary-color; border-radius: 10px;}
+/*
+===========================================
+         Social Media Side Panel
+===========================================
+*/
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: fit-content;
+  right: 0;
+  top: 35%;
+  background-color: $accent3-color;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+  border-radius: 10px 0px 0px 10px;
+  border: 2px slategray solid;
+  box-shadow: -1px 1px 5px 0px black;
+}
+
+#socialSidepanel:active{width: fit-content;}
+
+.sidepanel a {
+  background-color: $primary-color;
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: $accent1-color;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  background-color: $accent2-color;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  background-color: $accent3-color;
+  color: $accent1-color;
+  padding: initial;
+  font-size: 2.5rem;
+  
+}
+
+.openbtn {
+  position: fixed;
+  font-size: 2rem;
+  cursor: pointer;
+  right: 0;
+  top: 35%;
+  background-color: $accent3-color;
+  color: $accent1-color;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: -1px 1px 5px 0px black;
+}
+
+.openbtn:hover {
+  background-color:$secondary-color; color: $primary-color; border-radius: 5px 0px 0px 5px;
+}
+
+.social_img { max-width: 1.5em;}
+/*
+===============================================
+  Rental Page | Product Section Overlay Images
+===============================================
+*/
+.rental_container_box{ 
+  padding: 2em 0px 2em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 3px 0px $secondary-color;
+  border-radius: 3px;
+}
+
+.rental_container {
+  position: relative;
+  width: 50%;
+  padding: 15px 1px;
+  background: $accent2-color;
+  margin-top: 15px;
+}
+
+.rental_image{width: 100%; opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background: $secondary-color;
+  box-shadow: 0 0 10px black;
+}
+
+.rc_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.rental_container:hover .rental_image {
+  opacity: 0.6;
+}
+
+.rental_container:hover .rc_middle {
+  opacity: 1;
+}
+
+.rc_text {
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-size: 16px;
+  padding: 6px 60px;
+  padding: 16px 32px;
+  box-shadow: 0 0 4px 2px black;
+}
+
+.collapsible {
+  background-color: $accent3-color;
+  color: $accent1-color;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.collapsible:hover{transform: scale(1.05, 1.1); background-color: $accent2-color; }
+
+.tableTitle{text-align: center;}
+.tableHead, .tableBody{padding: 10px; border: 1px solid gray;}
+.tableHead {background-color: $secondary-color;}
+.tableBody {background-color: $primary-color; }
+#rentalSlides{max-height: 400px; overflow: hidden;}
+.reservation {padding: 10px; border-radius: 5px;border: 1px solid gray; background-color: $accent2-variant; color: $primary-color; text-decoration: none;}
+
+#confirmIt{font-weight: 600; display: flex; flex-direction: column; width: fit-content; margin: auto; 
+  color: $accent3-color; background-color: $primary-color; padding:10px; border-radius: 10px; }
+  #submission{padding: 10px; 
+    border-radius: 10px; 
+    color: $accent1-color; background-color: $accent3-color;} 
+  #submission:hover{background-color: $accent2-variant;}
+/*
+======================
+     Tour Page
+======================
+*/
+
+#tourTitle{background-color: $accent2-color; text-align: center; padding: 1em; margin: 0em;color: $primary-color; b{color: $accent2-variant;} outline: solid .5em white;}
+
+#tourBody{height:100%; margin: auto; main{margin: auto;} }
+
+.ImgContainer{width: 100%;
+  display: flex;
+  margin: 2em auto;
+  padding: 1em;
+  outline: auto;
+  margin-top: auto;
+  background-color: #04a8a8;}
+
+.articleImg{width: 100%; box-shadow: 0 0 3px 2px black;
+}
+
+
+#videoContainer{width: 95%;margin: 10px auto; display: flex; flex-direction: column;}
+
+#iframed{height: 500px; border: .1em $accent1-color solid; border-radius: 10px; box-shadow: 0 0 17px 6px black;}
+
+.tour_header{background-color: $accent1-color; padding: 15px; border-radius: 10px; border:2px dotted white; color: $accent3-color; margin-bottom: 0;}
+
+#tourVideo{ color: $primary-color; border-radius: 10px;background: #257d78; padding-bottom: 10px;}
+.tour-image{padding-top: 25rem;  border-top: .5em white solid;  border-bottom: .5em white solid;}
+/*
+==========================
+          contact
+==========================
+*/
+#contactMessage{display: flex; flex-direction: column; text-align: center;margin: auto auto 2em auto; p{margin: 5px;text-align: right;} padding: 5px;}
+#contact_form{ background: $accent3-color; display: flex; flex-direction: column; width: fit-content; input{width:fit-content; align-self: flex-start; background-color: $accent2-color; color: azure; font-weight: 600;}margin: auto 2em; padding: 2em; 
+textarea{height: 250px; overflow: scroll; margin: 0px;} button{color: $accent1-color; background-color: $accent2-color; padding: 10px; border-radius: 10px;} button:hover{background-color: $accent2-variant;box-shadow: 0 0 4px 1px black;}
+}
+#contact-main{display: flex; flex-direction: column;; width: fit-content;margin: auto; width: 95%;}
+.fixer{width: 80%;}
+/*
+======================
+      Google Maps
+======================
+*/
+.mapContainer{width: 100%; margin: 10px auto; display: flex; flex-direction: column;}
+.maps{display: flex; margin: auto; width: 100%; padding: 5px;}
+
+/*
+==========================
+          Footer
+==========================
+*/
+footer{outline: auto;}
+footer h3, footer h5{color: $accent1-color; text-transform: uppercase;}
+footer h5{margin: 0; font-size: medium;}
+.highlight {color: $secondary-color;}
+
+footer div{width: 70%; margin: auto; font-size: medium;}
+#tourFoot{margin:2em auto 0em auto;}

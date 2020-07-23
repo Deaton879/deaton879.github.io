@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rentals</title>
+    <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="./images/phpThumb_generated_thumbnailico">
+    <meta name="description" content="Rental Page and Pricing for Scoots site">
+  </head>
+
+  <body>
+    
+    <header>
+      <a href="./scoots_homepage.html"><img style="border: none;" src="../images/icons8-scooter-64.png" alt="Site logo | Scooter icon by Icons8"></a>
+      <section>
+        <h1 class="header_title">Scoots</h1>
+        <div>Rent the keys to Cozumel</div>
+      </section>
+      
+      <button onclick="toggleMenu('nav_toggle')" id="menu">&#9776;</button>
+        
+    </header>
+
+    <nav class="nav-container">   
+      <div id="nav_toggle" class="nav_hide">
+        <ul class="nav_list">
+          <li class="dropdown active"><a href="./rentals.html">Rentals</a>
+            <menu id="nest_menu">
+              <li class="nest_items"><a href="./rentals.html#scooters">Scooters</a></li>
+              <li class="nest_items"><a href="./rentals.html#atv">ATV</a></li>
+              <li class="nest_items"><a href="./rentals.html#jeeps">Jeeps</a></li>
+            </menu>
+          </li>
+          <li class="dropdown"><a href="./reservations.html">Reservations</a></li>
+          <li class="dropdown"><a href="./tours.html">Tours</a></li>
+          <li class="dropdown"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+    <!--Navigation-->
+
+    
+
+
+    <!-- Hero Image/Banner Images Slideshow-->
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Check out our selection!</h1>
+        
+      </div>
+    </div>
+
+    <div id="socialSidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://www.facebook.com/"><img src="../images/facebook-social-media-pngrepo-com.png" class="social_img" alt="social media icon - facebook"></a>
+      <a href="https://www.twitter.com/"><img src="../images/twitter-social-media-pngrepo-com.png" class="social_img" alt="social media icon - twitter"></a>
+      <a href="https://www.pinterest.com/"><img src="../images/pinterest-social-media-pngrepo-com.png" class="social_img" alt="social media icon - pinterest"></a>
+      <a href="https://www.whatsapp.com/"><img src="../images/whatsapp-social-media-pngrepo-com.png" class="social_img" alt="social media icon - whatsapp"></a>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#8678;</button>
+
+    <main id="rentalMain">
+
+      <h2 class="rentalHeader" id="rentMe">NO MATTER THE ROAD AHEAD, WE'VE GOT YOUR TRANSPORTATION NEEDS COVERED</h2><hr>
+
+
+      <div class="slideshow" id="rentalSlides">
+
+        <div class="mySlides fade">
+          <img class="home_pic slides" data-src="../images/Honda_Dio_Group.jpg" src="../images/Placeholder.png" alt="Honda Dio">
+        </div>
+  
+        <div class="mySlides fade">
+          <img class="home_pic slides" src="../images/Placeholder.png" data-src="../images/Jeep_4_Door_Group.jpg" alt="4-door Wrangler">
+        </div>
+  
+        <div class="mySlides fade">
+          <img class="home_pic slides" src="../images/Placeholder.png" data-src="../images/Honda_Metropolitan_Group.jpeg" alt="Honda PCX150">
+        </div>
+  
+        <div class="mySlides fade">
+          <img class="home_pic slides" src="../images/Placeholder.png" data-src="../images/Jeep_2_Door_Group.jpg" alt="Jeep 2-Door Wrangler">
+        </div>
+        <br>
+  
+        <div style="display:none;">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+      
+      </div>
+
+      <h3 class="rentalHeader">Select a category below to explore what's on offer.</h3>
+
+      <hr>
+      <button type="button" id="scooters" class="collapsible"><span class="body_h2">Scooters</span></button>
+
+      <div class="rental_container_box" style="display: none;">
+  
+        <div class="rental_container">
+          <img  src="../images/Placeholder.png" data-src="../images/Honda_Metropolitan.jpg" alt="Honda Metropolitan Scooter" class="rental_image">
+          <div class="rc_middle">
+            <div class="rc_text" onclick="getInfo(0,'Honda_Metro')">Honda Metropolitan - <b>click for more info</b></div>
+          </div>
+        </div>
+        <div class="more_info" id="Honda_Metro"></div>
+        <a class="reservation" href="./reservations.html">Make a reservation, today!</a>
+        
+
+        <div class="rental_container">
+          <img src="../images/Placeholder.png" data-src="../images/Honda_Dio.jpg" alt="Honda Dio Scooter" class="rental_image">
+          <div class="rc_middle">
+            <div class="rc_text" onclick="getInfo(1,'Honda_Dio')">Honda Dio - <b>click for more info</b></div>
+          </div>
+        </div>
+        <div class="more_info" id="Honda_Dio"></div>
+        <a class="reservation" href="./reservations.html">Make a reservation, today!</a>
+
+        <div class="rental_container">
+          <img src="../images/Placeholder.png" data-src="../images/Honda_PCX150.jpg" alt="Honda PCX150 Scooter" class="rental_image">
+          <div class="rc_middle">
+            <div class="rc_text" onclick="getInfo(2,'Honda_PCX150')">Honda PCX150 - <b>click for more info</b></div>
+          </div>
+        </div>
+        <div class="more_info" id="Honda_PCX150"></div>
+        <a class="reservation" href="./reservations.html">Make a reservation, today!</a>
+      </div>
+
+      <hr>
+      <button type="button" id="atv" class="collapsible"><span class="body_h2">ATV Side-by-Side</span></button>
+      
+      
+      <div class="rental_container_box" style="display: none;">
+        <div class="rental_container">
+          <img src="../images/Placeholder.png" data-src="../images/Honda_Pioneer _1000.jpg" alt="Honda Pioneer 1000 ATV Side-by-Side" class="rental_image">
+          <div class="rc_middle">
+            <div class="rc_text" onclick="getInfo(3,'Honda_Pioneer')">Honda Pioneer 1000 - <b>click for more info</b></div>
+          </div>
+        </div>
+        <div class="more_info" id="Honda_Pioneer"></div>
+        <a class="reservation" href="./reservations.html">Make a reservation, today!</a>
+      </div>
+
+      <hr>
+      <button type="button" id="jeep" class="collapsible"><span class="body_h2">Jeep Rentals</span></button>
+
+
+      <div class="rental_container_box" style="display: none;">
+
+        <div class="rental_container">
+          <img  src="../images/Placeholder.png" data-src="../images/Jeep_2_Door.jpg" alt="2-door Jeep Wrangler open-air manual" class="rental_image">
+          <div class="rc_middle">
+            <div class="rc_text" onclick="getInfo(4,'Jeep_2')">2-door Jeep Wrangler - <b>click for more info</b></div>
+          </div>
+        </div>
+        <div class="more_info" id="Jeep_2"></div>
+        <a class="reservation" href="./reservations.html">Make a reservation, today!</a>
+
+        <div class="rental_container">
+          <img  src="../images/Placeholder.png" data-src="../images/Jeep_4_Door.jpg" alt="4-door Jeep Wrangler A/C manual" class="rental_image">
+          <div class="rc_middle">
+            <div class="rc_text" onclick="getInfo(5,'Jeep_4')">4-door Jeep Wrangler - <b>click for more info</b></div>
+          </div>
+        </div>
+        <div class="more_info" id="Jeep_4"></div>
+        <a class="reservation" href="./reservations.html">Make a reservation, today!</a>
+
+      </div>
+      <hr>
+        
+    </main>
+
+    <footer>
+
+      
+
+      <h3>Transporation Services</h3>
+
+      <div>Scoots offers a full service concierge shuttle experience.
+      No additional fees for our <b class="highlight">pick-up/drop off service</b>, 
+      and no wasted time or money spent on transportation to and from 
+      either of our <b class="highlight">two Cozumel locations.</b></div>
+
+      <h3>Office Hours</h3>
+      <div>
+        <b class="highlight">9:00 A.M. - 5:30 P.M.</b><br>
+        <b class="highlight">Monday - Saturday</b><br><br>
+        Sunday is day of rest!<br><br>
+        <h3>Two convenient loactions!</h3>
+        <div class="fixer">One is near the 
+          <b class="highlight">Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</b><br>
+         and the other is near the  
+         <b class="highlight">Terminal Puerta Maya</b> further south along the coast
+        </div>
+      </div>
+
+    
+
+      <div><h5>Phone: </h5><b class="highlight">555-55-555</b>
+     <h5>E-mail </h5><b class="highlight">scootsRentalGuy1@email.mail</b></div><br><br>
+
+
+      © 2020 ScootsRentalsCozumel.com | 
+      <span id="todaysDate" class="highlight"></span>
+    </footer>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "flex") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "flex";
+          }
+        });
+      }
+    </script>
+    <script src="../js/slideshow.js" defer></script>
+    <script src="../js/ajax.js" defer></script>
+    <script src="../js/basic.js" defer></script>
+    <script src="../js/lazyload.js" defer></script>
+  </body>
+  
+</html>

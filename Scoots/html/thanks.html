@@ -4,28 +4,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us</title>
+    <title>Reserve your ride today!</title>
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="./images/phpThumb_generated_thumbnailico">
-    <meta name="description" content="Contact Page for Scoots">
+    <meta name="description" content="Page to reserve your choice of available rentals in advance">
   </head>
 
-  <body>
-
+  <body id="thanksMessage">
+    
     <header>
       <a href="./scoots_homepage.html"><img style="border: none;" src="../images/icons8-scooter-64.png" alt="Site logo | Scooter icon by Icons8"></a>
       <section>
         <h1 class="header_title">Scoots</h1>
         <div>Rent the keys to Cozumel</div>
       </section>
-
+      
       <button onclick="toggleMenu('nav_toggle')" id="menu">&#9776;</button>
-
+        
     </header>
-
-
-    <!--Navigation-->
-
+    
     <nav class="nav-container">   
       <div id="nav_toggle" class="nav_hide">
         <ul class="nav_list">
@@ -36,27 +33,12 @@
               <li class="nest_items"><a href="./rentals.html#jeeps">Jeeps</a></li>
             </menu>
           </li>
-          <li class="dropdown"><a href="./reservations.html">Reservations</a></li>
+          <li class="dropdown active"><a href="./reservations.html">Reservations</a></li>
           <li class="dropdown"><a href="./tours.html">Tours</a></li>
-          <li class="dropdown active"><a href="./contact.html">Contact Us</a></li>
+          <li class="dropdown"><a href="./contact.html">Contact Us</a></li>
         </ul>
       </div>
     </nav>
-
-    <!-- Hero Image/Banner Images Slideshow-->
-    <hr>
-    
-
-    <div class="contact-image">
-      <div class="hero-text">
-        <h1>Contact Us!</h1>
-        <p><b class="highlight">We would love to hear from you!</b></p>
-        
-      </div>
-    </div>
-
-
-    <hr>
     <div id="socialSidepanel" class="sidepanel">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="https://www.facebook.com/"><img src="../images/facebook-social-media-pngrepo-com.png" class="social_img" alt="social media icon - facebook"></a>
@@ -64,33 +46,12 @@
       <a href="https://www.pinterest.com/"><img src="../images/pinterest-social-media-pngrepo-com.png" class="social_img" alt="social media icon - pinterest"></a>
       <a href="https://www.whatsapp.com/"><img src="../images/whatsapp-social-media-pngrepo-com.png" class="social_img" alt="social media icon - whatsapp"></a>
     </div>
-
-    <button class="openbtn" onclick="openNav()">&#8678;</button>
-
-    <main id="contact-main">
-
-      <div id="contactMessage">
-        <h1>SEND US A MESSAGE!</h1>
-        <h3>Scoots Rentals</h3>
-        <br><p>Office# 555-55-555</p>
-        <p>Mobile# 999-99-999</p>
-        <br><p>Office Hours: 9:00 A.M. - 5:30 P.M.</p>
-        <br><p>2 Locations:</p>
-        <p>Playa del Carmen</p>
-        <p>Puerta Maya</p>
-      </div>
-
-      <form id="contact_form" action="thanks.html">
-        <input type="text" id="Name" placeholder="NAME">
-        <input type="email" id="Email" placeholder="EMAIL">
-        <input type="number" id="Phone" placeholder="PHONE">
-        <textarea id="Message" placeholder="MESSAGE" ></textarea>  
-        <button type="submit" id="Send">Send</button>
-      </form>
-
+    <main class="ty_main">  
+      <h1 id="thanksH1">Thank You! We will be in contact with you shortly. Have a wonderful day!</h1>
     </main>
-
     <footer>
+
+      
 
       <h3>Transporation Services</h3>
 
@@ -112,12 +73,7 @@
         </div>
       </div>
 
-      <div class="mapContainer">
-
-      <div class="maps" id="Carmen"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23275.73446470874!2d-86.95482183676371!3d20.507780948397347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1595391703754!5m2!1sen!2sus" width="400" height="300"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
- 
-      <div class="maps" id="Maya"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7426682840223!2d-86.97723018403622!3d20.475759811799506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1595391937808!5m2!1sen!2sus" width="400" height="300"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-      </div>
+     
 
       <div><h5>Phone: </h5><b class="highlight">555-55-555</b>
      <h5>E-mail </h5><b class="highlight">scootsRentalGuy1@email.mail</b></div><br><br>
@@ -128,14 +84,12 @@
     </footer>
 
     <script>
-     
-
+      
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="../js/slideshow.js" defer></script>
+    <script src="../js/formController.js"></script>
     <script src="../js/basic.js" defer></script>
     <script src="../js/lazyload.js" defer></script>
-
+    
   </body>
   
 </html>

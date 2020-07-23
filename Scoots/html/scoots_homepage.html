@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoots Home Page</title>
+    <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="./images/phpThumb_generated_thumbnailico">
+    <meta name="description" content="Home Page for the Scoots Rental Site">
+  </head>
+
+  <body id="homeBody" onload="getCurrent(20.4230, 86.9223), getFive(20.4230, 86.9223)">
+
+    <header>
+      <a href="./scoots_homepage.html"><img style="border: none;" src="../images/icons8-scooter-64.png" alt="Site logo | Scooter icon by Icons8"></a>
+      <section>
+        <h1 class="header_title">Scoots</h1>
+        <div>Rent the keys to Cozumel</div>
+      </section>
+
+      <button onclick="toggleMenu('nav_toggle')" id="menu">&#9776;</button>
+
+    </header>
+
+   
+    <!--Navigation-->
+
+    <nav class="nav-container">   
+      <div id="nav_toggle" class="nav_hide">
+        <ul class="nav_list">
+          <li class="dropdown"><a href="./rentals.html">Rentals</a>
+            <menu id="nest_menu">
+              <li class="nest_items"><a href="./rentals.html#scooters">Scooters</a></li>
+              <li class="nest_items"><a href="./rentals.html#atv">ATV</a></li>
+              <li class="nest_items"><a href="./rentals.html#jeeps">Jeeps</a></li>
+            </menu>
+          </li>
+          <li class="dropdown"><a href="./reservations.html">Reservations</a></li>
+          <li class="dropdown"><a href="./tours.html">Tours</a></li>
+          <li class="dropdown"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+    <!-- Hero Image/Banner Images Slideshow-->
+    <h1 id="titleScoot">WELCOME TO SCOOTS!</h1> <h2 id="subTitleScoot">WE HAVE ALL YOUR TRANSPORTATION NEEDS WHILE YOU VACATION HERE IN COZUMEL</h2>
+    <div class="slideshow">
+      <div class="mySlides fade">
+        <picture class="home_pic slides">
+          <source media="(max-width: 360px)" srcset="../images/cozumel-unsplash_S.jpg">
+          <source media="(max-width: 900px)" srcset="../images/cozumel-unsplash_M.jpg">
+          <img src="../images/Placeholder.png" data-src="../images/cozumel-unsplash_L.jpg" alt="Old stone Archway">
+        </picture>
+      </div>
+
+      <div class="mySlides fade">
+        <picture class="home_pic slides">
+          <source media="(max-width: 360px)" srcset="../images/boat_Fernando_Jorge_S.jpg">
+          <source media="(max-width: 900px)" srcset="../images/boat_Fernando_Jorge_M.jpg">
+          <img src="../images/Placeholder.png" data-src="../images/boat_Fernando_Jorge_L.jpg" alt="Enjoying the ocean">
+        </picture>
+      </div>
+
+      <div class="mySlides fade">
+        <picture class="home_pic slides">
+          <source media="(max-width: 360px)" srcset="../images/reef_fish_Vlad_Tchompalov_S.jpg">
+          <source media="(max-width: 900px)" srcset="../images/reef_fish_Vlad_Tchompalov_M.jpg">
+          <img src="../images/Placeholder.png" data-src="../images/reef_fish_Vlad_Tchompalov_L.jpg" alt="Fish in the reef">
+        </picture>
+      </div>
+
+      <div class="mySlides fade">
+        <picture class="home_pic slides">
+          <source media="(max-width: 360px)" srcset="../images/beach_Fallon_Michael_S.jpg">
+          <source media="(max-width: 900px)" srcset="../images/beach_Fallon_Michael_M.jpg">
+          <img src="../images/Placeholder.png" data-src="../images/beach_Fallon_Michael_L.jpg" alt="Palm tree paradise">
+        </picture>
+      </div>
+      <br>
+
+      <div style="display: none;">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+    </div>
+    <div id="callTo"><p>Check out our awesome Summer Deals on all our rental lineup! Make a reservation for your next trip, today. We have Scooters, Side-by-Sides, and Jeeps to rent.<br> Keep money in your pocket by making a reservation in advance.</p><a href="./reservations.html">Reserve my ride!</a> </div>
+    <div id="socialSidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://www.facebook.com/"><img src="../images/facebook-social-media-pngrepo-com.png" class="social_img" alt="social media icon - facebook"></a>
+      <a href="https://www.twitter.com/"><img src="../images/twitter-social-media-pngrepo-com.png" class="social_img" alt="social media icon - twitter"></a>
+      <a href="https://www.pinterest.com/"><img src="../images/pinterest-social-media-pngrepo-com.png" class="social_img" alt="social media icon - pinterest"></a>
+      <a href="https://www.whatsapp.com/"><img src="../images/whatsapp-social-media-pngrepo-com.png" class="social_img" alt="social media icon - whatsapp"></a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">&#8678;</button>
+  
+    <section class="currentWeather">
+      <h4>Weather Summary</h4>
+      <hr>
+      <div class="summaryData">
+          <h5>Currently: </h5>
+          <p id="currently"></p>
+      </div>
+      <div class="summaryData">
+          <h5>Low: </h5>
+          <p id="temp-now"></p>
+      </div>
+      <div class="summaryData">
+          <h5>High: </h5>
+          <p id="temp-high"></p>
+      </div>
+      <div class="summaryData">
+          <h5>Wind Chill: </h5>
+          <p id="windchill"></p>
+      </div>
+      <div class="summaryData">
+          <h5>Humidity: </h5>
+          <p id="humidity"></p>
+      </div>
+      <div class="summaryData">
+          <h5>Wind Speed: </h5>
+          <p id="windspeed"></p>
+      </div>
+    </section> 
+    <main id="home-main">
+      <!--  Basic current Weather-->
+      
+
+      <section class="filler" id="forecastContainer">
+        <h3>5-Day Forecast</h3>
+        <div id="fiveDay">
+            <div class="forecast">
+                <p id="day1">Mon</p>
+                <div class="icon-holder">
+                    <img src="../images/Placeholder.png" alt="forecast icon, partly cloudy">
+                </div>
+                <p>78 &#8457;</p>  
+            </div>
+            <div class="forecast">
+                <p id="day2">Tue</p>
+                <div class="icon-holder">
+                    <img src="../images/Placeholder.png" alt="forecast icon, heavy rain">
+                </div>
+                <p>79 &#8457;</p>  
+            </div>
+            <div class="forecast">
+                <p id="day3">Wed</p>
+                <div class="icon-holder">
+                    <img src="../images/Placeholder.png" alt="forecast icon, partly sunny">
+                </div>
+                <p>76 &#8457;</p>  
+            </div>
+            <div class="forecast">
+                <p id="day4">Thur</p>
+                <div class="icon-holder">
+                    <img src="../images/Placeholder.png" alt="forecast icon, rain">
+                </div>
+                <p>77 &#8457;</p>  
+            </div>
+            <div class="forecast">
+                <p id="day5">Fri</p>
+                <div class="icon-holder">
+                    <img src="../images/Placeholder.png" alt="forecast icon, sunny">
+                </div>
+                <p>83 &#8457;</p>  
+            </div>
+        </div>
+      </section><br>
+      <hr>
+
+      <div id="tellMeMore">
+        <h2>Types of Rentals</h2>
+        <h3>Scooters</h3>
+        <p>We have a selection of Honda scooters to choose from, accommodating both single and dual passengers. A range of power is available to suit the preference of everyone in the family</p>
+        <h3>ATV/Side-by-Side</h3>
+        <p>We offer the Honda Pioneer 1000 for unparalleled experience while off roading. If you're looking to have some fun, the Honda Pioneer will not disappoint</p>
+        <h3>Jeeps</h3>
+        <p>Everybodies favorite Jeeps are the perfect vacation transportation. With the option of both 2 and 4 doors, the latter which even has A/C! Follow the link below to check out our rentals more in depth!</p>
+        <a href="./rentals.html">Take me to the showroom!</a>
+      </div>
+    </main>
+
+    <footer>
+
+      
+
+      <h3>Transporation Services</h3>
+
+      <div>Scoots offers a full service concierge shuttle experience.
+      No additional fees for our <b class="highlight">pick-up/drop off service</b>, 
+      and no wasted time or money spent on transportation to and from 
+      either of our <b class="highlight">two Cozumel locations.</b></div>
+
+      <h3>Office Hours</h3>
+      <div>
+        <b class="highlight">9:00 A.M. - 5:30 P.M.</b><br>
+        <b class="highlight">Monday - Saturday</b><br><br>
+        Sunday is day of rest!<br><br>
+        <h3>Two convenient loactions!</h3>
+        <div class="fixer">One is near the 
+          <b class="highlight">Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</b><br>
+         and the other is near the  
+         <b class="highlight">Terminal Puerta Maya</b> further south along the coast
+        </div>
+      </div>
+
+
+      <div><h5>Phone: </h5><b class="highlight">555-55-555</b>
+     <h5>E-mail </h5><b class="highlight">scootsRentalGuy1@email.mail</b></div><br><br>
+
+
+      © 2020 ScootsRentalsCozumel.com | 
+      <span id="todaysDate" class="highlight"></span>
+    </footer>
+
+    <script>
+     
+
+    </script>
+    <script src="../js/weather_api.js" defer></script>
+    <script src="../js/slideshow.js" defer></script>
+    <script src="../js/basic.js" defer></script>
+    <script src="../js/lazyload.js" defer></script>
+
+  </body>
+  
+</html>

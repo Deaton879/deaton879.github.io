@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reserve your ride today!</title>
+    <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="./images/phpThumb_generated_thumbnailico">
+    <meta name="description" content="Page to reserve your choice of available rentals in advance">
+  </head>
+
+  <body>
+    
+    <header>
+      <a href="./scoots_homepage.html"><img style="border: none;" src="../images/icons8-scooter-64.png" alt="Site logo | Scooter icon by Icons8"></a>
+      <section>
+        <h1 class="header_title">Scoots</h1>
+        <div>Rent the keys to Cozumel</div>
+      </section>
+      
+      <button onclick="toggleMenu('nav_toggle')" id="menu">&#9776;</button>
+        
+    </header>
+
+    <nav class="nav-container">   
+      <div id="nav_toggle" class="nav_hide">
+        <ul class="nav_list">
+          <li class="dropdown"><a href="./rentals.html">Rentals</a>
+            <menu id="nest_menu">
+              <li class="nest_items"><a href="./rentals.html#scooters">Scooters</a></li>
+              <li class="nest_items"><a href="./rentals.html#atv">ATV</a></li>
+              <li class="nest_items"><a href="./rentals.html#jeeps">Jeeps</a></li>
+            </menu>
+          </li>
+          <li class="dropdown active"><a href="./reservations.html">Reservations</a></li>
+          <li class="dropdown"><a href="./tours.html">Tours</a></li>
+          <li class="dropdown"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+    <!--Navigation-->
+
+    
+
+
+    <!-- Hero Image/Banner Images Slideshow-->
+    <div class="res_image">
+      <div class="hero-text">
+        <h1>Something here for every adventure!</h1>
+        <a href="#terms">Rules and Restrictions</a>
+      </div>
+    </div>
+
+
+
+    <div id="socialSidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://www.facebook.com/"><img src="../images/facebook-social-media-pngrepo-com.png" class="social_img" alt="social media icon - facebook"></a>
+      <a href="https://www.twitter.com/"><img src="../images/twitter-social-media-pngrepo-com.png" class="social_img" alt="social media icon - twitter"></a>
+      <a href="https://www.pinterest.com/"><img src="../images/pinterest-social-media-pngrepo-com.png" class="social_img" alt="social media icon - pinterest"></a>
+      <a href="https://www.whatsapp.com/"><img src="../images/whatsapp-social-media-pngrepo-com.png" class="social_img" alt="social media icon - whatsapp"></a>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#8678;</button>
+
+    <main>
+
+      <h2>Pricing and Offers</h2>
+
+        <!-- FORM TO RESERVE A RENTAL FROM SCOOTS -->
+
+        <form action="confirm.html" id="reserve-form" onreset="resetMyForm()">
+          <div id="form-content-container">
+              <fieldset id="contact-info">
+                  <legend>contact info</legend>
+                  <div class="formFieldContainer">
+                      <label class="contactInfoLabel">first name * 
+                      <input type="text" name="first-name" placeholder="john" pattern="[A-za-z]{1,}" id="first-NAME" onblur="imListening(this)" autofocus required></label>
+                      <br><span class="errorMessage" id="first-name">*Please enter name using only alpha numeric characters</span>
+                      <br>
+                  
+                      <label class="contactInfoLabel">last name * 
+                      <input type="text" name="last-name" placeholder="smith" pattern="[A-za-z]{1,}" onblur="imListening(this)" required></label>
+                      <br><span class="errorMessage" id="last-name">*Please enter name using only alpha numeric characters</span>
+                      <br>
+
+                      
+                      <label class="contactInfoLabel">home country 
+                      <input type="text" name="country" placeholder="united states"></label>
+                      <br><br>
+  
+
+                      <label class="contactInfoLabel">phone number * 
+                      <input type="text" name="phone" placeholder="phone" onblur="imListening(this)" required></label>
+                      <br><span class="errorMessage" id="phone">Please enter your phone number"</span>
+                      <br>
+
+                      <label class="contactInfoLabel">E-Mail: 
+                      <input type="email" name="Email" placeholder="john_doe@myemail.com"></label>
+                      <br><br>
+
+                      <label class="contactInfoLabel">Dates Between* <input type="date" required></label><label class="contactInfoLabel"><input type="date" required></label><br><br>
+
+                      <label class="contactInfoLabel">What are you looking to rent? <select name="rentalSelect" id="rentalSelect">
+                        <option value="Dio">Honda Dio</option>
+                        <option value="Metro">Honda Metropolitan</option>
+                        <option value="PCX150">Honda PCX150</option>
+                        <option value="Pioneer">Honda Pioneer 1000</option>
+                        <option value="Jeep_2Door">Jeep Wrangler 2-Door</option>
+                        <option value="Jeep_4Door">Jeep Wrangler 4-Door</option>
+                      </select></label><br><br>
+
+                      <label class="contactInfoLabel">Are you with a cruise? <select name="rentalSelect2" id="rentalSelect2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select></label><br>
+
+                      
+                  </div>
+              </fieldset>
+
+              <fieldset id="confirm-purchase">
+                  <legend>Additional Comments</legend>
+                  <textarea id="formTA" placeholder="special accommodations/comments (i.e. need and location of a drop-off request)"></textarea>
+                  
+                  <span class="errorMessage" id="submit">Please correct errors before proceeding</span><br>
+                  <span id="form-buttons">
+                      <input type="reset" name="reset" id="reset">
+                      <input type="submit" name="submit" id="submitForm"> 
+                  </span>
+              </fieldset>
+          </div>
+      </form> 
+     
+         <!-- INFORMATION NEEDED IN ORDER TO SUCCESSFULLY REGISTER A RESERVATION -->
+      
+      <h3>Information and Services</h3>
+      <a id="terms"></a>
+      <ul>
+        <li>A $50 security deposit is required to confirm reservations.</li>
+        <li>A valid drivers license is required in hand at time of rental.</li>
+        <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+        <li>Fuel charge not included.</li>
+        <li>Unlimited mileage.</li>
+        <li>Liability insurance is free of charge.</li>
+        <li>Reservations rate requires 24 hour prior notification.</li>
+        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+        <li>Rentals may be returned to either location.</li>
+      </ul>
+
+
+    </main>
+    <footer>
+
+      
+
+      <h3>Transporation Services</h3>
+
+      <div>Scoots offers a full service concierge shuttle experience.
+      No additional fees for our <b class="highlight">pick-up/drop off service</b>, 
+      and no wasted time or money spent on transportation to and from 
+      either of our <b class="highlight">two Cozumel locations.</b></div>
+
+      <h3>Office Hours</h3>
+      <div>
+        <b class="highlight">9:00 A.M. - 5:30 P.M.</b><br>
+        <b class="highlight">Monday - Saturday</b><br><br>
+        Sunday is day of rest!<br><br>
+        <h3>Two convenient loactions!</h3>
+        <div class="fixer">One is near the 
+          <b class="highlight">Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</b><br>
+         and the other is near the  
+         <b class="highlight">Terminal Puerta Maya</b> further south along the coast
+        </div>
+      </div>
+
+     
+
+      <div><h5>Phone: </h5><b class="highlight">555-55-555</b>
+     <h5>E-mail </h5><b class="highlight">scootsRentalGuy1@email.mail</b></div><br><br>
+
+
+      © 2020 ScootsRentalsCozumel.com | 
+      <span id="todaysDate" class="highlight"></span>
+    </footer>
+
+    <script>
+      
+    </script>
+    <script src="../js/formController.js"></script>
+    <script src="../js/basic.js" defer></script>
+    <script src="../js/lazyload.js" defer></script>
+  </body>
+  
+</html>

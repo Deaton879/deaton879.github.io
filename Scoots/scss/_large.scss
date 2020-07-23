@@ -1,0 +1,108 @@
+body, html {
+  height: 100%;
+  margin: auto;
+}
+
+header{justify-content: end;}
+header section{padding:5px;}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/scooters1_Caleb_George_L.jpg");
+}
+.tour-image{background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/ship-wreckage.jpg");}
+.contact-image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/reef-snorkeling.jpg");}
+.res_image{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Jeep_4_Door_Group.jpg");}
+#menu{display: none;}
+
+.nav_hide{display:block}
+
+.nav-container{top:6%}
+
+.nav_list{display: flex; margin: auto;}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+}
+
+.dropdown:hover{
+  background-color: $accent2-color;
+  a{color: $primary-color;}
+}
+
+#nest_menu{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  padding: inherit;
+  width: inherit;
+}
+
+#nest_menu a {
+  width: inherit;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.rc_text{padding: 16px 32px; font-size: 2rem; border-radius: 3px;}
+.rc_text:hover{cursor: pointer;}
+.dropdown:hover #nest_menu {display: block;}
+
+.nest_items:hover {background-color: $accent1-color;}
+
+footer div{width: 20%;}
+
+.mapContainer {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 14px 5px black;
+}
+.maps{width:fit-content;border-radius: 10px; background-color: $accent2-color;overflow: hidden; padding: 10px; border: 1px black solid;}
+
+#rentalMain{width:60%;}
+
+#main2{    
+  background: none;
+  z-index: 0;
+  white-space: pre-line;
+  position: absolute;
+  line-break: anywhere;
+  right: 0;
+  top: 84em;
+  margin: 1em 1em;
+  width: 30%;
+  font-weight: 600;}
+  #read-more{ 
+    
+    text-align-last: end;
+    .highlight{color: $accent2-color;}
+    a{
+      font-family: "Merienda One",cursive;
+      text-decoration: none;
+      border-style: dotted;
+      padding: 5px;
+      background: yellowgreen;
+      font-style: italic;
+    }
+    margin: -4em 3em;
+  }
+
+
+
+#forecastContainer {
+  display: initial;
+  width: 80%;
+  margin: auto;
+}
+#home-main{width: 65%; padding: 1em; margin: auto;}

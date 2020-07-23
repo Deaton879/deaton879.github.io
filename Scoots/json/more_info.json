@@ -1,0 +1,59 @@
+[{"Honda_Metro" :
+  { "named" : "Honda Metropolitan Scooter",
+    "persons" : "1",
+    "half_r" : "$20",
+    "full_r" : "$30",
+    "half_w" : "$25",
+    "full_w" : "$35"   
+  }},
+
+
+{"Honda_Dio" :
+  { "named" : "Honda Dio Scooter",
+    "persons" : "2",
+    "half_r" : "$30",
+    "full_r" : "$40",
+    "half_w" : "$35",
+    "full_w" : "$45"   
+  }},
+
+
+{"Honda_PCX150" :
+  { "named" : "Honda PCX150 Scooter",
+    "persons" : "2",
+    "half_r" : "$40",
+    "full_r" : "$50",
+    "half_w" : "$45",
+    "full_w" : "$55"   
+  }},
+
+
+{"Honda_Pioneer" :
+  { "named" : "Honda Pioneer 1000",
+    "persons" : "4",
+    "half_r" : "$50",
+    "full_r" : "$70",
+    "half_w" : "$60",
+    "full_w" : "$80"   
+  }},
+
+
+{"Jeep_2" :
+  { "named" : "Jeep Wrangler - 2 door",
+    "persons" : "4",
+    "half_r" : "$60",
+    "full_r" : "$85",
+    "half_w" : "$70",
+    "full_w" : "$90"   
+  }},
+
+
+{"Jeep_4" :
+  { "named" : "Jeep Wrangler - 4 door with a/c",
+    "persons" : "5",
+    "half_r" : "$70",
+    "full_r" : "$100",
+    "half_w" : "$85",
+    "full_w" : "$125"   
+  }}]
+   
